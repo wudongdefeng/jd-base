@@ -30,14 +30,8 @@ SendCount=${ShellDir}/send_count
 isTermux=${ANDROID_RUNTIME_ROOT}${ANDROID_ROOT}
 WhichDep=$(grep "/jd-base" "${ShellDir}/.git/config")
 Scripts2URL=https://github.com/shylocks/Loon
-
-if [[ ${WhichDep} == *github* ]]; then
-  ScriptsURL=https://github.com/wudongdefeng/jd_scripts
-  ShellURL=https://github.com/wudongdefeng/jd-base
-else
-  ScriptsURL=https://gitee.com/wudongdefeng/jd_scripts
-  ShellURL=https://gitee.com/wudongdefeng/jd-base
-fi
+ScriptsURL=https://gitee.com/wudongdefeng/jd_scripts
+ShellURL=https://gitee.com/wudongdefeng/jd-base
 
 ## 更新shell脚本
 function Git_PullShell {
