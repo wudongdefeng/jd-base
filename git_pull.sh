@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 ## Author: Evine Deng
-## Source: https://github.com/EvineDeng/jd-base
-## Modified： 2021-01-22
-## Version： v3.6.1
+
+## Source: https://github.com/wudongdefeng/jd_base
+## Modified： 2021-01-17
+## Version： v3.5.3
 
 ## 文件路径、脚本网址、文件版本以及各种环境的判断
 ShellDir=${JD_DIR:-$(cd $(dirname $0); pwd)}
@@ -30,8 +31,14 @@ SendCount=${ShellDir}/send_count
 isTermux=${ANDROID_RUNTIME_ROOT}${ANDROID_ROOT}
 WhichDep=$(grep "/jd-base" "${ShellDir}/.git/config")
 Scripts2URL=https://github.com/shylocks/Loon
-ScriptsURL=https://gitee.com/wudongdefeng/jd_scripts
-ShellURL=https://gitee.com/wudongdefeng/jd-base
+
+# if [[ ${WhichDep} == *github* ]]; then
+ScriptsURL=https://github.com/wudongdefeng/jd_scripts
+ShellURL=https://github.com/wudongdefeng/jd_base
+# else
+#   ScriptsURL=https://gitee.com/lxk0301/jd_scripts
+#   ShellURL=https://gitee.com/wudongdefeng/jd-base
+# fi
 
 ## 更新shell脚本
 function Git_PullShell {
@@ -42,18 +49,10 @@ function Git_PullShell {
   git reset --hard origin/v3
 }
 
-## 更新crontab
-function Update_Cron {
-  if [ -f ${ListCron} ]; then
-    perl -i -pe "s|30 8-20/4(.+jd_nian\W*.*)|28 8-20/4,21\1|" ${ListCron} # 修改默认错误的cron
-    crontab ${ListCron}
-  fi
-}
-
 ## 克隆scripts
 function Git_CloneScripts {
-  echo -e "克隆LXK9301脚本，原地址：${ScriptsURL}\n"
-  git clone -b master ${ScriptsURL} ${ScriptsDir}
+  echo -e "克隆JS脚本，原地址：${ScriptsURL}\n"
+  git clone -b my_jd_scripts ${ScriptsURL} ${ScriptsDir}
   ExitStatusScripts=$?
   echo
 }
@@ -64,7 +63,7 @@ function Git_PullScripts {
   cd ${ScriptsDir}
   git fetch --all
   ExitStatusScripts=$?
-  git reset --hard origin/master
+  git reset --hard origin/my_jd_scripts
   echo
 }
 
@@ -171,7 +170,7 @@ function Notify_Version {
   if [ -f ${FileConf} ] && [[ "${VerConf}" != "${VerConfSample}" ]] && [[ ${UpdateDate} == $(date "+%Y-%m-%d") ]]
   then
     if [ ! -f ${SendCount} ]; then
-      echo -e "检测到配置文件config.sh.sample有更新\n\n更新日期: ${UpdateDate}\n当前版本: ${VerConf}\n新的版本: ${VerConfSample}\n更新内容: ${UpdateContent}\n如需使用新功能请对照config.sh.sample，将相关新参数手动增加到你自己的config.sh中，否则请无视本消息。\n" | tee ${ContentVersion}
+      echo -e "检测到配置文件config.sh.sample有更新\n\n更新日期: ${UpdateDate}\n当前版本: ${VerConf}\n新的版本: ${VerConfSample}\n更新内容: ${UpdateContent}\n\n如需使用新功能按该文件前几行注释操作，否则请无视本消息。\n" | tee ${ContentVersion}
       echo -e "本消息只在该新版本配置文件更新当天发送一次，脚本地址：${ShellURL}" >> ${ContentVersion}
       cd ${ShellDir}
       node update.js
@@ -314,6 +313,12 @@ function Add_Cron {
   fi
 }
 
+## 更新crontab
+function Update_Cron {
+  perl -i -pe "s|0 8,9,10(.+jd_nian\W*.*)|30 8-20/4\1|" ${ListCron} # 修改默认错误的cron
+  crontab ${ListCron}
+}
+
 ## 在日志中记录时间与路径
 echo -e "\n--------------------------------------------------------------\n"
 echo -n "系统时间："
@@ -346,8 +351,8 @@ if [ ${ExitStatusShell} -eq 0 ]; then
   echo -e "--------------------------------------------------------------\n"
   [ -f ${ScriptsDir}/package.json ] && PackageListOld=$(cat ${ScriptsDir}/package.json)
   [ -d ${ScriptsDir}/.git ] && Git_PullScripts || Git_CloneScripts
-  [ -d ${Scripts2Dir}/.git ] && Git_PullScripts2 || Git_CloneScripts2
-  cp -f ${Scripts2Dir}/jd_*.js ${ScriptsDir}
+  # [ -d ${Scripts2Dir}/.git ] && Git_PullScripts2 || Git_CloneScripts2
+  # cp -f ${Scripts2Dir}/jd_*.js ${ScriptsDir}
 fi
 
 ## 执行各函数
