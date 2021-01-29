@@ -72,6 +72,7 @@ function Git_CloneScripts2 {
   echo -e "克隆shylocks脚本，原地址：${Scripts2URL}\n"
   git clone -b main ${Scripts2URL} ${Scripts2Dir}
   ExitStatusScripts2=$?
+  git reset --hard origin/master
   echo
 }
 
