@@ -140,21 +140,14 @@ function Set_Env {
   Trans_UN_SUBSCRIBES
 }
 
-## 随机延迟子程序
-function Random_DelaySub {
-  CurDelay=$((${RANDOM} % ${RandomDelay} + 1))
-  echo -e "\n命令未添加 \"now\"，随机延迟 ${CurDelay} 秒后再执行任务，如需立即终止，请按 CTRL+C...\n"
-  sleep ${CurDelay}
-}
-
-## 随机延迟判断
+## 随机延迟
 function Random_Delay {
-  if [ -n "${RandomDelay}" ] && [ ${RandomDelay} -gt 0 ]; then
-    CurMin=$(date "+%M")
-    if [ ${CurMin} -gt 2 ] && [ ${CurMin} -lt 30 ]; then
-      Random_DelaySub
-    elif [ ${CurMin} -gt 31 ] && [ ${CurMin} -lt 59 ]; then
-      Random_DelaySub
+  if [[ -n ${RandomDelay} ]] && [[ ${RandomDelay} -gt 0 ]]; then
+    CurMin=$(date "+%-M")
+    if [[ ${CurMin} -gt 2 && ${CurMin} -lt 30 ]] || [[ ${CurMin} -gt 31 && ${CurMin} -lt 59 ]]; then
+      CurDelay=$((${RANDOM} % ${RandomDelay} + 1))
+      echo -e "\n命令未添加 \"now\"，随机延迟 ${CurDelay} 秒后再执行任务，如需立即终止，请按 CTRL+C...\n"
+      sleep ${CurDelay}
     fi
   fi
 }
@@ -204,7 +197,7 @@ function Run_Pm2 {
 
 ## 运行挂机脚本
 function Run_HangUp {
-  Import_Conf && Detect_Cron && Set_Env
+  Import_Conf $1 && Detect_Cron && Set_Env
   HangUpJs="jd_crazy_joy_coin"
   cd ${ScriptsDir}
   if type pm2 >/dev/null 2>&1; then
@@ -222,7 +215,7 @@ function Reset_Pwd {
 
 ## 运行京东脚本
 function Run_Normal {
-  Import_Conf && Detect_Cron && Set_Env
+  Import_Conf $1 && Detect_Cron && Set_Env
   
   FileNameTmp1=$(echo $1 | perl -pe "s|\.js||")
   FileNameTmp2=$(echo $1 | perl -pe "{s|jd_||; s|\.js||; s|^|jd_|}")
@@ -250,7 +243,6 @@ function Run_Normal {
     LogFile="${LogDir}/${FileName}/${LogTime}.log"
     [ ! -d ${LogDir}/${FileName} ] && mkdir -p ${LogDir}/${FileName}
     cd ${WhichDir}
-    env
     node ${FileName}.js | tee ${LogFile}
   else
     echo -e "\n在${ScriptsDir}、${ScriptsDir}/backUp、${ConfigDir}三个目录下均未检测到 $1 脚本的存在，请确认...\n"
