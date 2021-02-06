@@ -40,6 +40,27 @@ ShellURL=https://github.com/wudongdefeng/jd_base
 #   ShellURL=https://gitee.com/wudongdefeng/jd-base
 # fi
 
+## 更新crontab，gitee服务器同一时间限制5个链接，因此每个人更新代码必须错开时间，每次执行git_pull随机生成。
+## 每天次数随机，更新时间随机，更新秒数随机，至少6次，至多12次，大部分为8-10次，符合正态分布。
+function Update_Cron {
+  if [ -f ${ListCron} ]; then
+    RanMin=$((${RANDOM} % 60))
+    RanSleep=$((${RANDOM} % 56))
+    RanHourArray[0]=$((${RANDOM} % 3))
+    for ((i=1; i<14; i++)); do
+      j=$(($i - 1))
+      tmp=$((${RANDOM} % 3 + ${RanHourArray[j]} + 2))
+      [[ ${tmp} -lt 24 ]] && RanHourArray[i]=${tmp} || break
+    done
+    RanHour=${RanHourArray[0]}
+    for ((i=1; i<${#RanHourArray[*]}; i++)); do
+      RanHour="${RanHour},${RanHourArray[i]}"
+    done
+    perl -i -pe "s|.+(bash git_pull.+)|${RanMin} ${RanHour} \* \* \* sleep ${RanSleep} && \1|" ${ListCron}
+    crontab ${ListCron}
+  fi
+}
+
 ## 更新shell脚本
 function Git_PullShell {
   echo -e "更新shell脚本，原地址：${ShellURL}\n"
@@ -51,7 +72,7 @@ function Git_PullShell {
 
 ## 克隆scripts
 function Git_CloneScripts {
-  echo -e "克隆JS脚本，原地址：${ScriptsURL}\n"
+  # echo -e "克隆LXK9301脚本，原地址：${ScriptsURL}\n"
   git clone -b master ${ScriptsURL} ${ScriptsDir}
   ExitStatusScripts=$?
   echo
@@ -59,7 +80,7 @@ function Git_CloneScripts {
 
 ## 更新scripts
 function Git_PullScripts {
-  echo -e "更新LXK9301脚本，原地址：${ScriptsURL}\n"
+  # echo -e "更新LXK9301脚本，原地址：${ScriptsURL}\n"
   cd ${ScriptsDir}
   git fetch --all
   ExitStatusScripts=$?
@@ -99,7 +120,6 @@ function Count_UserSum {
 }
 
 ## 把config.sh中提供的所有账户的PIN附加在jd_joy_run.js中，让各账户相互进行宠汪汪赛跑助力
-## 你的账号将按Cookie顺序被优先助力，助力完成再助力我的账号和lxk0301大佬的账号
 function Change_JoyRunPins {
   j=${UserSum}
   PinALL=""
@@ -112,8 +132,6 @@ function Change_JoyRunPins {
     PinALL="${PinTempFormat},${PinALL}"
     let j--
   done
-  PinEvine="Evine,做一颗潇洒的蛋蛋,Evine007,jd_7bb2be8dbd65c,jd_6fae2af082798,jd_664ecc3b78945,277548856_m,米大眼老鼠,"
-  PinALL="${PinALL}${PinEvine}"
   perl -i -pe "{s|(let invite_pins = \[\")(.+\"\];?)|\1${PinALL}\2|; s|(let run_pins = \[\")(.+\"\];?)|\1${PinALL}\2|}" ${ScriptsDir}/jd_joy_run.js
 }
 
@@ -128,7 +146,7 @@ function Change_ALL {
   fi
 }
 
-## 检测文件：LXK9301/jd_scripts 仓库中的 docker/crontab_list.sh，和 shylocks/Loon 仓库中的 docker/crontab_list.sh
+## 检测文件：LXK9301/jd_scripts 仓库中的 docker/crontab_list.sh
 ## 检测定时任务是否有变化，此函数会在Log文件夹下生成四个文件，分别为：
 ## task.list    crontab.list中的所有任务清单，仅保留脚本名
 ## js.list      上述检测文件中用来运行js脚本的清单（去掉后缀.js，非运行脚本的不会包括在内）
@@ -138,11 +156,11 @@ function Diff_Cron {
   if [ -f ${ListCron} ]; then
     if [ -n "${JD_DIR}" ]
     then
-      grep -E " j[drx]_\w+" ${ListCron} | perl -pe "s|.+ (j[drx]_\w+).*|\1|" | uniq | sort > ${ListTask}
+      grep -E " j[drx]_\w+" ${ListCron} | perl -pe "s|.+ (j[drx]_\w+).*|\1|" | sort -u > ${ListTask}
     else
-      grep "${ShellDir}/" ${ListCron} | grep -E " j[drx]_\w+" | perl -pe "s|.+ (j[drx]_\w+).*|\1|" | uniq | sort > ${ListTask}
+      grep "${ShellDir}/" ${ListCron} | grep -E " j[drx]_\w+" | perl -pe "s|.+ (j[drx]_\w+).*|\1|" | sort -u > ${ListTask}
     fi
-    cat ${ListCronLxk} ${ListCronShylocks} | grep -E "j[drx]_\w+\.js" | perl -pe "s|.+(j[drx]_\w+)\.js.+|\1|" | sort > ${ListJs}
+    cat ${ListCronLxk} | grep -E "j[drx]_\w+\.js" | perl -pe "s|.+(j[drx]_\w+)\.js.+|\1|" | sort -u > ${ListJs}
     grep -vwf ${ListTask} ${ListJs} > ${ListJsAdd}
     grep -vwf ${ListJs} ${ListTask} > ${ListJsDrop}
   else
@@ -172,8 +190,8 @@ function Notify_Version {
   if [ -f ${FileConf} ] && [[ "${VerConf}" != "${VerConfSample}" ]] && [[ ${UpdateDate} == $(date "+%Y-%m-%d") ]]
   then
     if [ ! -f ${SendCount} ]; then
-      echo -e "检测到配置文件config.sh.sample有更新\n\n更新日期: ${UpdateDate}\n当前版本: ${VerConf}\n新的版本: ${VerConfSample}\n更新内容: ${UpdateContent}\n\n如需使用新功能按该文件前几行注释操作，否则请无视本消息。\n" | tee ${ContentVersion}
-      echo -e "本消息只在该新版本配置文件更新当天发送一次，脚本地址：${ShellURL}" >> ${ContentVersion}
+      echo -e "检测到配置文件config.sh.sample有更新\n\n更新日期: ${UpdateDate}\n当前版本: ${VerConf}\n新的版本: ${VerConfSample}\n更新内容: ${UpdateContent}\n如需使用新功能请对照config.sh.sample，将相关新参数手动增加到你自己的config.sh中，否则请无视本消息。\n" | tee ${ContentVersion}
+      echo -e "本消息只在该新版本配置文件更新当天发送一次。" >> ${ContentVersion}
       cd ${ShellDir}
       node update.js
       if [ $? -eq 0 ]; then
@@ -316,10 +334,8 @@ function Add_Cron {
 }
 
 ## 更新crontab
-function Update_Cron {
-  perl -i -pe "s|0 8,9,10(.+jd_nian\W*.*)|30 8-20/4\1|" ${ListCron} # 修改默认错误的cron
-  crontab ${ListCron}
-}
+[[ $(date "+%-H") -le 2 ]] && Update_Cron
+
 
 ## 在日志中记录时间与路径
 echo -e "\n--------------------------------------------------------------\n"
