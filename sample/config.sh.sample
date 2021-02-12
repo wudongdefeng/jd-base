@@ -1,5 +1,5 @@
-## Version: v3.25.1
-## Date: 2021-02-07
+## Version: v3.25.2
+## Date: 2021-02-12
 ## Update Content: 增加京东年终奖的环境变量（详见sample/config.sh.sample）。
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
@@ -353,24 +353,24 @@ ForOtherSgmh5=""
 ForOtherSgmh6=""
 
 
-################################## 定义2020年炸年兽活动互助（选填） ##################################
+################################## 定义2021年京东国际互助（选填） ##################################
 ## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
-## 仅2021年2月12日前有效
-MyNian1=""
-MyNian2=""
-MyNian3=""
-MyNian4=""
-MyNian5=""
-MyNian6=""
-MyNianA=""
-MyNianB=""
+MyJDGLOBAL1=""
+MyJDGLOBAL2=""
+MyJDGLOBAL3=""
+MyJDGLOBAL4=""
+MyJDGLOBAL5=""
+MyJDGLOBAL6=""
+MyJDGLOBALA=""
+MyJDGLOBALB=""
 
-ForOtherNian1=""
-ForOtherNian2=""
-ForOtherNian3=""
-ForOtherNian4=""
-ForOtherNian5=""
-ForOtherNian6=""
+ForOtherJDGLOBAL1=""
+ForOtherJDGLOBAL2=""
+ForOtherJDGLOBAL3=""
+ForOtherJDGLOBAL4=""
+ForOtherJDGLOBAL5=""
+ForOtherJDGLOBAL6=""
+
 
 
 ################################## 定义2020年炸年兽组队PK互助（选填） ##################################
