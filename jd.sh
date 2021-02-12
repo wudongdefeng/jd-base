@@ -104,7 +104,7 @@ function Combin_All {
   export JXNCTOKENS=$(Combin_Sub TokenJxnc)
   export BOOKSHOP_SHARECODES=$(Combin_Sub ForOtherBookShop "05d692a781834dc6815b90d440059d09@93c846eef3e8439ab0a655bc4c9b21e1@3113559ee4aa44469645507954dae9b4")
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp@IRwwaei6bvkgnjM" "Vl1uMrmyZvs@eU9YarrjM_53p27dyXQa3g@9Jq0uXglsVCqKd5kEv-D@9YmhuUccv2W6J9VsHue5AQqJ" "eU9YarjhYqonpDrTzXcR1Q@eU9Ya77gZK5z-TqHn3UWhQ@eU9Yaui2ZP4gpG-Gz3EThA@eU9YaeizbvQnpG_SznIS0w")
-  export JDNIAN_SHARECODES=$(Combin_Sub ForOtherNian "cgxZbzDccO-EvQzACQSq77eHJWUwT59lADSx2tLVDjfIsHShMTG4@cgxZdTXtI-uIvA7LCgT47mMhBoGH-yMR5KMmE3Xsh-aXP2l9a2YWtK2Noqs@cgxZdTXtQ8i7g0S7a1nalLAsu8xo_PbhblWR-kWcWD1tHGyGKxL4XA0@cgxZLWaFIb7S4gvPZ1jlo3Ru3_zhiy3nnTsS4mQaaZc" "cgxZWifbeu_a6gmFRGbg6Lh1SmQdF0DUmQ@cgxZdTXtIu6J7ljIXVGv6VoOs61gdyYXgT0ctAtCCykLsWw5accav11_0dI@cgxZ-fMU8RF0M5dV3r4QOsLKNQRnjyuoh9haQkLPPMH6fJjgVIkoZy5ww_K-I2JJ@cgxZ-OAB8S5NPaJF0LUYNl1oYE9tdRYPs2e2kWz3RrqEMgqutLWhZlw" "cgxZdTXtIuyLvwyYXgWh7YMhXtAVbaE0Ozjf2OUdEJZsvB1JgZ-5v5F_bDc@cgxZdTXtI-iI6FycAFH7u-1dMgurAZjyJ58rjmucS1-MNDQLuuFxg0MP4nk@cgxZdTXtIr7e6AzPXQT666v1QrNvBgZa6pzohEggDpwCCoJqAmI3w2yaU_s@cgxZdTXtIb7b4gbIXQSu6lqwwvtQXfo34CxB9K3ndzOzMDWK93LMQ85BnsQ")
+  export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL "dVUxcThuTXNrVmU0Qis0TS9OVkxtUT09@M0RhbXdWS2JOcHNEUEFXYnUrYUtQbVgrOVJ5bjVjekthby9nZ3ZZOHhIWT0=@YW1uK3hEdjlPT1ZwRUFvcitMT0Vudz09")
   if [[ $(date -u "+%H") -eq 12 ]] || [[ $(date -u "+%H") -eq 13 ]]; then
     export JDNY_SHARECODES=$(Combin_Sub ForOtherNEWYEARMONEY "usNvD7MW94leAuMyN7g8s3c2i1OvK5YccxC_RiJ23Ip-6w@oMZeXLca9otVAeNgNrIk_GZu-8hHEOI3tbbj_g52x6MCo4S8@oMZePJQpycElYL5CTOYKswMDM5KxTKb4tqqe9VblYNI0TRY")
   else
