@@ -1,6 +1,6 @@
-## Version: v3.25.2
+## Version: v3.25.3
 ## Date: 2021-02-12
-## Update Content: 增加京东年终奖的环境变量（详见sample/config.sh.sample）。
+## Update Content: 增加京东国际助力的环境变量（详见sample/config.sh.sample）。
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://github.com/EvineDeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
