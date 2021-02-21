@@ -1,6 +1,6 @@
 FROM node:lts-alpine
 LABEL maintainer="Evine Deng"
-ARG JD_BASE_URL=https://github.com/dockere/jd-base
+ARG JD_BASE_URL=https://github.com/wudongdefeng/jd-base
 ARG JD_BASE_BRANCH=master
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
     LANG=zh_CN.UTF-8 \
