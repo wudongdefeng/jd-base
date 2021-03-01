@@ -6,7 +6,7 @@
 - :warning: lxk大佬的代码已私人化，请自寻路径了，以前的代码不更新还能用
 
 
-
+  详细的教程在wiki> https://gitee.com/wudongdefeng/jd-base/wikis
 
   依次按下顺序运行代码  
 
