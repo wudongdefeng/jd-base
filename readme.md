@@ -10,10 +10,7 @@
 
   依次按下顺序运行代码  
 
-  mkdir ~/.ssh
-
-  lxk大佬的密钥复制到~/.ssh  
-
+  
   使用termux高级教程配置好，百度第一个就是  
 
   pkg update  
