@@ -373,24 +373,24 @@ ForOtherJDGLOBAL6=""
 
 
 
-################################## 定义2020年炸年兽组队PK互助（选填） ##################################
+################################## 定义财富岛互助（选填） ##################################
 ## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
 ## 仅2021年2月12日前有效
-MyNianPk1=""
-MyNianPk2=""
-MyNianPk3=""
-MyNianPk4=""
-MyNianPk5=""
-MyNianPk6=""
-MyNianPkA=""
-MyNianPkB=""
+MyJDCFD1=""
+MyJDCFD2=""
+MyJDCFD3=""
+MyJDCFD4=""
+MyJDCFD5=""
+MyJDCFD6=""
+MyJDCFDA=""
+MyJDCFDB=""
 
-ForOtherNianPk1=""
-ForOtherNianPk2=""
-ForOtherNianPk3=""
-ForOtherNianPk4=""
-ForOtherNianPk5=""
-ForOtherNianPk6=""
+ForOtherJDCFD1=""
+ForOtherJDCFD2=""
+ForOtherJDCFD3=""
+ForOtherJDCFD4=""
+ForOtherJDCFD5=""
+ForOtherJDCFD6=""
 
 
 ################################## 定义神仙书院活动互助（选填） ##################################
@@ -413,42 +413,7 @@ ForOtherImmortal5=""
 ForOtherImmortal6=""
 
 
-################################## 定义京东手机年终奖活动互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
-## 仅2021年2月8日(含)前有效
-MyJdMobileFestival1=""
-MyJdMobileFestival2=""
-MyJdMobileFestival3=""
-MyJdMobileFestival4=""
-MyJdMobileFestival5=""
-MyJdMobileFestival6=""
-MyJdMobileFestivalA=""
-MyJdMobileFestivalB=""
 
-ForOtherJdMobileFestival1=""
-ForOtherJdMobileFestival2=""
-ForOtherJdMobileFestival3=""
-ForOtherJdMobileFestival4=""
-ForOtherJdMobileFestival5=""
-ForOtherJdMobileFestival6=""
-
-################################## 定义京东压岁钱互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
-MyJdNEWYEARMONEY1=""
-MyJdNEWYEARMONEY2=""
-MyJdNEWYEARMONEY3=""
-MyJdNEWYEARMONEY4=""
-MyJdNEWYEARMONEY5=""
-MyJdNEWYEARMONEY6=""
-MyJdNEWYEARMONEYA=""
-MyJdNEWYEARMONEYB=""
-
-ForOtherNEWYEARMONEY1=""
-ForOtherNEWYEARMONEY2=""
-ForOtherNEWYEARMONEY3=""
-ForOtherNEWYEARMONEY4=""
-ForOtherNEWYEARMONEY5=""
-ForOtherNEWYEARMONEY6=""
 
 ################################## 定义东东超市蓝币兑换数量（选填） ##################################
 ## 东东超市蓝币兑换，可用值包括：
