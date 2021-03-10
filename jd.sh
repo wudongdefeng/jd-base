@@ -106,7 +106,7 @@ function Combin_All {
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp@IRwwaei6bvkgnjM" "Vl1uMrmyZvs@eU9YarrjM_53p27dyXQa3g@9Jq0uXglsVCqKd5kEv-D@9YmhuUccv2W6J9VsHue5AQqJ" "eU9YarjhYqonpDrTzXcR1Q@eU9Ya77gZK5z-TqHn3UWhQ@eU9Yaui2ZP4gpG-Gz3EThA@eU9YaeizbvQnpG_SznIS0w")
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL "dVUxcThuTXNrVmU0Qis0TS9OVkxtUT09@M0RhbXdWS2JOcHNEUEFXYnUrYUtQbVgrOVJ5bjVjekthby9nZ3ZZOHhIWT0=@YW1uK3hEdjlPT1ZwRUFvcitMT0Vudz09")
   if [[ $(date -u "+%H") -eq 12 ]] || [[ $(date -u "+%H") -eq 13 ]]; then
-    export JDNY_SHARECODES=$(Combin_Sub ForOtherNEWYEARMONEY "usNvD7MW94leAuMyN7g8s3c2i1OvK5YccxC_RiJ23Ip-6w@oMZeXLca9otVAeNgNrIk_GZu-8hHEOI3tbbj_g52x6MCo4S8@oMZePJQpycElYL5CTOYKswMDM5KxTKb4tqqe9VblYNI0TRY")
+    export JDCFD_SHARECODES=$(Combin_Sub ForOtherJDCFD)
   else
     export JDNIANPK_SHARECODES=$(Combin_Sub ForOtherNianPk)
   fi
