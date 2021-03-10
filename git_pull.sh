@@ -21,7 +21,7 @@ ContentNewTask=${ShellDir}/new_task
 ContentDropTask=${ShellDir}/drop_task
 SendCount=${ShellDir}/send_count
 isTermux=${ANDROID_RUNTIME_ROOT}${ANDROID_ROOT}
-ScriptsURL=https://gitee.com/wudongdefeng/jd_scripts
+ScriptsURL=https://github.com/wudongdefeng/jd_scripts
 ShellURL=https://github.com/wudongdefeng/jd-base
 
 ## 更新crontab，gitee服务器同一时间限制5个链接，因此每个人更新代码必须错开时间，每次执行git_pull随机生成。
