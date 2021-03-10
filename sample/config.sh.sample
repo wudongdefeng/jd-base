@@ -1,9 +1,9 @@
-## Version: v3.25.3
-## Date: 2021-02-12
-## Update Content: 增加京东国际助力的环境变量（详见sample/config.sh.sample）。
+## Version: v3.25.4
+## Date: 2021-03-10
+## Update Content: 增加财富岛的环境变量（详见sample/config.sh.sample）。
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
-## 如需更新，请参考WIKI（https://github.com/EvineDeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
+## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
 
 ################################## 说明 ##################################
 ## 以下配置中，带有 export 申明的，均由LXK9301大佬定义，详见：https://github.com/LXK9301/jd_scripts/blob/master/githubAction.md#%E4%B8%8B%E6%96%B9%E6%8F%90%E4%BE%9B%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84-secrets%E5%85%A8%E9%9B%86%E5%90%88
@@ -128,7 +128,7 @@ export JD_BEAN_STOP=""
 
 
 ################################## 定义东东农场互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 MyFruit1=""
 MyFruit2=""
 MyFruit3=""
@@ -147,7 +147,7 @@ ForOtherFruit6=""
 
 
 ################################## 定义东东萌宠互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 MyPet1=""
 MyPet2=""
 MyPet3=""
@@ -166,7 +166,7 @@ ForOtherPet6=""
 
 
 ################################## 定义种豆得豆互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 MyBean1=""
 MyBean2=""
 MyBean3=""
@@ -185,7 +185,7 @@ ForOtherBean6=""
 
 
 ################################## 定义京喜工厂互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 MyDreamFactory1=""
 MyDreamFactory2=""
 MyDreamFactory3=""
@@ -204,7 +204,7 @@ ForOtherDreamFactory6=""
 
 
 ################################## 定义东东工厂互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 MyJdFactory1=""
 MyJdFactory2=""
 MyJdFactory3=""
@@ -223,7 +223,7 @@ ForOtherJdFactory6=""
 
 
 ################################## 定义京东赚赚互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 MyJdzz1=""
 MyJdzz2=""
 MyJdzz3=""
@@ -242,7 +242,7 @@ ForOtherJdzz6=""
 
 
 ################################## 定义疯狂的JOY互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 MyJoy1=""
 MyJoy2=""
 MyJoy3=""
@@ -261,7 +261,7 @@ ForOtherJoy6=""
 
 
 ################################## 定义京喜农场互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 ## 京喜农场助力码为 JSON 格式因此使用单引号，json 格式如下
 ## {"smp":"22bdadsfaadsfadse8a","active":"jdnc_1_btorange210113_2","joinnum":"1"}
 ## 助力码获取可以通过 bash jd.sh jd_get_share_code now 命令获取
@@ -297,7 +297,7 @@ TokenJxnc6=''
 
 
 ################################## 定义口袋书店互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 MyBookShop1=""
 MyBookShop2=""
 MyBookShop3=""
@@ -316,7 +316,7 @@ ForOtherBookShop6=""
 
 
 ################################## 定义签到领现金互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 MyCash1=""
 MyCash2=""
 MyCash3=""
@@ -335,7 +335,7 @@ ForOtherCash6=""
 
 
 ################################## 定义闪购盲盒互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 MySgmh1=""
 MySgmh2=""
 MySgmh3=""
@@ -354,7 +354,7 @@ ForOtherSgmh6=""
 
 
 ################################## 定义2021年京东国际互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 MyJDGLOBAL1=""
 MyJDGLOBAL2=""
 MyJDGLOBAL3=""
@@ -374,7 +374,7 @@ ForOtherJDGLOBAL6=""
 
 
 ################################## 定义财富岛互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 ## 仅2021年2月12日前有效
 MyJDCFD1=""
 MyJDCFD2=""
@@ -394,7 +394,7 @@ ForOtherJDCFD6=""
 
 
 ################################## 定义神仙书院活动互助（选填） ##################################
-## 具体填法及要求详见：https://github.com/EvineDeng/jd-base/wiki/FAQ
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 ## 仅2021年2月5日前有效
 MyImmortal1=""
 MyImmortal2=""
