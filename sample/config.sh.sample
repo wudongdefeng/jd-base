@@ -1,6 +1,6 @@
-## Version: v3.25.5
-## Date: 2021-03-10
-## Update Content: 增加财富岛的通知开关，京小兑自动把抽奖卷兑换为兑币（详见sample/config.sh.sample）。
+## Version: v3.25.6
+## Date: 2021-03-17
+## Update Content: 宠汪汪邀请助力与赛跑助力助力（详见sample/config.sh.sample）。
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
@@ -597,10 +597,9 @@ export PURCHASE_SHOPS=""
 export JD_IMMORTAL_LATLON=''
 
 
-################################## 京东炸年兽小程序自定义UA变量（选填） ##################################
-## 京东炸年兽（（jd_nian_wechat.js））这个脚本所需的，需要使用抓包工具自行抓包，建议填写，防止黑号。
-## 示例：export JD_WECHAT_USER_AGENT="Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15A148 MicroMessenger/7.0.20(0x17001320) NetType/WIFI Language/zh_CN"
-export JD_WECHAT_USER_AGENT=""
+################################## 宠汪汪邀请助力与赛跑助力变量（选填） ##################################
+## 示例：默认为 "false" 助力lxk
+export JOY_RUN_HELP_MYSELF="false"
 
 
 ################################## Telegram 代理（选填） ##################################
