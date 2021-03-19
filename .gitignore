@@ -1,7 +1,7 @@
 panel/node_modules*
 panel/yarn.lock
 panel/package-lock.json
-scripts*
+scripts2*
 log*
 config*
 version
