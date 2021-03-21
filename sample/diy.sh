@@ -15,8 +15,8 @@ function Git_CloneScripts {
 function Git_PullScripts {
   cd ${ScriptsDir}
   git fetch --all
-  git merge
   ExitStatusScripts=$?
   git reset --hard origin/main
+  git pull
   echo
 }

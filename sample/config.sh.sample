@@ -1,6 +1,6 @@
-## Version: v3.25.6
-## Date: 2021-03-17
-## Update Content: 宠汪汪邀请助力与赛跑助力助力（详见sample/config.sh.sample）。
+## Version: v3.25.7
+## Date: 2021-03-21
+## Update Content: 新增京东城城助力（详见sample/config.sh.sample）。
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
@@ -393,24 +393,24 @@ ForOtherJDCFD5=""
 ForOtherJDCFD6=""
 
 
-################################## 定义神仙书院活动互助（选填） ##################################
+################################## 定义京东城城书院互助（选填） ##################################
 ## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
-## 仅2021年2月5日前有效
-MyImmortal1=""
-MyImmortal2=""
-MyImmortal3=""
-MyImmortal4=""
-MyImmortal5=""
-MyImmortal6=""
-MyImmortalA=""
-MyImmortalB=""
+## 仅2021年3月24日前有效
+MyCITY1=""
+MyCITY2=""
+MyCITY3=""
+MyCITY4=""
+MyCITY5=""
+MyCITY6=""
+MyCITYA=""
+MyCITYB=""
 
-ForOtherImmortal1=""
-ForOtherImmortal2=""
-ForOtherImmortal3=""
-ForOtherImmortal4=""
-ForOtherImmortal5=""
-ForOtherImmortal6=""
+ForOtherCITY1=""
+ForOtherCITY2=""
+ForOtherCITY3=""
+ForOtherCITY4=""
+ForOtherCITY5=""
+ForOtherCITY6=""
 
 
 
