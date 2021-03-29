@@ -100,7 +100,7 @@ function Combin_All {
   export DDFACTORY_SHARECODES=$(Combin_Sub ForOtherJdFactory)
   export JDZZ_SHARECODES=$(Combin_Sub ForOtherJdzz)
   export JDJOY_SHARECODES=$(Combin_Sub ForOtherJoy)
-  export JXNC_SHARECODES=$(Combin_Sub ForOtherJxnc "{"smp":"da6762718787c913e5285470772b3b09","active":"jdnc_1_2yuanhamigua210315_2","joinnum":1}")
+  export JXNC_SHARECODES=$(Combin_Sub ForOtherJxnc "{"smp":"da6762718787c913e5285470772b3b09","active":"jdnc_1_2yuanhamigua210315_2","joinnum":1}@{"smp":"236c07b9af98f718aa64a712e9c057f7","active":"jdnc_1_5yuansgyumi210315_2","joinnum":1}")
   export JXNCTOKENS=$(Combin_Sub TokenJxnc)
   export BOOKSHOP_SHARECODES=$(Combin_Sub ForOtherBookShop "05d692a781834dc6815b90d440059d09@93c846eef3e8439ab0a655bc4c9b21e1@3113559ee4aa44469645507954dae9b4")
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp@IRwwaei6bvkgnjM" "Vl1uMrmyZvs@eU9YarrjM_53p27dyXQa3g@9Jq0uXglsVCqKd5kEv-D@9YmhuUccv2W6J9VsHue5AQqJ" "eU9YarjhYqonpDrTzXcR1Q@eU9Ya77gZK5z-TqHn3UWhQ@eU9Yaui2ZP4gpG-Gz3EThA@eU9YaeizbvQnpG_SznIS0w")
@@ -110,8 +110,7 @@ function Combin_All {
   else
     export JDNIANPK_SHARECODES=$(Combin_Sub ForOtherNianPk)
   fi
-  export CITY_SHARECODES=$(Combin_Sub ForOtherCITY "RtGKz732FwqhfILLFtZn1bWu3jJRk8VejV-Up_XHO3niqEZ0Dw@XNS7nLn6Fgiqf4KZF9x_mlpC9xjVzAK_IUu2RrX6TF7AqQI")
-  export JDSGMH_SHARECODES=$(Combin_Sub ForOtherSgmh "T019_qwtFEtHolbeIRv3lP8CjVWmIaW5kRrbA@T0225KkcR09Lo1TVIhullfVedwCjVWmIaW5kRrbA@T0205KkcJ2x4nB6lQ0aH76FwCjVWmIaW5kRrbA" "T015vPp0RRoR_VHRT0cCjVWmIaW5kRrbA@T0225KkcRkpK8QLWdU7ykvMIdwCjVWmIaW5kRrbA@T024aG_llbW3LM1L9qFNQWOgo2QwCjVWmIaW5kRrbA" "T0225KkcRkhIoFaGdhr8lvADfACjVWmIaW5kRrbA@T011y7sqHksZ9VMCjVWmIaW5kRrbA@T020aXzwlYqOIvhb-KpFTXuaCjVWmIaW5kRrbA")
+    export JDSGMH_SHARECODES=$(Combin_Sub ForOtherSgmh "T019_qwtFEtHolbeIRv3lP8CjVWmIaW5kRrbA@T0225KkcR09Lo1TVIhullfVedwCjVWmIaW5kRrbA@T0205KkcJ2x4nB6lQ0aH76FwCjVWmIaW5kRrbA" "T015vPp0RRoR_VHRT0cCjVWmIaW5kRrbA@T0225KkcRkpK8QLWdU7ykvMIdwCjVWmIaW5kRrbA@T024aG_llbW3LM1L9qFNQWOgo2QwCjVWmIaW5kRrbA" "T0225KkcRkhIoFaGdhr8lvADfACjVWmIaW5kRrbA@T011y7sqHksZ9VMCjVWmIaW5kRrbA@T020aXzwlYqOIvhb-KpFTXuaCjVWmIaW5kRrbA")
 }
 
 ## 转换JD_BEAN_SIGN_STOP_NOTIFY或JD_BEAN_SIGN_NOTIFY_SIMPLE
