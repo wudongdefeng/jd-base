@@ -51,6 +51,12 @@
  crond
  
  好了代码已全自动了，切记每次重启软件需要重新运行这句上面两行代码。
+
+拉取失败怎么办呢
+
+cd  ~/storage/shared/jd
+rm -rf scripts
+bash git_pull.sh
   
 
  
