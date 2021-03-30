@@ -56,7 +56,9 @@
 拉取失败怎么办呢
 
 cd  ~/storage/shared/jd
+
 rm -rf scripts
+
 bash git_pull.sh
   
 
