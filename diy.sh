@@ -111,7 +111,7 @@ done
 ############################## 更新diy.sh ##############################
 cd $ConfigDir
 echo -e "开始更新 diy.sh "
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/wudongdefeng/jd-temporaryt/main/diy.sh -O diy.sh.new
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/wudongdefeng/jd-temporary/main/diy.sh -O diy.sh.new
 if [ $? -eq 0 ]; then
   mv -f diy.sh.new diy.sh
   echo -e "更新 diy.sh 成功!!!"
