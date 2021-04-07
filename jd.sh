@@ -100,8 +100,8 @@ function Combin_All {
   export DDFACTORY_SHARECODES=$(Combin_Sub ForOtherJdFactory)
   export JDZZ_SHARECODES=$(Combin_Sub ForOtherJdzz)
   export JDJOY_SHARECODES=$(Combin_Sub ForOtherJoy)
-  export JXNC_SHARECODES=$(Combin_Sub ForOtherJxnc "'{"smp":"da6762718787c913e5285470772b3b09","active":"jdnc_1_5yuansgyumi210315_2","joinnum":1}'@'{"smp":"236c07b9af98f718aa64a712e9c057f7","active":"jdnc_1_5yuansgyumi210315_2","joinnum":1}'")
-  export JXNCTOKENS=$(Combin_Sub TokenJxnc)
+  export JXNC_SHARECODES=$(Combin_Sub ForOtherJxnc '{"smp":"da6762718787c913e5285470772b3b09","active":"jdnc_1_5yuansgyumi210315_2","joinnum":1}'@'{"smp":"236c07b9af98f718aa64a712e9c057f7","active":"jdnc_1_5yuansgyumi210315_2","joinnum":1}')
+ 
   export BOOKSHOP_SHARECODES=$(Combin_Sub ForOtherBookShop "05d692a781834dc6815b90d440059d09@93c846eef3e8439ab0a655bc4c9b21e1@3113559ee4aa44469645507954dae9b4")
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp@IRwwaei6bvkgnjM" "Vl1uMrmyZvs@eU9YarrjM_53p27dyXQa3g@9Jq0uXglsVCqKd5kEv-D@9YmhuUccv2W6J9VsHue5AQqJ" "eU9YarjhYqonpDrTzXcR1Q@eU9Ya77gZK5z-TqHn3UWhQ@eU9Yaui2ZP4gpG-Gz3EThA@eU9YaeizbvQnpG_SznIS0w")
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL "dVUxcThuTXNrVmU0Qis0TS9OVkxtUT09@M0RhbXdWS2JOcHNEUEFXYnUrYUtQbVgrOVJ5bjVjekthby9nZ3ZZOHhIWT0=@YW1uK3hEdjlPT1ZwRUFvcitMT0Vudz09")
