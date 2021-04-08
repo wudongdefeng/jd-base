@@ -94,12 +94,12 @@ function Combin_Sub {
 function Combin_All {
   export JD_COOKIE=$(Combin_Sub Cookie)
   export FRUITSHARECODES=$(Combin_Sub ForOtherFruit "64af0fffd7b3478585b2b71b377613ce@9fe344f3887243339369fd1f564ec49e@141be55835d4494fb06b0ac4e895ddef" "6d402dcfae1043fba7b519e0d6579a6f@5efc7fdbb8e0436f8694c4c393359576@6dc9461f662d490991a31b798f624128" "e2fd1311229146cc9507528d0b054da8@30f29addd75d44e88fb452bbfe9f2110@1d02fc9e0e574b4fa928e84cb1c5e70b")
-  export PETSHARECODES=$(Combin_Sub ForOtherPet)
+  export PETSHARECODES=$(Combin_Sub ForOtherPet "MTAxODc2NTEzMTAwMDAwMDAzMzA1MDU0NQ==@MTE1NDAxNzcwMDAwMDAwMzU5MTg5Nzc=@MTE1NDQ5OTUwMDAwMDAwNDM3Mjk4Njk=")
   export PLANT_BEAN_SHARECODES=$(Combin_Sub ForOtherBean "54i3jbri2l6fomplj6zedpwt4ifexs242jkgaai@4npkonnsy7xi2fqmflib7amovspi4y7hybdrapa@tnmcphpjys5icwjpxfmm3gwodgjirglqb6pnm4q@olmijoxgmjutzoaamsfbxewhiix3znzagvxr6ia" "mze7pstbax4l7dmo4vq6wz7vgu@rsuben7ys7sfbu5eub7knbibke@olmijoxgmjutzexyge246xwmaxy43t3jsqc74zy" "olmijoxgmjutybihibx67mwivxbag4rjviz3cji@m6mhupvfogvf5kuwe3c5h5fptd2syad6cznse4i@4npkonnsy7xi3mi4ngwtraxgzwabeyj7oky5rly")
   export DREAM_FACTORY_SHARE_CODES=$(Combin_Sub ForOtherDreamFactory "mEnEqVBBCQZ_Jt9dHXXAbQ==@7dAa1KpAimJEKUkwYZ5ovw==@g6XKy-b1PF1JLLRD7enX3w==@5AnP-NWntIbO2rEf58NCnA==" "CNt5BX1eD8Tw-Wq045YSWg==@phEELHGm3o7VKPIyiBO3Vw==@z-tDlNURI5HvM4MtehtjDA==@dzM8y-1G-D1pt6If32xQ0A==" "XCO7kpq00mMmYwOag2O_CQ==@48wAKDXkEE-RNwNs7W48MlW77AibIyB8QyD22ydJ4NI=@fzeFwj_aACkm-VgdmLqOhw==")
-  export DDFACTORY_SHARECODES=$(Combin_Sub ForOtherJdFactory)
-  export JDZZ_SHARECODES=$(Combin_Sub ForOtherJdzz)
-  export JDJOY_SHARECODES=$(Combin_Sub ForOtherJoy)
+  export DDFACTORY_SHARECODES=$(Combin_Sub ForOtherJdFactory "T019_qwtFEtHolbeIRv3lP8CjVWnYaS5kRrbA@T0225KkcR09Lo1TVIhullfVedwCjVWnYaS5kRrbA@T0205KkcJ2x4nB6lQ0aH76FwCjVWnYaS5kRrbA")
+  export JDZZ_SHARECODES=$(Combin_Sub ForOtherJdzz "S_qwtFEtHolbeIRv3lP8@S5KkcR09Lo1TVIhullfVedw@S5KkcJ2x4nB6lQ0aH76Fw")
+  export JDJOY_SHARECODES=$(Combin_Sub ForOtherJoy "wWFOrC7_0Js_PzOOsCjhnw==@x0FKqaNRojnvTZGPkGhEIqt9zd5YaBeE@BWpGQBc1unxqf_2Xe-XV1A==")
   export JXNC_SHARECODES=$(Combin_Sub ForOtherJxnc '{"smp":"da6762718787c913e5285470772b3b09","active":"jdnc_1_5yuansgyumi210315_2","joinnum":1}'@'{"smp":"236c07b9af98f718aa64a712e9c057f7","active":"jdnc_1_5yuansgyumi210315_2","joinnum":1}')
  
   export BOOKSHOP_SHARECODES=$(Combin_Sub ForOtherBookShop "05d692a781834dc6815b90d440059d09@93c846eef3e8439ab0a655bc4c9b21e1@3113559ee4aa44469645507954dae9b4")
