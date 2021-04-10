@@ -5,9 +5,9 @@
 
 - :warning: lxk大佬的代码已私人化，请自寻路径了，以前的代码不更新还能用
 
-- :warning: 二维码扫描功能因可以泄漏个人信息，此功能已经移除，需要的话请自行想办法(如：海阔视界登录后可以在源码查看那里获取cookie）
+- :warning: 控制面板因存在泄漏账号的风险，已移除，需要的话可以自行复制https://github.wuyanzheshui.workers.dev/wudongdefeng/jd-base/archive/5664506698fb3843f5964ee95f0601657e97a0ca.zip中的panel文件夹过去，教程见wiki
 
-不看注释的可以保存下来了
+活动入口不看注释的可以保存下来了
 
 京东领京豆各类不好找的小游戏入口：
 
@@ -116,18 +116,27 @@
 
   至此代码已OK！  
 
-  控制面板开启方法  
-
-  cd panel  
-
-  npm install || npm install --registry=https://registry.npm.taobao.org.com  
-
-  node server.js  
-
- 出现端口5678提示，进手机网页127.0.0.1:5678就好了（当然用pm2也行，但是用pm2不容易发现错误，会导致控制面板能显示但为空白，建议node server.js成功后再使用pm2) 
+  
   
 
- 出现错误无非是npm的问题，自己在网页搜索相关的教程，一般重新安装nodejs-lts就能解决  
+ 出现错误无非是npm安装权限的问题，自己在网页搜索相关的教程，一般重新安装nodejs-lts就能解决
+ 
+ 出现错误运行以下代码
+
+ rm ~/.npm/node_modules
+  
+ rm -rf ~/storage/shared/jd/scripts/node_modules
+ 
+ npm cache clean -f
+  
+ cd scripts
+
+ pkg install nodejs-lts
+
+ npm install || npm install --registry=https://registry.npm.taobao.org
+ 
+ 或npm install npm -g
+   
 
  最后代码怎么运行呢  
 
