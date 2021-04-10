@@ -123,7 +123,7 @@
  
  出现错误运行以下代码
 
- rm ~/.npm/node_modules
+ rm -rf ~/.npm/node_modules
   
  rm -rf ~/storage/shared/jd/scripts/node_modules
  
@@ -131,7 +131,7 @@
   
  cd scripts
 
- pkg restall nodejs-lts
+ pkg upgrade nodejs-lts
 
  npm install || npm install --registry=https://registry.npm.taobao.org
  
