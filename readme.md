@@ -5,7 +5,7 @@
 
 - :warning: lxk大佬的代码已私人化，请自寻路径了，以前的代码不更新还能用
 
-- :warning: 控制面板因存在泄漏账号的风险，已移除，需要的话可以自行复制https://github.wuyanzheshui.workers.dev/wudongdefeng/jd-base/archive/5664506698fb3843f5964ee95f0601657e97a0ca.zip中的panel文件夹过去，教程见wiki
+- :warning: 控制面板因存在泄漏账号的风险，已移除扫描cookie功能，需要的话可以自行复制教程见wiki（https://gitee.com/wudongdefeng/jd-base/wikis/Panel?sort_id=3647163）
 
 活动入口不看注释的可以保存下来了
 
@@ -131,7 +131,7 @@
   
  cd scripts
 
- pkg install nodejs-lts
+ pkg restall nodejs-lts
 
  npm install || npm install --registry=https://registry.npm.taobao.org
  
