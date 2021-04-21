@@ -2,8 +2,8 @@
 
 ## Author: Evine Deng
 ## Source: https://github.com/EvineDeng/jd-base
-## Modified： 2021-04-07
-## Version： v4.0.3
+## Modified： 2021-04-21
+## Version： v4.0.2
 
 ## 路径
 ShellDir=${JD_DIR:-$(cd $(dirname $0); pwd)}
@@ -100,12 +100,11 @@ function Combin_All {
   export DDFACTORY_SHARECODES=$(Combin_Sub ForOtherJdFactory "T019_qwtFEtHolbeIRv3lP8CjVWnYaS5kRrbA@T0225KkcR09Lo1TVIhullfVedwCjVWnYaS5kRrbA@T0205KkcJ2x4nB6lQ0aH76FwCjVWnYaS5kRrbA")
   export JDZZ_SHARECODES=$(Combin_Sub ForOtherJdzz "S_qwtFEtHolbeIRv3lP8@S5KkcR09Lo1TVIhullfVedw@S5KkcJ2x4nB6lQ0aH76Fw")
   export JDJOY_SHARECODES=$(Combin_Sub ForOtherJoy "wWFOrC7_0Js_PzOOsCjhnw==@x0FKqaNRojnvTZGPkGhEIqt9zd5YaBeE@BWpGQBc1unxqf_2Xe-XV1A==")
-  export JXNC_SHARECODES=$(Combin_Sub ForOtherJxnc '{"smp":"da6762718787c913e5285470772b3b09","active":"jdnc_1_xiacheng210315_2","joinnum":1}'@'{"smp":"236c07b9af98f718aa64a712e9c057f7","active":"jdnc_1_yumi210315_2","joinnum":1}'@'{"smp":"1e51775af56a39a17086a73469e7b093","active":"jdnc_1_3yuanbanana210315_2","joinnum":1}')
+  export JXNC_SHARECODES=$(Combin_Sub ForOtherJxnc '{"smp":"da6762718787c913e5285470772b3b09","active":"jdnc_1_2yuanqiaokeli210315_2","joinnum":1}'@'{"smp":"236c07b9af98f718aa64a712e9c057f7","active":"jdnc_1_yumi210315_2","joinnum":2}'@'{"smp":"1e51775af56a39a17086a73469e7b093","active":"jdnc_1_3yuanbanana210315_2","joinnum":1}')
  
   export BOOKSHOP_SHARECODES=$(Combin_Sub ForOtherBookShop "05d692a781834dc6815b90d440059d09@93c846eef3e8439ab0a655bc4c9b21e1@3113559ee4aa44469645507954dae9b4")
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL)
-export JD818_SHARECODES=$(Combin_Sub ForOther818PHONE)
   if [[ $(date -u "+%H") -eq 12 ]] || [[ $(date -u "+%H") -eq 13 ]]; then
     export JDCFD_SHARECODES=$(Combin_Sub ForOtherJDCFD "5865334930A39F30F1DB0754AA1F7959D3B07BA15AD4F30283ED42307AE100DD@076DADA340114E774EC884E4F779A1CF9EDDB3E88BB506700D7993BEF6604C49@E54589EDC287977F8CC29308FA304B263192FD978A8E414B86D09B09365C9FC8")
   else
