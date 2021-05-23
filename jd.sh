@@ -2,8 +2,8 @@
 
 ## Author: Evine Deng
 ## Source: https://github.com/EvineDeng/jd-base
-## Modified： 2021-04-21
-## Version： v4.0.2
+## Modified： 2021-05-24
+## Version： v4.0.3
 
 ## 路径
 ShellDir=${JD_DIR:-$(cd $(dirname $0); pwd)}
@@ -103,6 +103,7 @@ function Combin_All {
   export JXNC_SHARECODES=$(Combin_Sub ForOtherJxnc '{"smp":"da6762718787c913e5285470772b3b09","active":"jdnc_1_2yuanhuangguog210422_2","joinnum":1}'@'{"smp":"236c07b9af98f718aa64a712e9c057f7","active":"jdnc_1_4yuantaimang210422_2","joinnum":1}'@'{"smp":"1e51775af56a39a17086a73469e7b093","active":"jdnc_1_2yuanyumi210422_2","joinnum":1}')
   export JDHEALTH_SHARECODES=$(Combin_Sub ForOtherHealth "T019_qwtFEtHolbeIRv3lP8CjVfnoaW5kRrbA@T0225KkcR09Lo1TVIhullfVedwCjVfnoaW5kRrbA")
   export BOOKSHOP_SHARECODES=$(Combin_Sub ForOtherBookShop "05d692a781834dc6815b90d440059d09@93c846eef3e8439ab0a655bc4c9b21e1@3113559ee4aa44469645507954dae9b4")
+  export JD818_SHARECODES=$(Combin_Sub ForOther818PHONE)
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL)
   if [[ $(date -u "+%H") -eq 12 ]] || [[ $(date -u "+%H") -eq 13 ]]; then
