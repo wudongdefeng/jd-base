@@ -1,6 +1,6 @@
-## Version: v3.27.3
+## Version: v3.28.4
 ## Date: 2021-05-24
-## Update Content: 新增京东手机狂欢节环境变量（详见sample/config.sh.sample),运行前需先pkg upgrade nodejs。
+## Update Content: 新增京东城城领现金环境变量（详见sample/config.sh.sample),
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
@@ -395,6 +395,38 @@ ForOtherJDCFD6=""
 ################################## 定义京东健康互助（选填） ##################################
 ## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 
+MyCity1=""
+MyCity2=""
+MyCity3=""
+MyCity4=""
+MyCity5=""
+MyCity6=""
+MyCityA=""
+MyCityB=""
+
+ForOtherCity1=""
+ForOtherCity2=""
+ForOtherCity3=""
+ForOtherCity4=""
+ForOtherCity5=""
+ForOtherCity6=""
+
+
+################################## 定义京东手机狂欢节互助（选填） ##################################
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
+## 仅2021年3月24日前有效
+My818PHONE1=""
+My818PHONE2=""
+My818PHONE3=""
+My818PHONE4=""
+My818PHONE5=""
+My818PHONE6=""
+My818PHONEA=""
+My818PHONEB=""
+
+################################## 定义京东城城领现金互助（选填） ##################################
+## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
+## 仅2021年3月24日前有效
 MyHealth1=""
 MyHealth2=""
 MyHealth3=""
@@ -410,21 +442,6 @@ ForOtherHealth3=""
 ForOtherHealth4=""
 ForOtherHealth5=""
 ForOtherHealth6=""
-
-
-################################## 定义京东手机狂欢节互助（选填） ##################################
-## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
-## 仅2021年3月24日前有效
-My818PHONE1=""
-My818PHONE2=""
-My818PHONE3=""
-My818PHONE4=""
-My818PHONE5=""
-My818PHONE6=""
-My818PHONEA=""
-My818PHONEB=""
-
-
 ################################## 定义东东超市蓝币兑换数量（选填） ##################################
 ## 东东超市蓝币兑换，可用值包括：
 ## 一、0：表示不兑换京豆，这也是js脚本的默认值
