@@ -1,6 +1,6 @@
-## Version: v3.30.4
-## Date: 2021-05-24
-## Update Content: 新增京东城城领现金抽奖环境变量，脚本不会自动抽奖，建议活动快结束开启，默认关闭(在6.2日自动开启抽奖),如需自动抽奖请设置环境变量（详见sample/config.sh.sample)
+## Version: v3.31.1
+## Date: 2021-06-10
+## Update Content: 新增助力作者lxk开关，lxk大佬已删库跑路，大家且用且珍惜（详见sample/config.sh.sample)
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
@@ -661,3 +661,5 @@ EnableExtraShell=""
 ## 请在以下补充你需要用到的额外的环境变量，形式：export 变量名="变量值"
 #控制城城领现金，是否抽检，默认不抽奖"false"
 export JD_CITY_EXCHANGE="" 
+#控制助力作者lxk开关，默认助力"true",关闭填写false
+export HELP_AUTHOR="" 
