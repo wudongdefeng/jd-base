@@ -3,6 +3,6 @@
 
 - :warning: 请不要fork，因为GitHub Actions也会fork过去。那样会给番组计划的服务器造成压力；又或者请求过多，有可能触发拒绝请求的保护机制，造成项目被后台删除。
 
-- :warning: lxk大佬的代码已私人化，请自寻路径了，以前的代码不更新还能用
+- :warning: lxk大佬已删库跑路，大家且用且珍惜！
 
-lxk大佬已删库跑路，大家且用且珍惜！
+tg群:https://t.me/wudongdefeng_jd_temporary
