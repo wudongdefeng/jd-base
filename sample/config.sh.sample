@@ -1,6 +1,6 @@
-## Version: v3.32.4
-## Date: 2021-06-21
-## Update Content: 请手动删除618系列及宠汪汪助力配置项，lxk大佬已删库跑路，大家且用且珍惜（详见sample/config.sh.sample)
+## Version: v3.33.4
+## Date: 2021-06-29
+## Update Content: 新增宠汪汪助力及本地验证，详见配置，lxk大佬已删库跑路，大家且用且珍惜（详见sample/config.sh.sample)
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
@@ -632,3 +632,5 @@ export HELP_AUTHOR="true"
 #控制会员开卡开关，默认助力"false",打开填写true
 export Opencardtw="false"
 export ZOO_ADD2CART="false" 
+#控制本地宠汪汪验证码数量
+export validate_num=8
