@@ -1,6 +1,6 @@
-## Version: v3.33.4
-## Date: 2021-06-29
-## Update Content: 新增宠汪汪助力及本地验证，详见配置，lxk大佬已删库跑路，大家且用且珍惜（详见sample/config.sh.sample)
+## Version: v3.34.4
+## Date: 2021-07-01
+## Update Content: 宠汪汪兑换改为直接验证，取消本地验证，永久删除wiki中的docker教程，强行使用docker发生的意外与本人无关，多位大佬已删库跑路，大家且用且珍惜（详见sample/config.sh.sample)
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
