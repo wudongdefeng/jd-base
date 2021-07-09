@@ -93,6 +93,7 @@ function Combin_Sub {
 ## 组合Cookie、Token与互助码，用户自己的放在前面，我的放在后面
 function Combin_All {
   export JD_COOKIE=$(Combin_Sub Cookie)
+  export JXNCTOKENS=$(Combin_Sub TokenJxnc)
   export FRUITSHARECODES=$(Combin_Sub ForOtherFruit "64af0fffd7b3478585b2b71b377613ce@9fe344f3887243339369fd1f564ec49e@141be55835d4494fb06b0ac4e895ddef")
   export PETSHARECODES=$(Combin_Sub ForOtherPet "MTAxODc2NTEzMTAwMDAwMDAzMzA1MDU0NQ==@MTE1NDAxNzcwMDAwMDAwMzU5MTg5Nzc=@MTE1NDQ5OTUwMDAwMDAwNDM3Mjk4Njk=")
   export PLANT_BEAN_SHARECODES=$(Combin_Sub ForOtherBean "54i3jbri2l6fomplj6zedpwt4ifexs242jkgaai@4npkonnsy7xi2fqmflib7amovspi4y7hybdrapa@tnmcphpjys5icwjpxfmm3gwodgjirglqb6pnm4q")
@@ -100,7 +101,7 @@ function Combin_All {
   export DDFACTORY_SHARECODES=$(Combin_Sub ForOtherJdFactory "T019_qwtFEtHolbeIRv3lP8CjVWnYaS5kRrbA@T0225KkcR09Lo1TVIhullfVedwCjVWnYaS5kRrbA@T0205KkcJ2x4nB6lQ0aH76FwCjVWnYaS5kRrbA")
   export JDZZ_SHARECODES=$(Combin_Sub ForOtherJdzz "S_qwtFEtHolbeIRv3lP8@S5KkcR09Lo1TVIhullfVedw@S5KkcJ2x4nB6lQ0aH76Fw")
   export JDJOY_SHARECODES=$(Combin_Sub ForOtherJoy "wWFOrC7_0Js_PzOOsCjhnw==@x0FKqaNRojnvTZGPkGhEIqt9zd5YaBeE@BWpGQBc1unxqf_2Xe-XV1A==")
-  export JXNC_SHARECODES=$(Combin_Sub ForOtherJxnc '{"smp":"da6762718787c913e5285470772b3b09","active":"jdnc_1_3yuanyoutao210616_2","joinnum":2}'@'{"smp":"236c07b9af98f718aa64a712e9c057f7","active":"jdnc_1_3yuanyoutao210616_2","joinnum":2}'@'{"smp":"1e51775af56a39a17086a73469e7b093","active":"jdnc_1_3yuanyoutao210616_2","joinnum":2}')
+  export JXNC_SHARECODES=$(Combin_Sub ForOtherJxnc '{"smp":"da6762718787c913e5285470772b3b09","active":"jdnc_1_3yuanyoutao210616_2","joinnum":3}'@'{"smp":"236c07b9af98f718aa64a712e9c057f7","active":"jdnc_1_3yuanyoutao210616_2","joinnum":3}'@'{"smp":"1e51775af56a39a17086a73469e7b093","active":"jdnc_1_3yuanyoutao210616_2","joinnum":3}')
   export JDHEALTH_SHARECODES=$(Combin_Sub ForOtherHealth "T019_qwtFEtHolbeIRv3lP8CjVfnoaW5kRrbA@T0225KkcR09Lo1TVIhullfVedwCjVfnoaW5kRrbA")
   export BOOKSHOP_SHARECODES=$(Combin_Sub ForOtherBookShop "05d692a781834dc6815b90d440059d09@93c846eef3e8439ab0a655bc4c9b21e1@3113559ee4aa44469645507954dae9b4")
   export JD818_SHARECODES=$(Combin_Sub ForOther818PHONE "09150707-728b-4e42-bff7-e760a1eaa957@2e183312-bfaf-4b9a-8809-b3f97a32bc9e@dd8ba167-3dc9-4606-9140-7253785cc58d")
