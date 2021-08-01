@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 ## Author: Evine Deng
-## Source: https://github.com/EvineDeng/jd-base
-## Modified： 2021-05-24
-## Version： v4.1.3
+## Source: https://gitee.com/wudongdefeng/jd-base
+## Modified： 2021-08-01
+## Version： v4.1.4
 
 ## 路径
 ShellDir=${JD_DIR:-$(cd $(dirname $0); pwd)}
