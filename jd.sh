@@ -108,7 +108,7 @@ function Combin_All {
   export CITY_SHARECODES=$(Combin_Sub ForOtherCity "RtGKz732FwqhfILLFtZn1bWu3jJRk8VejV-Up_XHO3niqEZ0Dw@XNS7nLn6Fgiqf4KZF9x_mlpC9xjVzAK_IUu2RrX6TF7AqQI")
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export jd_zdjr_activityUrl="https://cjhydz-isv.isvjcloud.com"
-  export jd_zdjr_activityId="70e55c5ded2f4733bf186585c3ad2ad4"
+  export jd_zdjr_activityId="108fab8b263245059b8c444f95dba411"
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL)
   if [[ $(date -u "+%H") -eq 12 ]] || [[ $(date -u "+%H") -eq 13 ]]; then
     export JDCFD_SHARECODES=$(Combin_Sub ForOtherJDCFD "5865334930A39F30F1DB0754AA1F7959D3B07BA15AD4F30283ED42307AE100DD@076DADA340114E774EC884E4F779A1CF9EDDB3E88BB506700D7993BEF6604C49@E54589EDC287977F8CC29308FA304B263192FD978A8E414B86D09B09365C9FC8")
