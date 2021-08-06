@@ -1,6 +1,6 @@
-## Version: v3.34.4
-## Date: 2021-07-01
-## Update Content: 宠汪汪兑换改为直接验证，取消本地验证，永久删除wiki中的docker教程，强行使用docker发生的意外与本人无关，多位大佬已删库跑路，大家且用且珍惜（详见sample/config.sh.sample)
+## Version: v3.35.0
+## Date: 2021-08-06
+## Update Content: 新增开卡系列脚本，环境变量设置见sample（详见sample/config.sh.sample)
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
@@ -634,3 +634,10 @@ export Opencardtw="false"
 export ZOO_ADD2CART="false" 
 #控制本地宠汪汪验证码数量
 export validate_num=8
+#控制开卡系列变量
+export guaopencard4="true"
+export guaopencard5="true"
+export guaopencard6="true"
+export guaopencard_addSku4="true"
+export guaopencard_addSku5="true"
+export guaopencard_addSku6="true"
