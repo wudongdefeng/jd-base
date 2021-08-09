@@ -104,7 +104,7 @@ function Combin_All {
   export JXNC_SHARECODES=$(Combin_Sub ForOtherJxnc '{"smp":"da6762718787c913e5285470772b3b09","active":"jdnc_1_3yuanyoutao210616_2","joinnum":3}'@'{"smp":"236c07b9af98f718aa64a712e9c057f7","active":"jdnc_1_3yuanyoutao210616_2","joinnum":3}'@'{"smp":"1e51775af56a39a17086a73469e7b093","active":"jdnc_1_3yuanyoutao210616_2","joinnum":3}')
   export JDHEALTH_SHARECODES=$(Combin_Sub ForOtherHealth "T019_qwtFEtHolbeIRv3lP8CjVfnoaW5kRrbA@T0225KkcR09Lo1TVIhullfVedwCjVfnoaW5kRrbA")
   export BOOKSHOP_SHARECODES=$(Combin_Sub ForOtherBookShop "05d692a781834dc6815b90d440059d09@93c846eef3e8439ab0a655bc4c9b21e1@3113559ee4aa44469645507954dae9b4")
-  export JD818_SHARECODES=$(Combin_Sub ForOther818PHONE "09150707-728b-4e42-bff7-e760a1eaa957@2e183312-bfaf-4b9a-8809-b3f97a32bc9e@dd8ba167-3dc9-4606-9140-7253785cc58d")
+  export JD818_SHARECODES=$(Combin_Sub ForOther818PHONE "")
   export CITY_SHARECODES=$(Combin_Sub ForOtherCity "RtGKz732FwqhfILLFtZn1bWu3jJRk8VejV-Up_XHO3niqEZ0Dw@XNS7nLn6Fgiqf4KZF9x_mlpC9xjVzAK_IUu2RrX6TF7AqQI")
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export jd_zdjr_activityUrl="https://lzkjdz-isv.isvjcloud.com"
