@@ -1,6 +1,6 @@
-## Version: v3.35.1
+## Version: v3.36.0
 ## Date: 2021-08-09
-## Update Content: 新增开卡系列脚本，环境变量设置见sample（详见sample/config.sh.sample)
+## Update Content: 新增手机狂欢节环境变量，环境变量设置见sample（详见sample/config.sh.sample)
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
@@ -376,24 +376,24 @@ ForOtherJDCFD4=""
 ForOtherJDCFD5=""
 ForOtherJDCFD6=""
 
-################################## 定义京东城城领现金互助（选填） ##################################
+################################## 定义京东手机狂欢节互助（选填） ##################################
 ## 具体填法及要求详见：https://gitee.com/wudongdefeng/jd-base/wiki/FAQ
 
-MyCity1=""
-MyCity2=""
-MyCity3=""
-MyCity4=""
-MyCity5=""
-MyCity6=""
-MyCityA=""
-MyCityB=""
+My818PHONE1=""
+My818PHONE2=""
+My818PHONE3=""
+My818PHONE4=""
+My818PHONE5=""
+My818PHONE6=""
+My818PHONEA=""
+My818PHONEB=""
 
-ForOtherCity1=""
-ForOtherCity2=""
-ForOtherCity3=""
-ForOtherCity4=""
-ForOtherCity5=""
-ForOtherCity6=""
+ForOther818PHONE1=""
+ForOther818PHONE2=""
+ForOther818PHONE3=""
+ForOther818PHONE4=""
+ForOther818PHONE5=""
+ForOther818PHONE6=""
 
 
 
