@@ -634,7 +634,7 @@ export Opencardtw="false"
 export ZOO_ADD2CART="false" 
 #控制本地宠汪汪验证码数量
 export validate_num=8
-#控制开卡系列变量
+#控制开卡系列变量,true表示开卡加购，false表示不开卡不加购
 export guaopencard4="true"
 export guaopencard5="true"
 export guaopencard6="true"
