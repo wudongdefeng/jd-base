@@ -112,9 +112,11 @@ function Combin_All {
   export guaopencard4="true"
   export guaopencard5="true"
   export guaopencard6="true"
+  export guaopencard7="true"
   export guaopencard_addSku4="true"
   export guaopencard_addSku5="true"
   export guaopencard_addSku6="true"
+  export guaopencard_addSku7="true"
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL)
   if [[ $(date -u "+%H") -eq 12 ]] || [[ $(date -u "+%H") -eq 13 ]]; then
     export JDCFD_SHARECODES=$(Combin_Sub ForOtherJDCFD "5865334930A39F30F1DB0754AA1F7959D3B07BA15AD4F30283ED42307AE100DD@076DADA340114E774EC884E4F779A1CF9EDDB3E88BB506700D7993BEF6604C49@E54589EDC287977F8CC29308FA304B263192FD978A8E414B86D09B09365C9FC8")
