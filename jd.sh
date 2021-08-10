@@ -109,11 +109,11 @@ function Combin_All {
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export jd_zdjr_activityUrl="https://lzkjdz-isv.isvjcloud.com"
   export jd_zdjr_activityId="1c0fdb5afd304204887422f20e53cd14"
-  export guaopencard4="true"
+  export guaopencard8="true"
   export guaopencard5="true"
   export guaopencard6="true"
   export guaopencard7="true"
-  export guaopencard_addSku4="true"
+  export guaopencard_addSku8="true"
   export guaopencard_addSku5="true"
   export guaopencard_addSku6="true"
   export guaopencard_addSku7="true"
