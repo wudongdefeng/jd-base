@@ -330,15 +330,16 @@ then
   echo -e "js脚本更新完成...\n"
   Change_ALL
   [ -d ${ScriptsDir}/node_modules ] && Notify_Version
-  Diff_Cron
-  Npm_Install
+  Diff_Cron  
   Output_ListJsAdd
   Output_ListJsDrop
   Del_Cron
   Add_Cron
  if  [[ "${Autonpm}" == false ]]；then
  echo -e "--------------------------------------------------------------\n"
- echo -e "你已设置不自动安装npm\n"
+ echo -e "你已设置不自动安装npm\n" 
+ else
+ Npm_Install
  fi
 else
   echo -e "js脚本更新失败，请检查原因或再次运行git_pull.sh...\n"
