@@ -335,7 +335,7 @@ then
   Output_ListJsDrop
   Del_Cron
   Add_Cron
- if  [[ "${Autonpm}" == false ]]；then
+ if [[ ${Autonpm} == false ]]; then
  echo -e "--------------------------------------------------------------\n"
  echo -e "你已设置不自动安装npm\n" 
  else
