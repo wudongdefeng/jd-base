@@ -336,6 +336,10 @@ then
   Output_ListJsDrop
   Del_Cron
   Add_Cron
+ if  [ "${Autonpm}" = "false" ]；then
+ echo -e "--------------------------------------------------------------\n"
+ echo -e "你已设置不自动安装npm\n"
+ fi
 else
   echo -e "js脚本更新失败，请检查原因或再次运行git_pull.sh...\n"
   Change_ALL
