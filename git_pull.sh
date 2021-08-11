@@ -337,7 +337,8 @@ then
   Add_Cron
  if [[ ${Autonpm} == false ]]; then
  echo -e "--------------------------------------------------------------\n"
- echo -e "你已设置不自动安装npm\n" 
+ echo -e "你已设置不自动安装npm\n"
+ Change_ALL
  else
  Npm_Install
  fi
