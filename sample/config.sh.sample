@@ -1,6 +1,6 @@
-## Version: v3.37.0
-## Date: 2021-08-11
-## Update Content: 新增控制安装npm环境变量，环境变量export Autonpm="false"，不设置就是安装npm（详见sample/config.sh.sample)
+## Version: v3.38.0
+## Date: 2021-08-22
+## Update Content: 母库使用小小的仓库替代lxk大佬的仓库，减少了js的数量，降低了维护定时的频率，有问题请反馈
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
