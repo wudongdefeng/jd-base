@@ -1,4 +1,4 @@
-## Version: v3.40.0
+## Version: v3.40.1
 ## Date: 2021-09-08
 ## Update Content: 由于smiek大佬对脚本加密，昨天设置全局变量已失效，新的全局变量如下:\nexport guaopencard_All="true\nexport guaopencard_addSku_All="true"\nexport guaopencardRun_All="true"\nexport guaopencard_draw="3"
 
