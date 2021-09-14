@@ -8,4 +8,4 @@
 tg群:https://t.me/wudongdefeng_jd_temporary
 
 
-Wiki新增docker教程(https://github.com/wudongdefeng/jd-base/wiki/DOCKER_V3)
+Wiki新增docker教程(https://github.com/wudongdefeng/jd-base/wiki/DOCKER_V3)，重要的事情说3遍，不要用扫码，不要用扫码，不要用扫码。
