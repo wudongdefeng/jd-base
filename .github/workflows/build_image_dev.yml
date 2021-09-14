@@ -13,7 +13,7 @@ jobs:
         uses: ilteoood/docker_buildx@master
         with:
           publish: true
-          imageName: evinedeng/jd
+          imageName: wudongdefeng/jd-base
           dockerFile: docker/dev/Dockerfile
           platform: linux/amd64
           tag: unstable
