@@ -13,7 +13,7 @@ jobs:
         uses: ilteoood/docker_buildx@master
         with:
           publish: true
-          imageName: evinedeng/jd
+          imageName: wudongdefeng/jd-base
           dockerFile: docker/gitee/Dockerfile
           platform: linux/amd64,linux/arm64,linux/arm/v7
           tag: gitee
