@@ -16,6 +16,6 @@ jobs:
           imageName: wudongdefeng/jd-base
           dockerFile: docker/dev/Dockerfile
           platform: linux/amd64
-          tag: unstable
+          tag: v3
           dockerUser: ${{ secrets.DOCKER_USERNAME }}
           dockerPassword: ${{ secrets.DOCKER_PASSWORD }}
