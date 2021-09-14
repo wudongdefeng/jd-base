@@ -1,8 +1,8 @@
 FROM node:lts-alpine
 LABEL maintainer="Evine Deng <evinedeng@foxmail.com>"
-ARG JD_BASE_URL=https://github.com/EvineDeng/jd-base
+ARG JD_BASE_URL=https://github.com/wudongdefeng/jd-base
 ARG JD_BASE_BRANCH=v3
-ARG JD_SCRIPTS_URL=https://github.com/LXK9301/jd_scripts
+ARG JD_SCRIPTS_URL=https://gitee.com/wudongdefeng/jd_scripts
 ARG JD_SCRIPTS_BRANCH=master
 ARG JD_SCRIPTS2_URL=https://github.com/shylocks/Loon
 ARG JD_SCRIPTS2_BRANCH=main
