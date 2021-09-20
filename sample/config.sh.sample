@@ -1,6 +1,6 @@
-## Version: v3.41.0
-## Date: 2021-09-14
-## Update Content: 新增京豆变化脚本单个推送cookie的个数，export JD_BEAN_CHANGE_SENDNUM="2"，表示单个推送的cookie为2个；Wiki新增docker教程(https://github.com/wudongdefeng/jd-base/wiki/DOCKER_V3)，重要的事情说3遍，不要用扫码，不要用扫码，不要用扫码。
+## Version: v3.42.0
+## Date: 2021-09-20
+## Update Content: 新增东东游戏控制游戏的种类，export guaDDGametype="all"，表示玩所有游戏。这个脚本需要更新依赖，请打开安装npm开关，或者手动cd到scripts，然后npm install form-data
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
 
