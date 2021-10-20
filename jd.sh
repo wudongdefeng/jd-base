@@ -105,7 +105,7 @@ function Combin_All {
   export JDHEALTH_SHARECODES=$(Combin_Sub ForOtherHealth "T019_qwtFEtHolbeIRv3lP8CjVfnoaW5kRrbA@T0225KkcR09Lo1TVIhullfVedwCjVfnoaW5kRrbA")
   export BOOKSHOP_SHARECODES=$(Combin_Sub ForOtherBookShop "05d692a781834dc6815b90d440059d09@93c846eef3e8439ab0a655bc4c9b21e1@3113559ee4aa44469645507954dae9b4")
   export JD818_SHARECODES=$(Combin_Sub ForOther818PHONE)
-  export CITY_SHARECODES=$(Combin_Sub ForOtherCity "RtGKz732FwqhfILLFtZn1bWu3jJRk8VejV-Up_XHO3niqEZ0Dw@XNS7nLn6Fgiqf4KZF9x_mlpC9xjVzAK_IUu2RrX6TF7AqQI")
+  export CITY_SHARECODES=$(Combin_Sub ForOtherCity "XNS7nLn6Fgiqf4KZF9x_mlpC9xjVzAK_IUu2RrX6TF7AqQI@RtGKz732FwqhfILLFtZn1bWu3jJRk8VejV-Up_XHO3niqEZ0Dw@RtGKr57FKEDRHd_pbIJJmo8Y6alAS1HdJXzTgji8RfSudaw7@RtGKgI71IlXjB-rgQpVkmoxs6VRSIG80QyiYRSV_4MAdghSh")
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export jd_zdjr_activityUrl="https://lzkjdz-isv.isvjcloud.com"
   export jd_zdjr_activityId="1c0fdb5afd304204887422f20e53cd14"
