@@ -137,7 +137,7 @@ function Trans_UN_SUBSCRIBES {
   export UN_SUBSCRIBES="${goodPageSize}\n${shopPageSize}\n${jdUnsubscribeStopGoods}\n${jdUnsubscribeStopShop}"
 }
 
-## 申明全部变量
+## 申明全部变量 
 function Set_Env {
   Count_UserSum
   Combin_All
