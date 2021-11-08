@@ -98,7 +98,7 @@ if __name__ == '__main__':
     try:
         cks = os.environ["JD_COOKIE"].split("&")
     except:
-        f = open("/config/config.sh", "r", encoding='utf-8')
+        f = open("config/config.sh", "r", encoding='utf-8')
         cks = re.findall(r'Cookie[0-9]*="(pt_key=.*?;pt_pin=.*?;)"', f.read())
         f.close()
     for ck in cks:
