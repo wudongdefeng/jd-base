@@ -343,7 +343,6 @@ then
  echo -e "你已设置不自动安装npm，如需安装，请手动cd到scripts然后npm install\n"
  Change_ALL
  else
- pkg install python
  pip3 install requests
  pip3 install aiohttp
  Npm_Install
