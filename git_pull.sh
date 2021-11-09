@@ -38,7 +38,7 @@ function Update_Cron {
     done
     perl -i -pe "s|.+(bash git_pull.+)|${RanMin} ${RanH} \* \* \* sleep ${RanSleep} && \1|" ${ListCron}
     perl -i -pe "s|21 5,12(.+jd_star_wind_superBrand\W*.*)|${RanHour} 9,13,16,19,20\1|" ${ListCron}
-    perl -i -pe "s|15 */2(.+jd_jxmc\W*.*)|15 0-23/1\1|" ${ListCron} # 修改默认错误的cron
+    perl -i -pe "s|15 */2(.+jd_jxmc\W*.*)|RanH *\1|" ${ListCron} # 修改默认错误的cron
     crontab ${ListCron}
   fi
 }
