@@ -1,6 +1,6 @@
-## Version: v3.47.0
+## Version: v3.48.0
 ## Date: 2021-11-09
-## Update Content: 新增饭粒py脚本，python scripts/jd_fanli.py。自动即可，手动需要cd到scripts安装依赖pip install requests
+## Update Content: 新增宝藏py脚本，python scripts/newTreasure.py。自动即可，手动需要cd到scripts安装依赖pip install requests还有pip install aiohttp
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
