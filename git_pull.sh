@@ -182,6 +182,7 @@ function Npm_Install {
   cd ${ScriptsDir}
   if [[ "${PackageListOld}" != "$(cat package.json)" ]]; then
     echo -e "检测到package.json有变化，运行 npm install...\n"
+    
     Npm_InstallSub
     if [ $? -ne 0 ]; then
       echo -e "\nnpm install 运行不成功，自动删除 ${ScriptsDir}/node_modules 后再次尝试一遍..."
@@ -342,6 +343,8 @@ then
  echo -e "你已设置不自动安装npm，如需安装，请手动cd到scripts然后npm install\n"
  Change_ALL
  else
+ pkg install python
+ pip3 install requests
  Npm_Install
  fi
 else
