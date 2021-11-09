@@ -345,6 +345,7 @@ then
  else
  pkg install python
  pip3 install requests
+ pip3 install axios
  Npm_Install
  fi
 else
