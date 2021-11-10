@@ -82,10 +82,10 @@ logfile="${logdir}/$(date '+%Y-%m-%d-%H-%M-%S').log"
 PID=$(ps | grep "python3 ${scriptPath}" | grep -v grep| awk '{print $1}')
 if [ ! -z $PID ];then
     _printTime "已在后台运行 PID：$PID 如需要终止执行命令：kill $PID"
-    _printTime "查看运行日志: tail -f ${logfile} 2>&1"
+    _printTime "查看运行日志: tail -f ${logfile}
 else
     _printTime "开始执行入会领豆...."
-    nohup python3 ${scriptPath} >> ${logfile} &
+    nohup python3 ${scriptPath} >> ${logfile} 2>&1
     PID=$!
     sleep 5
     if ! ps | grep -v grep | grep -q $PID ;then
