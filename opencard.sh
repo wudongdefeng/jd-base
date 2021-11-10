@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 ## 使用Env环境执行方式，OpenCradConfig.ini配置文件参数不会生效。
-## 执行命令 ：bash open.sh
+## 执行命令 ：bash start-v4.sh
 ## 2021.6.7
 ## By Curtin
 ## 定时任务：
 ## 0 8 * * * bash /你存放脚本的本地绝对路径/start-v4.sh
 ##
 #########################################
-source=${JD_DIR}/config/config.sh
-logdir="log/OpenCard"
+source $JD_DIR/config/config.sh
+logdir="/log/OpenCrad"
 [[ -d ${logdir} ]] || mkdir -p ${logdir}
 
 ## function
@@ -59,9 +59,9 @@ getCookieNum(){
 
 
 #主脚本路径。V4 建议在 config.sh 文件添加 OwnRawFile
-cd ${JD_DIR}
+cd `dirname $0`
 cucrpwd=`pwd`
-scriptPath=${cucrpwd}/scripts/jd_OpenCard.py
+scriptPath=${cucrpwd}/jd_OpenCard.py
 ################### ↓↓↓【以下需要配置的参数，代替配置文件OpenCradConfig.ini】↓↓↓ ###################
 #京东cookie 格式：pt_key=xxx;pt_pin=xxx; & pt_key=xxx;pt_pin=xxx; (多账号&分隔)
 
@@ -85,7 +85,7 @@ if [ ! -z $PID ];then
     _printTime "查看运行日志: tail -f ${logfile}"
 else
     _printTime "开始执行入会领豆...."
-    nohup python3 ${scriptPath} >> ${logfile} 2>&1
+    nohup python3 ${scriptPath} 2>&1 > ${logfile} &
     PID=$!
     sleep 5
     if ! ps | grep -v grep | grep -q $PID ;then
