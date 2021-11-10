@@ -8,7 +8,7 @@
 ##
 #########################################
 source=${JD_DIR}/config/config.sh
-logdir="../jd/log/OpenCrad"
+logdir="../jd/log/OpenCard"
 [[ -d ${logdir} ]] || mkdir -p ${logdir}
 
 ## function
