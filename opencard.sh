@@ -7,7 +7,7 @@
 ## 0 8 * * * bash /你存放脚本的本地绝对路径/start-v4.sh
 ##
 #########################################
-source $JD_DIR/config/config.sh
+source config/config.sh
 logdir="log/OpenCard"
 [[ -d ${logdir} ]] || mkdir -p ${logdir}
 
