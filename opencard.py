@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 ## 使用Env环境执行方式，OpenCradConfig.ini配置文件参数不会生效。
-## 执行命令 ：bash start-v4.sh
+## 执行命令 ：bash open.sh
 ## 2021.6.7
 ## By Curtin
 ## 定时任务：
 ## 0 8 * * * bash /你存放脚本的本地绝对路径/start-v4.sh
 ##
 #########################################
-source ${JD_DIR}/config/config.sh
+source=${JD_DIR}/config/config.sh
 logdir="/jd/log/OpenCrad"
 [[ -d ${logdir} ]] || mkdir -p ${logdir}
 
