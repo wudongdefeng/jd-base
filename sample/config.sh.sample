@@ -18,6 +18,8 @@
 ## 其他date命令的更多用法，可以在命令行中输入 date --help  查看
 ## 判断条件 -eq -ne -gt -ge -lt -le ，具体含义可百度一下
 
+## 由于github仓库拉取较慢，所以会默认添加代理前缀，如不需要请移除
+GithubProxyUrl="https://ghproxy.com/"
 
 ################################## 定义Cookie（必填） ##################################
 ## 请依次填入每个用户的Cookie，Cookie的具体形式（只有pt_key字段和pt_pin字段，没有其他字段）：pt_key=xxxxxxxxxx;pt_pin=xxxx;
@@ -39,7 +41,11 @@ Cookie6=""
 ## 举例1：TempBlockCookie="2"    临时屏蔽掉Cookie2
 ## 举例2：TempBlockCookie="2 4"  临时屏蔽掉Cookie2和Cookie4
 TempBlockCookie=""
-
+## case $1 in
+##   test.js)
+##     TempBlockCookie="5"
+##     ;;
+## esac
 
 ################################## 定义是否自动删除失效的脚本与定时任务（选填） ##################################
 ## 有的时候，某些JS脚本只在特定的时间有效，过了时间就失效了，需要自动删除失效的本地定时任务，则设置为 "true" ，否则请设置为 "false"
