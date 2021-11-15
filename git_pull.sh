@@ -63,8 +63,8 @@ function Git_PullScripts {
   git fetch --all
   ExitStatusScripts=$?
   git reset --hard origin/master
-  sed -i "s#https://raw.githubusercontent.com#https://ghproxy.com/https://raw.githubusercontent.com#g" jd_rush_lzclient.js
   echo
+  sed -i "s#https://raw.githubusercontent.com#https://ghproxy.com/https://raw.githubusercontent.com#g" jd_rush_lzclient.js
 }
 
 ## 用户数量UserSum
