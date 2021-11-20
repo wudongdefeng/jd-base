@@ -350,7 +350,8 @@ then
   echo -e "js脚本更新完成...\n"
   Change_ALL
   [ -d ${ScriptsDir}/node_modules ] && Notify_Version
-  Diff_Cron  
+  Diff_Cron
+  PY_Cron
   Output_ListJsAdd
   Output_ListJsDrop
   Del_Cron
