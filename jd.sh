@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 ## Author: Evine Deng
-## Source: https://gitee.com/wudongdefeng/jd-base
-## Modified： 2021-08-01
-## Version： v4.1.4
+## Source: https://github.com/EvineDeng/jd-base
+## Modified： 2021-05-24
+## Version： v4.1.3
 
 ## 路径
 ShellDir=${JD_DIR:-$(cd $(dirname $0); pwd)}
@@ -13,7 +13,8 @@ ConfigDir=${ShellDir}/config
 FileConf=${ConfigDir}/config.sh
 FileConfSample=${ShellDir}/sample/config.sh.sample
 LogDir=${ShellDir}/log
-ListScripts=($(cd ${ScriptsDir}; ls *.js | grep -E "j[drx]_"))
+##ListScripts=($(cd ${ScriptsDir}; ls *.js | grep -E "j[drx]_"))
+ListScripts=($(cd ${ScriptsDir}; ls *.js))
 ListCron=${ConfigDir}/crontab.list
 
 ## 导入config.sh
@@ -140,7 +141,7 @@ function Trans_UN_SUBSCRIBES {
   export UN_SUBSCRIBES="${goodPageSize}\n${shopPageSize}\n${jdUnsubscribeStopGoods}\n${jdUnsubscribeStopShop}"
 }
 
-## 申明全部变量 
+## 申明全部变量
 function Set_Env {
   Count_UserSum
   Combin_All
@@ -190,7 +191,7 @@ function Run_Nohup {
     [ ! -d ${LogDir}/${js} ] && mkdir -p ${LogDir}/${js}
     LogTime=$(date "+%Y-%m-%d-%H-%M-%S")
     LogFile="${LogDir}/${js}/${LogTime}.log"
-    nohup node ${js}.js > ${LogFile} &
+    nohup node ${js}.py > ${LogFile} &
   done
 }
 
@@ -206,7 +207,7 @@ function Run_Pm2 {
 ## 运行挂机脚本
 function Run_HangUp {
   Import_Conf $1 && Detect_Cron && Set_Env
-  HangUpJs="jd_Aaron_wind_cfd_loop"
+  HangUpJs="jd_crazy_joy_coin"
   cd ${ScriptsDir}
   if type pm2 >/dev/null 2>&1; then
     Run_Pm2 2>/dev/null
@@ -225,15 +226,17 @@ function Reset_Pwd {
 function Run_Normal {
   Import_Conf $1 && Detect_Cron && Set_Env
   
-  FileNameTmp1=$(echo $1 | perl -pe "s|\.js||")
-  FileNameTmp2=$(echo $1 | perl -pe "{s|jd_||; s|\.js||; s|^|jd_|}")
-  SeekDir="${ScriptsDir} ${ScriptsDir}/backUp ${ConfigDir}{ScriptsDir}/scripts3"
+  FileNameTmp1=$(echo $1 | perl -pe "s|\.py||")
+##  FileNameTmp2=$(echo $1 | perl -pe "{s|jd_||; s|\.js||; s|^|jd_|}")
+  FileNameTmp2=$(echo $1 | perl -pe "s|\.js||")
+  FileNameTmp3=$(echo $1 | perl -pe "s|\.ts||")
+  SeekDir="${ScriptsDir} ${ScriptsDir}/backUp ${ShellDir}/HelloWorld ${ShellDir}/PKC"
   FileName=""
   WhichDir=""
 
   for dir in ${SeekDir}
   do
-    if [ -f ${dir}/${FileNameTmp1}.js ]; then
+    if [ -f ${dir}/${FileNameTmp1}.py ]; then
       FileName=${FileNameTmp1}
       WhichDir=${dir}
       break
@@ -241,10 +244,22 @@ function Run_Normal {
       FileName=${FileNameTmp2}
       WhichDir=${dir}
       break
+    elif [ -f ${dir}/${FileNameTmp3}.ts ]; then
+      FileName=${FileNameTmp3}
+      WhichDir=${dir}
+      break
     fi
   done
   
-  if [ -n "${FileName}" ] && [ -n "${WhichDir}" ]
+  if [ -f ${dir}/${FileName}.py ] && [ -n "${WhichDir}" ]
+  then
+    [ $# -eq 1 ] && Random_Delay
+    LogTime=$(date "+%Y-%m-%d-%H-%M-%S")
+    LogFile="${LogDir}/${FileName}/${LogTime}.log"
+    [ ! -d ${LogDir}/${FileName} ] && mkdir -p ${LogDir}/${FileName}
+    cd ${WhichDir}
+    python3 ${FileName}.py | tee ${LogFile}
+  elif [ -f ${dir}/${FileName}.js ] && [ -n "${WhichDir}" ]
   then
     [ $# -eq 1 ] && Random_Delay
     LogTime=$(date "+%Y-%m-%d-%H-%M-%S")
@@ -252,6 +267,14 @@ function Run_Normal {
     [ ! -d ${LogDir}/${FileName} ] && mkdir -p ${LogDir}/${FileName}
     cd ${WhichDir}
     node ${FileName}.js | tee ${LogFile}
+  elif [ -f ${dir}/${FileName}.ts ] && [ -n "${WhichDir}" ]
+  then
+    [ $# -eq 1 ] && Random_Delay
+    LogTime=$(date "+%Y-%m-%d-%H-%M-%S")
+    LogFile="${LogDir}/${FileName}/${LogTime}.log"
+    [ ! -d ${LogDir}/${FileName} ] && mkdir -p ${LogDir}/${FileName}
+    cd ${WhichDir}
+    ts-node ${FileName}.ts | tee ${LogFile}
   else
     echo -e "\n在${ScriptsDir}、${ScriptsDir}/backUp、${ConfigDir}三个目录下均未检测到 $1 脚本的存在，请确认...\n"
     Help
