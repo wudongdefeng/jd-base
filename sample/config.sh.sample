@@ -1,6 +1,6 @@
 ## Version: v3.50.0
 ## Date: 2021-11-20
-## Update Content: 新gua开卡脚本变量，export guaopencard_rewardBean="1,2,3"，表示开卡，邀请，关注全开通，详见sample
+## Update Content: 新增gua开卡脚本变量，export guaopencard_rewardBean="1,2,3"，表示开卡，邀请，关注全开通，详见sample
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
