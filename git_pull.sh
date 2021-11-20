@@ -119,16 +119,13 @@ function Diff_Cron {
     else
       grep "${ShellDir}/" ${ListCron} | grep -E " j[drx]_\w+" | perl -pe "s|.+ (j[drx]_\w+).*|\1|" | sort -u > ${ListTask}
     fi
-    cat ${ListCronLxk} | grep -E "j[drx]_\w+\.js" | perl -pe "s|.+(j[drx]_\w+)\.js\.+|\1|" | sort -u > ${ListJs}
-    
+    cat ${ListCronLxk} | grep -E "j[drx]_\w+\.js" | perl -pe "s|.+(j[drx]_\w+)\.js.+|\1|" | sort -u > ${ListJs}
     grep -vwf ${ListTask} ${ListJs} > ${ListJsAdd}
     grep -vwf ${ListJs} ${ListTask} > ${ListJsDrop}
   else
     echo -e "${ListCron} 文件不存在，请先定义你自己的crontab.list...\n"
   fi
 }
-
-
 
 ## 发送删除失效定时任务的消息
 function Notify_DropTask {
@@ -273,7 +270,6 @@ function Add_Cron {
         echo "4 0,9 * * * bash ${ShellJd} ${Cron}" >> ${ListCron}
       else
         cat ${ListCronLxk}| grep -E "\/${Cron}\." | perl -pe "s|(^.+)node */scripts/(j[drx]_\w+)\.js.+|\1bash ${ShellJd} \2|" >> ${ListCron}
-        cat ${ListCronLxk}| grep -E "\/${Cron}\." | perl -pe "s|(^.+)python */scripts/(j[drx]_\w+)\.py.+|\1bash ${ShellJd} \2|" >> ${ListCron}
       fi
     done
 
