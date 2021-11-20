@@ -120,21 +120,6 @@ function Diff_Cron {
       grep "${ShellDir}/" ${ListCron} | grep -E " j[drx]_\w+" | perl -pe "s|.+ (j[drx]_\w+).*|\1|" | sort -u > ${ListTask}
     fi
     cat ${ListCronLxk} | grep -E "j[drx]_\w+\.js" | perl -pe "s|.+(j[drx]_\w+)\.js.+|\1|" | sort -u > ${ListJs}
-    grep -vwf ${ListTask} ${ListJs} > ${ListJsAdd}
-    grep -vwf ${ListJs} ${ListTask} > ${ListJsDrop}
-  else
-    echo -e "${ListCron} 文件不存在，请先定义你自己的crontab.list...\n"
-  fi
-}
-
-function PY_Cron {
-  if [ -f ${ListCron} ]; then
-    if [ -n "${JD_DIR}" ]
-    then
-      grep -E " j[drx]_\w+" ${ListCron} | perl -pe "s|.+ (j[drx]_\w+).*|\1|" | sort -u > ${ListTask}
-    else
-      grep "${ShellDir}/" ${ListCron} | grep -E " j[drx]_\w+" | perl -pe "s|.+ (j[drx]_\w+).*|\1|" | sort -u > ${ListTask}
-    fi
     cat ${ListCronLxk} | grep -E "j[drx]_\w+\.py" | perl -pe "s|.+(j[drx]_\w+)\.py.+|\1|" | sort -u > ${ListJs}
     grep -vwf ${ListTask} ${ListJs} > ${ListJsAdd}
     grep -vwf ${ListJs} ${ListTask} > ${ListJsDrop}
@@ -142,6 +127,8 @@ function PY_Cron {
     echo -e "${ListCron} 文件不存在，请先定义你自己的crontab.list...\n"
   fi
 }
+
+
 
 ## 发送删除失效定时任务的消息
 function Notify_DropTask {
@@ -351,8 +338,7 @@ then
   echo -e "js脚本更新完成...\n"
   Change_ALL
   [ -d ${ScriptsDir}/node_modules ] && Notify_Version
-  Diff_Cron
-  PY_Cron
+  Diff_Cron  
   Output_ListJsAdd
   Output_ListJsDrop
   Del_Cron
