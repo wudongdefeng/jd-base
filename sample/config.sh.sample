@@ -42,7 +42,7 @@ Cookie6=""
 ## 举例2：TempBlockCookie="2 4"  临时屏蔽掉Cookie2和Cookie4
 TempBlockCookie=""
 ## case $1 in
-##   test.js)
+##   test)
 ##     TempBlockCookie="5"
 ##     ;;
 ## esac
