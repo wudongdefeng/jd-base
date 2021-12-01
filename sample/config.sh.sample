@@ -1,4 +1,4 @@
-## Version: v3.51.0
+## Version: v3.51.1
 ## Date: 2021-12-1
 ## Update Content: 新增gua开卡脚本变量，export guaopencard_draw="true"，export guaopencardRun_All="true"，export guaopencard_addSku_All="true"，export guaunknownTask_addSku_All="true"，export guaopencard_All="true"，适用于开卡74以后的脚本，详见sample
 
@@ -641,10 +641,11 @@ export ZOO_ADD2CART="false"
 #控制本地宠汪汪验证码数量
 export validate_num=8
 #控制开卡系列变量,true表示开卡加购，false表示不开卡不加购，3表示做活动次数
-export guaopencard_All="true"
-export guaopencard_addSku_All="true"
+export guaopencard_draw="true"
 export guaopencardRun_All="true"
-export guaopencard_draw="3"
+export guaopencard_addSku_All="true"
+export guaunknownTask_addSku_All="true"
+export guaopencard_All="true"
 export Autonpm="false"
 #控制单个推送cookie的个数，默认为2
 export JD_BEAN_CHANGE_SENDNUM="2"
