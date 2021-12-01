@@ -1,5 +1,5 @@
 ## Version: v3.51.1
-## Date: 2021-12-1
+## Date: 2021-12-01
 ## Update Content: 新增gua开卡脚本变量，export guaopencard_draw="true"，export guaopencardRun_All="true"，export guaopencard_addSku_All="true"，export guaunknownTask_addSku_All="true"，export guaopencard_All="true"，适用于开卡74以后的脚本，详见sample
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
