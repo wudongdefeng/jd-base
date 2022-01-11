@@ -110,7 +110,7 @@ function Combin_All {
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export JD_CITY_HELPSHARE="false"  
   export jd_zdjr_activityUrl="https://lzkjdz-isv.isvjcloud.com"
-  export jd_zdjr_activityId="10b0ec8fb440470d8fc42af4a07ecefe"
+  export jd_zdjr_activityId="7439655755c04f16a756240aa39582f5"
   export RUSH_LZCLIENT=""
   export RUSH_SHOP_SIGN_LIST=""
   export RUSH_SEVENDAY_LIST=""
