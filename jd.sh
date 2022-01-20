@@ -115,10 +115,6 @@ function Combin_All {
   export RUSH_LZCLIENT=""
   export RUSH_SHOP_SIGN_LIST=""
   export RUSH_SEVENDAY_LIST=""
-  export MyShopToken1="913E0D6C0E364A43A6FD3679C64C584E"
-  export MyShopToken2="22DC2595EAB3452E70BCAFB68F4D301A"
-  export MyShopToken3="4EB198714C610AB7C546E582DEF0D1B5"
-  export MyShopToken4="7AFD6CBB744454967F5086EF6737CE91"
   export SHOP_TOKENS="${MyShopToken1}&${MyShopToken2}&${MyShopToken3}&${MyShopToken4}&${MyShopToken5}&${MyShopToken6}&${MyShopToken7}&${MyShopToken8}&${MyShopToken9}"
 
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL)
