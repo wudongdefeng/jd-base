@@ -110,7 +110,7 @@ function Combin_All {
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export JD_CITY_HELPSHARE="false"  
   export jd_zdjr_activityUrl="https://lzkjdz-isv.isvjcloud.com"
-  export jd_zdjr_activityId="aa34613e7e9140b6818cbef9a5989e7b"
+  export jd_zdjr_activityId="9a513a4344a04e3db6e56c51ae72a7c1"
   export jd_mhurlList="https://anmp.jd.com/babelDiy/Zeus/4ZRoEPUncW1xHAUuz2CC7QhqYFSk/index.html"
   export RUSH_LZCLIENT=""
   export RUSH_SHOP_SIGN_LIST=""
