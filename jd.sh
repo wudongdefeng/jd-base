@@ -109,12 +109,12 @@ function Combin_All {
   export CITY_SHARECODES=$(Combin_Sub ForOtherCity "4LmlDflSMWZKYhPHStOJu9Uq7qqRWw@-ryUXv1eMGRBYROVS9mR9J6RqP4spall@-ryUPt5tDy4xAE63MY2_u7pkqS-DNoI@-ryUI-x5HxIdAFeRCqWfuxaDubQwlPw")
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export JD_CITY_HELPSHARE="false"  
-  export jd_mhurlList="https://anmp.jd.com/babelDiy/Zeus/4ZRoEPUncW1xHAUuz2CC7QhqYFSk/index.html"
+  export jd_nzmhurlList="https://anmp.jd.com/babelDiy/Zeus/wFdVpiU42GGLmPt4iVXendMohg4/index.html"
   export RUSH_LZCLIENT=""
   export RUSH_SHOP_SIGN_LIST=""
   export RUSH_SEVENDAY_LIST=""
   export SHOP_TOKENS="${MyShopToken1}&${MyShopToken2}&${MyShopToken3}&${MyShopToken4}&${MyShopToken5}&${MyShopToken6}&${MyShopToken7}&${MyShopToken8}&${MyShopToken9}"
-
+  
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL)
   if [[ $(date -u "+%H") -eq 12 ]] || [[ $(date -u "+%H") -eq 13 ]]; then
     export JDCFD_SHARECODES=$(Combin_Sub ForOtherJDCFD "26DDC6311C11085111BD817F548B8102D90CFEE44F69BB53E059EC830BC20CDE@EFF086EF2E7582413BDF061FE6F35C660BAF51E2332B8B0ADC8BC7C7FE962364@80DEC19D6ECED69F0A46CDD6E4745C9D09B0AC7744A1A1D05B78E28221ECDDD4")
