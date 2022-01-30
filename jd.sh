@@ -109,7 +109,7 @@ function Combin_All {
   export CITY_SHARECODES=$(Combin_Sub ForOtherCity "4LmlDflSMWZKYhPHStOJu9Uq7qqRWw@-ryUXv1eMGRBYROVS9mR9J6RqP4spall@-ryUPt5tDy4xAE63MY2_u7pkqS-DNoI@-ryUI-x5HxIdAFeRCqWfuxaDubQwlPw")
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export JD_CITY_HELPSHARE="false"  
-  export jd_nzmhurlList="https://anmp.jd.com/babelDiy/Zeus/wFdVpiU42GGLmPt4iVXendMohg4/index.html"
+  export jd_nzmhurlList="https://anmp.jd.com/babelDiy/Zeus/293owQqRtKfS8cuUhk4YzGFYGw2W/index.html"
   export RUSH_LZCLIENT=""
   export RUSH_SHOP_SIGN_LIST=""
   export RUSH_SEVENDAY_LIST=""
