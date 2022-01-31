@@ -348,6 +348,7 @@ then
  else
  pip3 install requests
  pip3 install aiohttp
+ pip3 install PyExecJS
  Npm_Install
  fi
 else
