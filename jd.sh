@@ -110,10 +110,10 @@ function Combin_All {
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export JD_CITY_HELPSHARE="false"  
   export jd_nzmhurlList="https://anmp.jd.com/babelDiy/Zeus/293owQqRtKfS8cuUhk4YzGFYGw2W/index.html"
-  //export RUSH_LZCLIENT=""
-  //export RUSH_SHOP_SIGN_LIST=""
-  //export RUSH_SEVENDAY_LIST=""
-  //export SHOP_TOKENS="${MyShopToken1}&${MyShopToken2}&${MyShopToken3}&${MyShopToken4}&${MyShopToken5}&${MyShopToken6}&${MyShopToken7}&${MyShopToken8}&${MyShopToken9}"
+  #export RUSH_LZCLIENT=""
+  #export RUSH_SHOP_SIGN_LIST=""
+  #export RUSH_SEVENDAY_LIST=""
+  #export SHOP_TOKENS="${MyShopToken1}&${MyShopToken2}&${MyShopToken3}&${MyShopToken4}&${MyShopToken5}&${MyShopToken6}&${MyShopToken7}&${MyShopToken8}&${MyShopToken9}"
   
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL)
   if [[ $(date -u "+%H") -eq 12 ]] || [[ $(date -u "+%H") -eq 13 ]]; then
