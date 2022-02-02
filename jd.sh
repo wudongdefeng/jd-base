@@ -113,7 +113,7 @@ function Combin_All {
   //export RUSH_LZCLIENT=""
   //export RUSH_SHOP_SIGN_LIST=""
   //export RUSH_SEVENDAY_LIST=""
- // export SHOP_TOKENS="${MyShopToken1}&${MyShopToken2}&${MyShopToken3}&${MyShopToken4}&${MyShopToken5}&${MyShopToken6}&${MyShopToken7}&${MyShopToken8}&${MyShopToken9}"
+  //export SHOP_TOKENS="${MyShopToken1}&${MyShopToken2}&${MyShopToken3}&${MyShopToken4}&${MyShopToken5}&${MyShopToken6}&${MyShopToken7}&${MyShopToken8}&${MyShopToken9}"
   
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL)
   if [[ $(date -u "+%H") -eq 12 ]] || [[ $(date -u "+%H") -eq 13 ]]; then
