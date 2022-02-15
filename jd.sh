@@ -112,6 +112,7 @@ function Combin_All {
   export jd_nzmhurl="https://anmp.jd.com/babelDiy/Zeus/3ZHWXfEDpu5GyX1BgCEN3qQwrC4K/index.html"   
   export wish_appIdArrList="1FFVQyqw@1GVFUx6g@1E1xZy6s"
   export wish_appNameArrList="1111点心动@JOY年尾之旅@PLUS生活特权"
+  export JD_SYJ="true"
   #export RUSH_LZCLIENT=""
   #export RUSH_SHOP_SIGN_LIST=""
   #export RUSH_SEVENDAY_LIST=""
