@@ -10,4 +10,6 @@ tg群:https://t.me/wudongdefeng_jd_temporary
 【青龙】拉取仓库命令：
 ql repo https://ghproxy.com/https://github.com/wudongdefeng/tem-update.git "jd|jx|gua|jddj|getJDCookie" "activity|backUp" "^jd^_|USER|function|utils|sendNotify|ZooFakerNecklace.js|JDJRValidator|signgraphicsvalidate|ql"
 
+或【青龙】拉取仓库命令： ql repo https://git.metauniverse-cn.com/https://github.com/wudongdefeng/tem-update.git "jd|jx|gua|jddj|getJDCookie" "activity|backUp" "^jd^_|USER|function|utils|sendNotify|ZooFakerNecklace.js|JDJRValidator|signgraphicsvalidate|ql"
+
 重要的事情说3遍，不要用扫码，不要用扫码，不要用扫码。
