@@ -1,7 +1,7 @@
 ## Version: v3.51.1
-## Date: 2021-12-01
-## Update Content: 新增gua开卡脚本变量，export guaopencard_draw="true"，export guaopencardRun_All="true"，export guaopencard_addSku_All="true"，export guaunknownTask_addSku_All="true"，export guaopencard_All="true"，适用于开卡74以后的脚本，详见sample
-
+## Date: 2022-02-20
+## Update Content: 新增JD_COOKIE1和fruit_sleep脚本变量，
+详见sample
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
 
@@ -33,7 +33,8 @@ Cookie3=""
 Cookie4=""
 Cookie5=""
 Cookie6=""
-
+export JD_COOKIE1=""
+export fruit_sleep=300000
 
 ################################## 临时屏蔽某个Cookie（选填） ##################################
 ## 如果某些Cookie已经失效了，但暂时还没法更新，可以使用此功能在不删除该Cookie和重新修改Cookie编号的前提下，临时屏蔽掉某些编号的Cookie
