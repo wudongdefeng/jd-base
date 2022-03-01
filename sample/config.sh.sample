@@ -1,7 +1,6 @@
-## Version: v3.51.1
-## Date: 2022-02-20
-## Update Content: 新增JD_COOKIE1和fruit_sleep脚本变量，
-详见sample
+## Version: v3.52.1
+## Date: 2022-03-01
+## Update Content: 新增限制帐号运行某脚本的示例，脚本脚本变量，详见sample/config.sh.sample
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考WIKI（https://gitee.com/wudongdefeng/jd-base/wiki）中"如何更新配置文件"部分的操作说明，进行智能比对后修改。
 
@@ -41,12 +40,34 @@ export fruit_sleep=300000
 ## 多个Cookie编号以半角的空格分隔，两侧一对半角双引号，使用此功能后，在运行js脚本时账户编号将发生变化
 ## 举例1：TempBlockCookie="2"    临时屏蔽掉Cookie2
 ## 举例2：TempBlockCookie="2 4"  临时屏蔽掉Cookie2和Cookie4
-TempBlockCookie=""
 ## case $1 in
-##   test)
-##     TempBlockCookie="5"
-##     ;;
+##     *jd_fruit*)                            # 东东农场活动脚本关键词
+##         TempBlockCookie="5"                # Cookie5 不玩东东农场
+##         ;;
+##     *jd_dreamFactory* | *jd_jdfactory*)    # 京喜工厂和东东工厂的活动脚本关键词
+##         TempBlockCookie="2"                # Cookie2 不玩京喜工厂和东东工厂
+##         ;;
+##     *jd_jdzz* | *jd_joy*)                  # 京喜赚赚和宠汪汪的活动脚本关键词
+##         TempBlockCookie="3 7_8 9-10 12~13" # Cookie3 、Cookie7至8、Cookie9至10、Cookie12至13 不玩京东赚赚和宠汪汪
+##         ;;
+##     *)                                     # 必选项。其他活动
+##         TempBlockCookie=""                 # 必选项。默认为空值，表示其他帐号参加全部活动。填写帐号序号表示指定的 Cookie 只能参加之前 case 选项的活动
+##         ;;
 ## esac
+case $1 in
+    *jd_fruit*)
+        TempBlockCookie=""
+        ;;
+    *jd_dreamFactory* | *jd_jdfactory*)
+        TempBlockCookie=""
+        ;;
+    *jd_jdzz* | *jd_joy*)
+        TempBlockCookie=""
+        ;;
+    *)
+        TempBlockCookie=""
+        ;;
+esac
 
 ################################## 定义是否自动删除失效的脚本与定时任务（选填） ##################################
 ## 有的时候，某些JS脚本只在特定的时间有效，过了时间就失效了，需要自动删除失效的本地定时任务，则设置为 "true" ，否则请设置为 "false"
