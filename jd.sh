@@ -110,8 +110,8 @@ function Combin_All {
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export JD_CITY_HELPSHARE="false"  
   export jd_nzmhurl="https://anmp.jd.com/babelDiy/Zeus/3ZHWXfEDpu5GyX1BgCEN3qQwrC4K/index.html"   
-  export wish_appIdArrList="1EFRWxKuG@1FFVQyqw@1E1xZy6s@1EFVTwK6P"
-  export wish_appNameArrList="许愿抽好礼@1111点心动@PLUS生活特权@转出你的小确幸" 
+  export wish_appIdArrList="1EFRWxKuG@1FFVQyqw@1E1xZy6s@1EFVTwK6P"
+  export wish_appNameArrList="许愿抽好礼@1111点心动@PLUS生活特权@转出你的小确幸" 
   export JD_SYJ="true"
   export JD_JOIN_ZLC="false"
   #export RUSH_LZCLIENT=""
