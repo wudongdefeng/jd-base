@@ -114,11 +114,6 @@ function Combin_All {
   export wish_appNameArrList="许愿抽好礼@1111点心动@PLUS生活特权@转出你的小确幸" 
   export JD_SYJ="true"
   export JD_JOIN_ZLC="false"
-  #export RUSH_LZCLIENT=""
-  #export RUSH_SHOP_SIGN_LIST=""
-  #export RUSH_SEVENDAY_LIST=""
-  #export SHOP_TOKENS="${MyShopToken1}&${MyShopToken2}&${MyShopToken3}&${MyShopToken4}&${MyShopToken5}&${MyShopToken6}&${MyShopToken7}&${MyShopToken8}&${MyShopToken9}"
-  
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL)
   if [[ $(date -u "+%H") -eq 12 ]] || [[ $(date -u "+%H") -eq 13 ]]; then
     export JDCFD_SHARECODES=$(Combin_Sub ForOtherJDCFD "26DDC6311C11085111BD817F548B8102D90CFEE44F69BB53E059EC830BC20CDE@EFF086EF2E7582413BDF061FE6F35C660BAF51E2332B8B0ADC8BC7C7FE962364@80DEC19D6ECED69F0A46CDD6E4745C9D09B0AC7744A1A1D05B78E28221ECDDD4")
