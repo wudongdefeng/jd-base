@@ -109,7 +109,7 @@ function Combin_All {
   export CITY_SHARECODES=$(Combin_Sub ForOtherCity "4LmlDflSMWZKYhPHStOJu9Uq7qqRWw@-ryUXv1eMGRBYROVS9mR9J6RqP4spall@-ryUPt5tDy4xAE63MY2_u7pkqS-DNoI@-ryUI-x5HxIdAFeRCqWfuxaDubQwlPw")
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export JD_CITY_HELPSHARE="false"  
-  export jd_nzmhurl="https://anmp.jd.com/babelDiy/Zeus/4BHyHKHHcfq58PNmKbmfwdMQRNtp/index.html"   
+  export jd_nzmhurl="https://anmp.jd.com/babelDiy/Zeus/dfoVj56tKdBbxaAi1fzE9KktMDx/index.html"   
   export wish_appIdArrList="1FFVQyqw@1EFRQwA@1EFRWxKuG@1E1xZy6s"
   export wish_appNameArrList="1111点心动@疯狂砸金蛋@许愿抽好礼@PLUS生活特权" 
   export JD_SYJ="true"
