@@ -175,7 +175,7 @@ function Npm_InstallSub {
     npm install || npm install --registry=https://registry.npm.taobao.org
   else
     echo -e "检测到本机安装了 yarn，使用 yarn 替代 npm...\n"
-    yarn install || yarn install --registry=https://registry.npm.taobao.org
+    yarn install || yarn install --no-bin-links --registry=https://registry.npm.taobao.org
   fi
 }
 
@@ -349,6 +349,9 @@ then
  pip3 install requests
  pip3 install aiohttp
  pip3 install PyExecJS
+ npm i axios --no-bin-links
+ npm i date-fns --no-bin-links
+ npm install date-fns
  Npm_Install
  fi
 else
