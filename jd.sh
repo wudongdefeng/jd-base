@@ -112,7 +112,6 @@ function Combin_All {
   export jd_nzmhurl="https://anmp.jd.com/babelDiy/Zeus/3qshXVjiSE2M9rfaCpntAXfkg166/index.html"   
   export wish_appIdArrList="1FFVQyqw@1EFRQwA@1EFRWxKuG@1E1xZy6s"
   export wish_appNameArrList="1111点心动@疯狂砸金蛋@许愿抽好礼@PLUS生活特权" 
-  export PandaToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTA3OTUyNjY5NywiaWF0IjoxNjQ4OTAwMTczLCJleHAiOjE2ODA0MzYxNzN9.TKvJqdWAqt1bQs7KzPTScEwIg-WtIPCwnbXt1UThYb4"
   export JD_SYJ="true"
   export JD_JOIN_ZLC="false"
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL)
