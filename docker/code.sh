@@ -10,8 +10,7 @@ env_name=(
   PLANT_BEAN_SHARECODES
   DREAM_FACTORY_SHARE_CODES
   DDFACTORY_SHARECODES
-  JDZZ_SHARECODES
-  BOOKSHOP_SHARECODES
+  JDZZ_SHARECODES  
   JD_CASH_SHARECODES
   JDSGMH_SHARECODES
   JDCFD_SHARECODES
@@ -23,8 +22,7 @@ var_name=(
   ForOtherBean
   ForOtherDreamFactory
   ForOtherJdFactory
-  ForOtherJdzz
-  ForOtherBookShop
+  ForOtherJdzz  
   ForOtherCash
   ForOtherSgmh
   ForOtherCfd
@@ -37,12 +35,12 @@ name_js=(
   wudongdefeng_tem-update_jd_zero_wind_plantBean
   wudongdefeng_tem-update_jd_dreamFactory
   wudongdefeng_tem-update_jd_jdfactory
-  wudongdefeng_tem-update_jd_kingran_wind_jdzz.js
+  wudongdefeng_tem-update_jd_faker_wind_jdzz
   wudongdefeng_tem-update_jd_bookshop
-  wudongdefeng_tem-update_jd_cash
-  wudongdefeng_tem-update_jd_kingran_wind_sgmh
+  wudongdefeng_tem-update_jd_wind_cash_Mod_Panda
+  wudongdefeng_tem-update_jd_faker_wind_sgmh
   wudongdefeng_tem-update_jd_cfd
-  wudongdefeng_tem-update_jd_zero_wind_health
+  wudongdefeng_tem-update_jd_faker_wind_health
 )
  
 name_config=(
