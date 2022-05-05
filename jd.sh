@@ -110,8 +110,8 @@ function Combin_All {
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export JD_CITY_HELPSHARE="false"  
   export jd_nzmhurl="https://anmp.jd.com/babelDiy/Zeus/zJstisP37KV7xx483MmipiaRPgy/index.html"   
-  export wish_appIdArrList="1EFBTxa6H@1FFVQyqw@1EFRQwA@1EFRWxKuG@1E1xZy6s"
-  export wish_appNameArrList="森林历险记@1111点心动@疯狂砸金蛋@许愿抽好礼@PLUS生活特权" 
+  export wish_appIdArrList="1EFFSyqaC@1FFVQyqw@1EFRWxKuG@1E1xZy6s"
+  export wish_appNameArrList="吃货嘉年华@许愿抽好礼@1111点心动@PLUS生活特权"
   export JD_SYJ="true"
   export JD_JOIN_ZLC="false"
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL)
