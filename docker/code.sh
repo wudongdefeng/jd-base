@@ -30,7 +30,7 @@ var_name=(
 )
  
 name_js=(
-  wudongdefeng_tem-update_jd_hello_wind_fruit
+  wudongdefeng_tem-update_jd_fruit_Mod.js
   wudongdefeng_tem-update_jd_hello_wind_pet
   wudongdefeng_tem-update_jd_zero_wind_plantBean
   wudongdefeng_tem-update_jd_dreamFactory
