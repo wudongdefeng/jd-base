@@ -5,7 +5,7 @@
 
 - :warning: lxk大佬已删库跑路，大家且用且珍惜！
 
-tg群:https://t.me/wudongdefeng_jd_temporary
+tg群:https://t.me/+MaBLbc9f52JlZDdl
 
 【青龙】拉取仓库命令：
 ql repo https://ghproxy.com/https://github.com/wudongdefeng/tem-update.git "jd|jx|gua|jddj|getJDCookie" "activity|backUp" "^jd^_|USER|function|utils|sendNotify|ZooFakerNecklace.js|JDJRValidator|signgraphicsvalidate|ql"
