@@ -8,8 +8,21 @@
 tg群:https://t.me/+MaBLbc9f52JlZDdl
 
 【青龙】拉取仓库命令：
-ql repo https://ghproxy.com/https://github.com/wudongdefeng/tem-update.git "jd|jx|gua|jddj|getJDCookie" "activity|backUp" "^jd^_|USER|function|utils|sendNotify|ZooFakerNecklace.js|JDJRValidator|signgraphicsvalidate|ql"
+ql repo https://github.com/wudongdefeng/tem-update.git "jd|jx|gua|jddj|getJDCookie" "activity|backUp" "^jd^_|USER|function|utils|sendNotify|ZooFakerNecklace.js|JDJRValidator|signgraphicsvalidate|ql"
 
-或【青龙】拉取仓库命令： ql repo https://git.metauniverse-cn.com/https://github.com/wudongdefeng/tem-update.git "jd|jx|gua|jddj|getJDCookie" "activity|backUp" "^jd^_|USER|function|utils|sendNotify|ZooFakerNecklace.js|JDJRValidator|signgraphicsvalidate|ql"
+如果拉库失败，可用以下代理:
+
+# https://yml-git.ml/https://github.com/wudongdefeng/tem-update.git
+
+# https://pd.zwc365.com/https://github.com/wudongdefeng/tem-update.git
+
+# https://gh.fakev.cn/wudongdefeng/tem-update.git
+
+# https://hub.fastgit.xyz/https://github.com/wudongdefeng/tem-update.git
+
+# https://hub.0z.gs/https://github.com/wudongdefeng/tem-update.git
+
+# https://hub.fastgit.xyz/https://github.com/wudongdefeng/tem-update.git
+
 
 重要的事情说3遍，不要用扫码，不要用扫码，不要用扫码。
