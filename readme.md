@@ -12,8 +12,6 @@ ql repo https://github.com/wudongdefeng/tem-update.git "jd|jx|gua|jddj|getJDCook
 
 如果拉库失败，可用以下代理:
 
-# https://yml-git.ml/https://github.com/wudongdefeng/tem-update.git
-
 # https://pd.zwc365.com/https://github.com/wudongdefeng/tem-update.git
 
 # https://gh.fakev.cn/wudongdefeng/tem-update.git
