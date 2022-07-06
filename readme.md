@@ -12,14 +12,19 @@ ql repo https://github.com/wudongdefeng/tem-update.git "jd|jx|gua|jddj|getJDCook
 
 如果拉库失败，可用以下代理:
 
-# https://pd.zwc365.com/https://github.com/wudongdefeng/tem-update.git
+https://pd.zwc365.com/https://github.com/wudongdefeng/tem-update.git
 
-# https://gh.fakev.cn/wudongdefeng/tem-update.git
+https://gh.fakev.cn/wudongdefeng/tem-update.git
 
-# https://hub.fastgit.xyz/https://github.com/wudongdefeng/tem-update.git
+https://hub.fastgit.xyz/https://github.com/wudongdefeng/tem-update.git
 
-# https://hub.0z.gs/https://github.com/wudongdefeng/tem-update.git
+https://hub.0z.gs/https://github.com/wudongdefeng/tem-update.git
 
+https://api.mtr.pub/wudongdefeng/tem-update.git
+
+https://ghproxy.futils.com/https://github.com/wudongdefeng/tem-update.git
+
+https://hub.xn--gzu630h.xn--kpry57d/wudongdefeng/tem-update.git
 
 
 重要的事情说3遍，不要用扫码，不要用扫码，不要用扫码。
