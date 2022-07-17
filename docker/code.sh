@@ -1,16 +1,19 @@
 #!/usr/bin/env bash
- 
+
 ## 导入通用变量与函数
 dir_shell=/ql/shell
 . $dir_shell/share.sh
- 
+
 env_name=(
   FRUITSHARECODES
   PETSHARECODES
   PLANT_BEAN_SHARECODES
   DREAM_FACTORY_SHARE_CODES
   DDFACTORY_SHARECODES
-  JDZZ_SHARECODES  
+  JDZZ_SHARECODES
+  JDJOY_SHARECODES
+  JXNC_SHARECODES
+  BOOKSHOP_SHARECODES
   JD_CASH_SHARECODES
   JDSGMH_SHARECODES
   JDCFD_SHARECODES
@@ -22,27 +25,32 @@ var_name=(
   ForOtherBean
   ForOtherDreamFactory
   ForOtherJdFactory
-  ForOtherJdzz  
+  ForOtherJdzz
+  ForOtherJoy
+  ForOtherJxnc
+  ForOtherBookShop
   ForOtherCash
   ForOtherSgmh
   ForOtherCfd
   ForOtherHealth
 )
- 
+
 name_js=(
-  wudongdefeng_tem-update_jd_fruit_Mod.js
-  wudongdefeng_tem-update_jd_hello_wind_pet
-  wudongdefeng_tem-update_jd_zero_wind_plantBean
+  wudongdefeng_tem-update_jd_fruit
+  wudongdefeng_tem-update_jd_pet
+  wudongdefeng_tem-update_jd_plantBean
   wudongdefeng_tem-update_jd_dreamFactory
   wudongdefeng_tem-update_jd_jdfactory
   wudongdefeng_tem-update_jd_faker_wind_jdzz
+  wudongdefeng_tem-update_jd_crazy_joy
+  wudongdefeng_tem-update_jd_jxnc
   wudongdefeng_tem-update_jd_bookshop
-  wudongdefeng_tem-update_jd_wind_cash_Mod_Panda
-  wudongdefeng_tem-update_jd_faker_wind_sgmh
+  wudongdefeng_tem-update_jd_kingran_wind_cash_windfg.js
+  wudongdefeng_tem-update_jd_sgmh
   wudongdefeng_tem-update_jd_cfd
-  wudongdefeng_tem-update_jd_faker_wind_health
+  wudongdefeng_tem-update_jd_health
 )
- 
+
 name_config=(
   Fruit
   Pet
@@ -50,13 +58,15 @@ name_config=(
   DreamFactory
   JdFactory
   Jdzz
+  Joy
+  Jxnc
   BookShop
   Cash
   Sgmh
   Cfd
   Health
 )
- 
+
 name_chinese=(
   东东农场
   东东萌宠
@@ -64,13 +74,15 @@ name_chinese=(
   京喜工厂
   东东工厂
   京东赚赚
+  crazyJoy任务
+  京喜农场
   口袋书店
   签到领现金
   闪购盲盒
   京喜财富岛
   东东健康社区
 )
- 
+
 gen_pt_pin_array() {
   local envs=$(eval echo "\$JD_COOKIE")
   local array=($(echo $envs | sed 's/&/ /g'))
@@ -81,7 +93,7 @@ gen_pt_pin_array() {
     [[ $pt_pin_temp == *\\x* ]] && pt_pin[i]=$(printf $pt_pin_temp) || pt_pin[i]=$pt_pin_temp
   done
 }
- 
+
 export_codes_sub() {
     local task_name=$1
     local config_name=$2
@@ -100,7 +112,7 @@ export_codes_sub() {
             code[i]=$(echo $line | awk -F "&" '{print $2}')
             let i++
         done
- 
+
         ## 输出My系列变量
         if [[ ${#code[*]} -gt 0 ]]; then
             for ((m = 0; m < ${#pt_pin[*]}; m++)); do
@@ -117,7 +129,7 @@ export_codes_sub() {
         else
             echo "## 从日志中未找到任何互助码"
         fi
- 
+
         ## 输出ForOther系列变量
         if [[ ${#code[*]} -gt 0 ]]; then
             echo
@@ -134,7 +146,7 @@ export_codes_sub() {
                     echo "$config_name_for_other$j=\"\${${config_name_for_other}1}\""
                 done
                 ;;
- 
+
             1) ## 均等助力
                 for ((m = 0; m < ${#pt_pin[*]}; m++)); do
                     tmp_for_other=""
@@ -151,7 +163,7 @@ export_codes_sub() {
                     echo "$config_name_for_other$j=\"$tmp_for_other\"" | perl -pe "s|($config_name_for_other\d+=\")@|\1|"
                 done
                 ;;
- 
+
             2) ## 本套脚本内账号间随机顺序助力
                 for ((m = 0; m < ${#pt_pin[*]}; m++)); do
                     tmp_for_other=""
@@ -164,7 +176,7 @@ export_codes_sub() {
                     echo "$config_name_for_other$j=\"$tmp_for_other\"" | perl -pe "s|($config_name_for_other\d+=\")@|\1|"
                 done
                 ;;
- 
+
             *) ## 按编号优先
                 for ((m = 0; m < ${#pt_pin[*]}; m++)); do
                     tmp_for_other=""
@@ -183,7 +195,7 @@ export_codes_sub() {
         echo "## 未运行过 $task_name.js 脚本，未产生日志"
     fi
 }
- 
+
 export_all_codes() {
     gen_pt_pin_array
     echo -e "\n# 从日志提取互助码，如果为空就是所有日志中都没有。\n"
@@ -207,9 +219,9 @@ export_all_codes() {
         export_codes_sub "${name_js[i]}" "${name_config[i]}" "${name_chinese[i]}"
     done
 }
- 
+
 export_all_codes | perl -pe "{s|京东种豆|种豆|; s|crazyJoy任务|疯狂的JOY|}"
- 
+
 combine_sub() {
     local what_combine=$1
     local combined_all=""
@@ -224,7 +236,7 @@ combine_sub() {
     done
     echo $combined_all | perl -pe "{s|^&||; s|^@+||; s|&@|&|g; s|@+&|&|g; s|@+|@|g; s|@+$||}"
 }
- 
+
 ## 正常依次运行时，组合所有账号的Cookie与互助码
 combine_all() {
     echo -e "\n## 互助变量："
@@ -235,7 +247,7 @@ combine_all() {
         fi
     done
 }
- 
+
 if [[ $(ls $dir_code) ]]; then
     latest_log=$(ls -r $dir_code | head -1)
     . $dir_code/$latest_log
