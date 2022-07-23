@@ -3,7 +3,7 @@
 
 - :warning: 请不要fork，因为GitHub Actions也会fork过去。那样会给番组计划的服务器造成压力；又或者请求过多，有可能触发拒绝请求的保护机制，造成项目被后台删除。
 
-- :warning: lxk大佬已删库跑路，大家且用且珍惜！
+- :warning: 码云的镜像公开自动私有了，大家拉github就行了！
 
 tg群:https://t.me/+MaBLbc9f52JlZDdl
 
