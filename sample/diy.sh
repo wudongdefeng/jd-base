@@ -74,7 +74,7 @@ do
 	    check_existing_cron=`grep -c "$croname" ${ConfigDir}/crontab.list`
 	    echo $name "开始添加定时..."
 	    if [ "${check_existing_cron}" -eq 0 ]; then
-	      sed -i "/hangup/a${script_date} bash /data/data/com.termux/files/home/storage/shared/jd/jd.sh $croname"  ${ConfigDir}/crontab.list
+	      sed -i "/hangup/a${script_date} bash jd $croname"  ${ConfigDir}/crontab.list
 	      echo -e "$name 成功添加定时!!!\n"
 	    else
 	      if [ "${Enablerenew}" = "true" ]; then
