@@ -8,16 +8,27 @@
 见下例
 
 [core]
+
         repositoryformatversion = 0
+        
         filemode = true
+        
         bare = false
+        
         logallrefupdates = true
+        
 [remote "origin"]
+
         url = https://gh.fakev.cn/wudongdefeng/jd-base
+        
         fetch = +refs/heads/*:refs/remotes/origin/*
+        
 [branch "master"]
+
         remote = origin
+        
         merge = refs/heads/master
+        
         
         
 还有一处需要修改，还是jd目录，vi scripts/.git/config，里面的仓库链接还是改成github
