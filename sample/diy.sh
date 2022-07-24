@@ -17,12 +17,14 @@ wudongdefeng
 
 ############################## 维护:wudongdefeng ##############################
 # 库地址:https://github.com/wudongdefeng/jd-temporary
-scripts_base_url_1=https://ghproxy.com/https://raw.githubusercontent.com/wudongdefeng/jd-temporary/main/
+scripts_base_url_1=https://raw-gh.gcdn.mirr.one/wudongdefeng/wool/main/
 my_scripts_list_1="
-monk-coder_monk_pasture.js
-monk-coder_z_asus_iqiyi.js
-monk_skyworth.js
-i-chenzhe-z_xmf.js
+ksjsb_v2.js
+meituan.js
+kgyy.js
+elmpro.js
+txspfl.js
+wyyx_app.js
 "
 
 
@@ -111,7 +113,7 @@ done
 ############################## 更新diy.sh ##############################
 cd $ConfigDir
 echo -e "开始更新 diy.sh "
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/wudongdefeng/jd-temporary/main/diy.sh -O diy.sh.new
+wget -q --no-check-certificate https://raw-gh.gcdn.mirr.one/wudongdefeng/jd-base/v3/sample/diy.sh -O diy.sh.new
 if [ $? -eq 0 ]; then
   mv -f diy.sh.new diy.sh
   echo -e "更新 diy.sh 成功!!!"
