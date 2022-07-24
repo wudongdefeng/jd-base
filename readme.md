@@ -3,7 +3,21 @@
 
 - :warning: 请不要fork，因为GitHub Actions也会fork过去。那样会给番组计划的服务器造成压力；又或者请求过多，有可能触发拒绝请求的保护机制，造成项目被后台删除。
 
-- :warning: 码云的镜像公开自动私有了，大家拉github就行了！
+- :warning: 码云的镜像公开自动私有了，大家拉github就行了！切换方法，jd目录下vi .git/config，里面带有仓库的链接改为github
+见下例
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+[remote "origin"]
+        url = https://gh.fakev.cn/wudongdefeng/jd-base
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
+还有一处需要修改，还是jd目录，vi scripts/.git/config，里面的仓库链接还是改成github
+
 
 tg群:https://t.me/+MaBLbc9f52JlZDdl
 
