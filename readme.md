@@ -3,6 +3,10 @@
 
 - :warning: 请不要fork，因为GitHub Actions也会fork过去。那样会给番组计划的服务器造成压力；又或者请求过多，有可能触发拒绝请求的保护机制，造成项目被后台删除。
 
+- :wool仓库使用方法，bash git_pull.sh后，cd config && curl -O https://raw-gh.gcdn.mirr.one/wudongdefeng/jd-base/v3/sample/diy.sh && cd ..
+    
+   config.sh 下的 EnableExtraShell的变量值false改成true，然后拉取仓库就有了。 
+
 - :warning: 码云的镜像公开私有了，大家拉github就行了！切换方法，jd目录下vi .git/config，里面带有仓库的链接改为github
 
 见下例
