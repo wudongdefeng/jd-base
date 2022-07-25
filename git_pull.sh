@@ -36,7 +36,7 @@ function Update_Cron {
       tmp=$((${RANDOM} % 3 + ${RanHourArray[j]} + 2))
       [[ ${tmp} -lt 24 ]] && RanHourArray[i]=${tmp} || break
     done
-    perl -i -pe "s|.+(bash git_pull.+)|${RanMin} ${RanH} \* \* \* sleep ${RanSleep} && \1|" ${ListCron}    
+    perl -i -pe "s|.+(bash git_pull.+)|${RanMin} \*\ \* \* \* sleep ${RanSleep} && \1|" ${ListCron}    
     perl -i -pe "s|15 */2(.+jd_jxmc\W*.*)|RanH *\1|" ${ListCron} # 修改默认错误的cron
     perl -i -pe "{
       s|.+(jd(\.sh)? jd_kingran_wind_superBrandJK.js)|35 \10,14,18,20, \* \* \* \1|g;
