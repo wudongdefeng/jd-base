@@ -25,6 +25,7 @@ kgyy.js
 elmpro.js
 txspfl.js
 wyyx_app.js
+jcCheckin.js
 "
 
 
