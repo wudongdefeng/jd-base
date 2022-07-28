@@ -60,4 +60,6 @@ https://ghproxy.futils.com/https://github.com/wudongdefeng/jd-base.git
 
 https://hub.xn--gzu630h.xn--kpry57d/wudongdefeng/jd-base.git
 
+https://cors.zme.ink/https://github.com/wudongdefeng/jd-base.git
+
 重要的事情说3遍，不要用扫码，不要用扫码，不要用扫码。
