@@ -23,7 +23,7 @@
         
 [remote "origin"]
 
-        url = https://gh.fakev.cn/wudongdefeng/jd-base
+        url = https://git.dc-wind.ml/https://github.com/wudongdefeng/jd-base
         
         fetch = +refs/heads/*:refs/remotes/origin/*
         
@@ -41,7 +41,7 @@
 tg群:https://t.me/+MaBLbc9f52JlZDdl
 
 【青龙】拉取仓库命令：
-ql repo https://github.com/wudongdefeng/tem-update.git "jd|jx|gua|jddj|getJDCookie" "activity|backUp" "^jd^_|USER|function|utils|sendNotify|ZooFakerNecklace.js|JDJRValidator|signgraphicsvalidate|ql"
+ql repo https://git.dc-wind.ml/https://github.com/wudongdefeng/tem-update.git "jd|jx|gua|jddj|getJDCookie" "activity|backUp" "^jd^_|USER|function|utils|sendNotify|ZooFakerNecklace.js|JDJRValidator|signgraphicsvalidate|ql"
 
 
 如果拉库失败，可用以下代理:
