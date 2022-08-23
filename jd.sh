@@ -229,7 +229,7 @@ function Run_Normal {
 ##  FileNameTmp2=$(echo $1 | perl -pe "{s|jd_||; s|\.js||; s|^|jd_|}")
   FileNameTmp2=$(echo $1 | perl -pe "s|\.js||")
   FileNameTmp3=$(echo $1 | perl -pe "s|\.ts||")
-  SeekDir="${ScriptsDir} ${ScriptsDir}/backUp ${ShellDir}/HelloWorld ${ShellDir}/PKC"
+  SeekDir="${ScriptsDir} ${ScriptsDir}/backUp ${ShellDir}/monitor ${ShellDir}/PKC"
   FileName=""
   WhichDir=""
 
