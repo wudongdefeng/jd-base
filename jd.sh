@@ -108,7 +108,9 @@ function Combin_All {
   export JD818_SHARECODES=$(Combin_Sub ForOther818PHONE)
   export CITY_SHARECODES=$(Combin_Sub ForOtherCity "4LmlDflSMWZKYhPHStOJu9Uq7qqRWw@-ryUXv1eMGRBYROVS9mR9J6RqP4spall@-ryUPt5tDy4xAE63MY2_u7pkqS-DNoI@-ryUI-x5HxIdAFeRCqWfuxaDubQwlPw")
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
-  export JD_CITY_HELPSHARE="false"  
+  export JD_CITY_HELPSHARE="false"
+  export gua_log_token="wbvfunwflgtvzjwf"
+  export GUA_CITY_SHARECODES="-ryUXv1eMGRBYROVS9mR9J6RqP4spall@4LmlDflSMWZKYhPHStOJu9Uq7qqRWw@47CsDeVRCTkPLxKIBsq14w"
   export jd_nzmhurl="https://h5.m.jd.com/babelDiy/Zeus/3G5ff21YoiZKEvLBcgwKmtWP5p9d/index.html"   
   export wish_appIdArrList="1EFNVyqeH@1FFVQyqw@1EFRWxKuG@1E1xZy6s"
   export wish_appNameArrList="京东电器@1111点心动@许愿抽好礼@PLUS生活特权"
