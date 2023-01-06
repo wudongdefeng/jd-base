@@ -110,7 +110,7 @@ function Combin_All {
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash "Y0ppOLnsMf4v8G_Wy3s@eU9Ya73gMPwk82-EynFH1Q@eU9YC57TD7ZUkjKmsCVp")
   export JD_CITY_HELPSHARE="false"
   export gua_log_token="trxpmpmkwe3437l1"
-  export GUA_CITY_SHARECODES="29DREZ1RFV5Sby3uP-o_MyGdzC4pmAU7@wdXgQpldFFxZbC28PuAnfM5AWVkjKA@29DRcb5iKhQiDnDMRb4RfKwadkz3HrQ"
+  export GUA_CITY_SHARECODES="29DREZ1RFV5Sby3uP-o_MyGdzC4pmAU7@wdXgQpldFFxZbC28PuAnfM5AWVkjKA@29DRcb5iKhQiDnDMRb4RfKwadkz3HrQ@29DRQJZZCiQrKVnGW4wNfLq2oMyz6J0"
   export jd_nzmhurl="https://h5.m.jd.com/babelDiy/Zeus/3G5ff21YoiZKEvLBcgwKmtWP5p9d/index.html"   
   export wish_appIdArrList="1EFNVyqeH@1FFVQyqw@1EFRWxKuG@1E1xZy6s"
   export wish_appNameArrList="京东电器@1111点心动@许愿抽好礼@PLUS生活特权"
