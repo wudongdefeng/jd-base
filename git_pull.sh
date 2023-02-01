@@ -381,9 +381,6 @@ then
  npm i ds --no-bin-links
  npm i qrcode-terminal --no-bin-links
  npm i silly-datetime --no-bin-links
- npm i  --no-bin-links
- npm i  --no-bin-links
- npm i  --no-bin-links
  Npm_Install
  fi
 else
