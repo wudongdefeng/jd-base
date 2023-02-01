@@ -189,7 +189,7 @@ done
 ############################## 更新diy.sh ##############################
 cd $ConfigDir
 echo -e "开始更新 diy.sh "
-wget -q --no-check-certificate https://raw-gh.gcdn.mirr.one/wudongdefeng/jd-base/v3/sample/diy.sh -O diy.sh.new
+wget -q --no-check-certificate https://cors.isteed.cc/https://raw.githubusercontent.com/wudongdefeng/jd-base/v3/sample/diy.sh -O diy.sh.new
 if [ $? -eq 0 ]; then
   mv -f diy.sh.new diy.sh
   echo -e "更新 diy.sh 成功!!!"
