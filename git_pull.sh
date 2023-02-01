@@ -349,12 +349,41 @@ then
  echo -e "你已设置不自动安装npm，如需安装，请手动cd到scripts然后npm install\n"
  Change_ALL
  else
- pip3 install requests
+ pip3 install requests pycryptodome redis telethon pillow jieba cacheout prettytable bs4 python-socks
  pip3 install aiohttp
  pip3 install PyExecJS
  npm i axios --no-bin-links
  npm i date-fns --no-bin-links
- npm install date-fns
+ npm i png-js --no-bin-links
+ npm i date-fns --no-bin-links
+ npm i axios@v0.27.2 --no-bin-links
+ npm i crypto-js --no-bin-links
+ npm i ts-md5 --no-bin-links
+ npm i tslib --no-bin-links
+ npm i @types/node --no-bin-links
+ npm i requests --no-bin-links
+ npm i tough-cookie --no-bin-links
+ npm i jsdom --no-bin-links
+ npm i download --no-bin-links
+ npm i tunnel --no-bin-links
+ npm i fs --no-bin-links
+ npm i ws --no-bin-links
+ npm i form-data --no-bin-links
+ npm i jsdom --no-bin-links
+ npm i js-base64 --no-bin-links
+ npm i got --no-bin-links
+ npm i tslib --no-bin-links
+ npm i redis --no-bin-links
+ npm i png-js --no-bin-links
+ npm i md5 --no-bin-links
+ npm i dotenv --no-bin-links
+ npm i moment --no-bin-links
+ npm i ds --no-bin-links
+ npm i qrcode-terminal --no-bin-links
+ npm i silly-datetime --no-bin-links
+ npm i  --no-bin-links
+ npm i  --no-bin-links
+ npm i  --no-bin-links
  Npm_Install
  fi
 else
