@@ -452,30 +452,6 @@
             "queue_name": "jd_inv_authorCode",
             "enable": true
         },
-        "jinggengInviteJoin": {
-            "name":"jinggeng邀请入会有礼",
-            "task": "bash jd HarbourJ_jd_jinggengInvite.py now",
-            "wait": 5,
-            "queue": true,
-            "queue_name": "jinggengInviteJoin",
-            "enable": true
-        },
-        "jd_joinCommonId": {
-            "name":"通用开卡-joinCommon系列",
-            "task": "bash jd HarbourJ_jd_joinCommon_opencard.py now",
-            "wait": 5,
-            "queue": true,
-            "queue_name": "jd_joinCommonId",
-            "enable": true
-        },
-        "jd_shopLeagueId": {
-            "name":"通用开卡-shopLeague系列",
-            "task": "bash jd HarbourJ_jd_shopLeague_opencard.py now",
-            "wait": 5,
-            "queue": true,
-            "queue_name": "jd_shopLeagueId",
-            "enable": true
-        },
         "jd_txzj_lottery_id": {
             "name":"txzj抽奖",
             "task": "bash jd wudongdefeng_jd_feverrun_wind_txzj_lottery.js now",
