@@ -1,0 +1,593 @@
+{
+    "api_id": 12345,
+    "api_hash": "",
+    "bot_id": 12345,
+    "bot_token": "12345:12345",
+    "user_id": ,
+    "proxy": true,
+    "proxy_type": "socks5",
+    "proxy_addr": "127.0.0.1",
+    "proxy_port": 10808,
+    "proxy_username": "",
+    "proxy_password": "",
+    "proxy_secret": "",
+    "log_path": "/ql/log",
+    "log_send": false,
+    "log_send_id": 12345,
+    "monitor_cache_size": 100,
+    "monitor_cars": [
+        -1001641077559,
+        5792870337
+    ],
+    "monitor_auto_stops": [
+        "jd_AutoOpenCard"
+    ],
+    "monitor_black_keywords": [
+        "(ShopToken)"
+    ],
+    "monitor_converters_whitelist_keywords": [
+        "(M_WX_)"
+    ],
+    "monitor_converters": {
+        "((?=.*LUCK_DRAW_URL)(?=.*https)^.*$)": {
+            "env": "export M_WX_LUCK_DRAW_URL=\"%s\""
+        },
+        "((?=.*M_WX_ADD_CART_URL)(?=.*https)^.*$)": {
+            "env": "export jd_wxCollectionActivity_activityUrl=\"%s\""
+        },
+        "((?=.*jd_wxCollectionActivityUrl)(?=.*https)^.*$)": {
+            "env": "export jd_wxCollectionActivity_activityUrl=\"%s\""
+        },
+        "^(?=(.|\\n)*jd_lzkj_wxBuildActivity_activityId)(.|\\n)*$": {
+            "env": "export jd_wxBuildActivity_activityId=\"%s\""
+        },
+        "M_WX_BUILD_DRAW_URL|url2id": {
+            "env": "export jd_wxBuildActivity_activityId=\"%s\""
+        },
+        "^(?=(.|\\n)*jd_wxShopGiftId)(.|\\n)*$": {
+            "env": "export PKC_TXGZYL=\"%s\""
+        },
+        "M_WX_SHOP_GIFT_URL|url2id": {
+            "env": "export PKC_TXGZYL=\"%s\""
+        },
+        "M_WX_FOLLOW_DRAW_URL|url2id": {
+            "env": "export jd_wxShopFollowActivity_activityId=\"%s\""
+        },
+        "M_WX_LEVEL_BIRTH_URL|url2id": {
+            "env": "export jd_wxMcLevelAndBirthGifts_activityId=\"%s\""
+        },
+        "^(?=(.|\\n)*jd_wxBirthGiftsId)(.|\\n)*$": {
+            "env": "export jd_wxMcLevelAndBirthGifts_activityId=\"%s\""
+        },
+        "M_WX_SECOND_DRAW_URL|url2id": {
+            "env": "export jd_wxSecond_activityId=\"%s\""
+        },
+        "jd_wxgame_wxId|url2id": {
+            "env": "export jd_wxgame_activityId=\"%s\""
+        },
+        "^(?=(.|\\n)*WXGAME_ACT_ID)(.|\\n)*$": {
+            "env": "export jd_wxgame_activityId=\"%s\""
+        },
+        "^(?=(.|\\n)*jd_fxyl_activityId)(.|\\n)*$": {
+            "env": "export jd_wxShareActivity_activityId=\"%s\""
+        },
+        "^(?=(.|\\n)*SHARE_ACTIVITY_ID)(.|\\n)*$": {
+            "env": "export jd_wxShareActivity_activityId=\"%s\""
+        },
+        "^(?=(.|\\n)*yhyauthorCode)(.|\\n)*$": {
+            "env": "export jd_inv_authorCode=\"%s\""
+        },
+        "((?=.*jd_wxDraw_wxId)(?=.*https)^.*$)": {
+            "env": "export LUCK_DRAW_URL=\"%s\""
+        },
+        "jd_wxCartKoi_wxId|url2id": {
+            "env": "export jd_wxCartKoi_activityId=\"%s\""
+        },
+        "jd_wxKnowledge_wxId|url2id": {
+            "env": "export jd_wxKnowledgeActivity_activityId=\"%s\""
+        },
+        "jd_wxTeam_wxId|url2id": {
+            "env": "export jd_cjhy_activityId=\"%s\""
+        },
+        "M_WX_TEAM_URL|url2id": {
+            "env": "export jd_cjhy_activityId=\"%s\""
+        },
+        "^(?=(.|\\n)*M_WX_WDZ_ID)(.|\\n)*$": {
+            "env": "export jd_wdz_activityId=\"%s\""
+        },
+        "^(?=(.|\\n)*jd_cjhy_activityId60)(.|\\n)*$": {
+            "env": "export jd_wdz_activityId=\"%s\""
+        }
+    },
+    "monitor_scripts": {
+        "M_FAV_SHOP_ARGV": {
+            "name":"M收藏有礼",
+            "task": "bash jd wudongdefeng_m_jd_fav_shop_gift.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "M_FAV_SHOP_ARGV",
+            "enable": true
+        },
+        "M_FOLLOW_SHOP_ARGV": {
+            "name":"M关注有礼",
+            "task": "bash jd wudongdefeng_m_jd_follow_shop.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "M_FOLLOW_SHOP_ARGV",
+            "enable": true
+        },
+        "jd_wxCollectionActivity_activityUrl": {
+            "name":"kingran加购",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_wxCollectionActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_wxCollectionActivity_activityUrl",
+            "enable": true
+        },
+        "M_WX_ADD_CART_URL": {
+            "name":"M加购",
+            "task": "bash jd wudongdefeng_m_jd_wx_addCart.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "M_WX_ADD_CART_URL",
+            "enable": false
+        },
+        "M_WX_BUILD_DRAW_URL": {
+            "name": "M盖楼领奖",
+            "task": "bash jd wudongdefeng_m_jd_wx_buildDraw.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "M_WX_BUILD_DRAW_URL",
+            "enable": true
+        },
+        "M_WX_CENTER_DRAW_URL": {
+            "name":"M老虎机抽奖",
+            "task": "bash jd wudongdefeng_m_jd_wx_centerDraw.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "M_WX_CENTER_DRAW_URL",
+            "enable": true
+        },
+        "M_WX_COLLECT_CARD_URL": {
+            "name":"M集卡抽奖",
+            "task": "bash jd wudongdefeng_m_jd_wx_collectCard.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "M_WX_COLLECT_CARD_URL",
+            "enable": false
+        },
+        "M_WX_FOLLOW_DRAW_URL": {
+            "name": "M关注有礼抽奖",
+            "task": "bash jd wudongdefeng_m_jd_wx_followDraw.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "M_WX_FOLLOW_DRAW_URL",
+            "enable": true
+        },
+        "M_WX_LEVEL_BIRTH_URL": {
+            "name": "M等级/生日礼包",
+            "task": "bash jd wudongdefeng_m_jd_wx_levelBirth.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "M_WX_LEVEL_BIRTH_URL",
+            "enable": true
+        },
+        "M_WX_LUCK_DRAW_URL": {
+            "name":"M无线店铺抽奖",
+            "task": "bash jd wudongdefeng_m_jd_wx_luckDraw.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "M_WX_LUCK_DRAW_URL",
+            "enable": true
+        },
+        "M_WX_SECOND_DRAW_URL": {
+            "name":"M读秒手速",
+            "task": "bash jd wudongdefeng_m_jd_wx_secondDraw.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "M_WX_SECOND_DRAW_URL",
+            "enable": true
+        },
+        "M_WX_SHOP_GIFT_URL": {
+            "name":"M关注有礼无线",
+            "task": "bash jd wudongdefeng_m_jd_wx_shopGift.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "M_WX_SHOP_GIFT_URL",
+            "enable": true
+        },
+        "jd_categoryUnion_activityId": {
+            "name":"品类联合任务",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_categoryUnion.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_categoryUnion_activityId",
+            "enable": true
+        },
+        "jd_cjwxKnowledgeActivity_activityId": {
+            "name":"CJ知识超人通用活动",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_cjhy_wxKnowledgeActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_cjwxKnowledgeActivity_activityId",
+            "enable": true
+        },
+        "jd_cjwxShopFollowActivity_activityId": {
+            "name":"CJ关注店铺有礼",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_cjwxShopFollowActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_cjwxShopFollowActivity_activityId",
+            "enable": true
+        },
+        "jd_cjhy_activityId": {
+            "name":"CJ组队瓜分",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_cjzdgf.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_cjhy_activityId",
+            "enable": true
+        },
+        "jd_completeInfoActivity_activityId": {
+            "name":"完善信息有礼",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_cjhy_completeInfoActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_completeInfoActivity_activityId",
+            "enable": true
+        },
+        "computer_activityIdList": {
+            "name":"电脑配件",
+            "task": "bash jd wudongdefeng_jd_faker_wind_computer.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "computer_activityIdList",
+            "enable": true
+        },
+        "jd_drawCenter_activityId": {
+            "name":"LZ刮刮乐抽奖",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_drawCenter.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_drawCenter_activityId",
+            "enable": true
+        },
+        "comm_activityIDList": {
+            "name":"JoyJd任务",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_joyjd_open.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "comm_activityIDList",
+            "enable": true
+        },
+        "JD_JOYOPEN": {
+            "name":"JOY通用开卡活动",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_joyopen.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "JD_JOYOPEN",
+            "enable": true
+        },
+        "JD_Lottery": {
+            "name":"通用抽奖机",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_lottery.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "JD_Lottery",
+            "enable": true
+        },
+        "LUCK_DRAW_URL": {
+            "name":"店铺抽奖通用活动",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_luck_draw.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "LUCK_DRAW_URL",
+            "enable": true
+        },
+        "VENDER_ID": {
+            "name":"强制入会",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_card_force.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "VENDER_ID",
+            "enable": true
+        },
+        "DPLHTY": {
+            "name":"大牌联合通用",
+            "task": "bash jd wudongdefeng_jd_opencardLH.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "DPLHTY",
+            "enable": true
+        },
+        "jd_fxyl_activityId": {
+            "name":"分享有礼",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_share.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_fxyl_activityId",
+            "enable": true
+        },
+        "PKC_TXGZYL": {
+            "name":"关注有礼特效",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_txgzyl.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "PKC_TXGZYL",
+            "enable": true
+        },
+        "jd_wdz_activityId": {
+            "name":"微定制",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_wdz.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_wdz_activityId",
+            "enable": true
+        },
+        "jd_wxBuildActivity_activityId": {
+            "name":"盖楼有礼",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_wxBuildActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_wxBuildActivity_activityId",
+            "enable": true
+        },
+        "jd_wxCartKoi_activityId": {
+            "name":"购物车锦鲤",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_wxCartKoi.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_wxCartKoi_activityId",
+            "enable": true
+        },
+        "jd_wxCollectCard_activityId": {
+            "name":"集卡抽奖",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_wxCollectCard.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_wxCollectCard_activityId",
+            "enable": false
+        },
+        "jd_wxFansInterActionActivity_activityId": {
+            "name":"粉丝互动",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_wxFansInterActionActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_wxFansInterActionActivity_activityId",
+            "enable": true
+        },
+        "jd_wxgame_activityId": {
+            "name":"LZ店铺游戏",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_wxgame.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_wxgame_activityId",
+            "enable": true
+        },
+        "jd_lzkj_wxDrawActivity_Id": {
+            "name":"LZ幸运抽奖",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_lzkj_wxDrawActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_lzkj_wxDrawActivity_Id",
+            "enable": true
+        },        
+        "jd_wxKnowledgeActivity_activityId": {
+            "name":"LZ知识超人",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_lzkj_wxKnowledgeActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_wxKnowledgeActivity_activityId",
+            "enable": true
+        },
+        "jd_wxMcLevelAndBirthGifts_activityId": {
+            "name":"生日礼包/会员等级礼包",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_wxMcLevelAndBirthGifts.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_wxMcLevelAndBirthGifts_activityId",
+            "enable": true
+        },
+        "jd_wxSecond_activityId": {
+            "name":"读秒拼手速",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_wxSecond.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_wxSecond_activityId",
+            "enable": true
+        },
+        "jd_wxShareActivity_activityId": {
+            "name":"分享有礼",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_wxShareActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_wxShareActivity_activityId",
+            "enable": true
+        },
+        "jd_wxShopFollowActivity_activityId": {
+            "name":"关注店铺抽奖",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_wxShopFollowActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_wxShopFollowActivity_activityId",
+            "enable": true
+        },
+        "jd_wxUnPackingActivity_activityId": {
+            "name":"LZ让福袋飞",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_wxUnPackingActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_wxUnPackingActivity_activityId",
+            "enable": true
+        },
+        "yhyauthorCode": {
+            "name":"邀请赢大礼",
+            "task": "bash jd wudongdefeng_lzkjdz-isv.py now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "yhyactivityId",
+            "enable": true
+        },
+        "jd_zdjr_activityId": {
+            "name":"组队瓜分京豆",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_zdjr.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_zdjr_activityId",
+            "enable": true
+        },
+        "jd_cjhy_completeInfoActivity_Ids": {
+            "name":"完善信息",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_cjhy_completeInfoActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_cjhy_completeInfoActivity_Ids",
+            "enable": true
+        },
+        "jd_inv_authorCode": {
+            "name":"邀好友赢大礼",
+            "task": "bash jd wudongdefeng_jd_inviteFriendsGift.py now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_inv_authorCode",
+            "enable": true
+        },
+        "jinggengInviteJoin": {
+            "name":"jinggeng邀请入会有礼",
+            "task": "bash jd HarbourJ_jd_jinggengInvite.py now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jinggengInviteJoin",
+            "enable": true
+        },
+        "jd_joinCommonId": {
+            "name":"通用开卡-joinCommon系列",
+            "task": "bash jd HarbourJ_jd_joinCommon_opencard.py now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_joinCommonId",
+            "enable": true
+        },
+        "jd_shopLeagueId": {
+            "name":"通用开卡-shopLeague系列",
+            "task": "bash jd HarbourJ_jd_shopLeague_opencard.py now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_shopLeagueId",
+            "enable": true
+        },
+        "jd_txzj_lottery_id": {
+            "name":"txzj抽奖",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_txzj_lottery.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_txzj_lottery_id",
+            "enable": true
+        },
+        "jd_cjhy_wxCollectionActivityId": {
+            "name":"cj加购",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_cjhy_wxCollectionActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_cjhy_wxCollectionActivityId",
+            "enable": true
+        },
+        "jd_cjhy_wxDrawActivity_Id": {
+            "name":"cj抽奖",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_cjhy_wxDrawActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_cjhy_wxDrawActivity_Id",
+            "enable": true
+        },
+        "jd_cjhy_wxKnowledgeActivity_activityId": {
+            "name":"cjhy知识超人",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_cjhy_wxKnowledgeActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_cjhy_wxKnowledgeActivity_activityId",
+            "enable": true
+        },
+        "jd_lzkj_wxBuildActivity_activityId": {
+            "name":"lzkj盖楼有礼",
+            "task": "bash jd wudongdefeng_jd_kingran_wind_wxBuildActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_lzkj_wxBuildActivity_activityId",
+            "enable": true
+        },
+        "jd_lzkj_wxCollectionActivityId": {
+            "name":"lz加购",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_lzkj_wxCollectionActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_lzkj_wxCollectionActivityId",
+            "enable": true
+        },
+        "jd_lzkj_wxKnowledgeActivity_activityId": {
+            "name":"lzkj知识超人",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_lzkj_wxKnowledgeActivity.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "jd_lzkj_wxKnowledgeActivity_activityId",
+            "enable": true
+        },
+        "WXGAME_ACT_ID": {
+            "name":"LZ店铺通用游戏任务",
+            "task": "bash jd wudongdefeng_jd_feverrun_wind_wxgame.js now",
+            "wait": 5,
+            "queue": true,
+            "queue_name": "WXGAME_ACT_ID",
+            "enable": true
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
