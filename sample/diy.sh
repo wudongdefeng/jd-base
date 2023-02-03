@@ -103,7 +103,6 @@ m_jx_factory_automation.js
 wind_shop_sign.js
 "
 
-
 ############################ 是否强制替换脚本的定时 ############################
 # 设为"true"时强制替换脚本的定时，设为"false"则不替换脚本的定时...
 Enablerenew="false"
