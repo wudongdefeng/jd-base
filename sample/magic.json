@@ -11,7 +11,7 @@
     "proxy_username": "",
     "proxy_password": "",
     "proxy_secret": "",
-    "log_path": "/ql/log",
+    "log_path": "/jd/log",
     "log_send": false,
     "log_send_id": 12345,
     "monitor_cache_size": 100,
@@ -542,52 +542,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
