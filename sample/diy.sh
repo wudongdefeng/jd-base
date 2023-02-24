@@ -17,7 +17,7 @@ wudongdefeng
 
 ############################## 维护:wudongdefeng ##############################
 # 库地址:https://github.com/wudongdefeng/jd-temporary
-scripts_base_url_1=https://git.dc-wind.ml/https://github.com/wudongdefeng/tem-update/blob/master
+scripts_base_url_1=https://git.dc-wind.ml/https://github.com/wudongdefeng/tem-update/blob/master/
 my_scripts_list_1="
 kingran/jd_categoryUnion.js
 kingran/jd_categoryUnion_draw.js
