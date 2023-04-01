@@ -59,6 +59,8 @@ js_config:
   Disable: 0
   Env: jd_cjhydz_microDz_Id
   KeyWord:
+  - - jd_task_wdz_custom
+  - - jd_wdz_activityId
   - - jd_cjhydz_microDz_Id
   Name: feverun-CJ微定制
   OverdueTime: 1800
@@ -70,6 +72,8 @@ js_config:
   Disable: 0
   Env: jd_cjhydz_wxTeam_Id
   KeyWord:
+  - - jd_task_cjzd_custom
+  - - jd_cjhy_activityId
   - - jd_cjhydz_wxTeam_Id
   Name: feverun-CJ组队瓜分
   OverdueTime: 1800
@@ -246,6 +250,8 @@ js_config:
   Disable: 0
   Env: jd_lzkjdz_wxTeam_Id
   KeyWord:
+  - - jd_task_lzzd_custom
+  - - jd_zdjr_activityId
   - - jd_lzkjdz_wxTeam_Id
   Name: feverun-lzkj组队瓜分
   OverdueTime: 1800
