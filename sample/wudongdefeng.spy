@@ -510,7 +510,9 @@ js_config:
   Disable: 0
   Env: M_WX_LUCK_DRAW_URL
   KeyWord:
+  - - jd_task_zpcj_custom
   - - M_WX_LUCK_DRAW_URL
+  - - LUCK_DRAW_URL
   Name: M幸运抽奖
   OverdueTime: 1800
   Script: m_jd_wx_luckDraw.js
@@ -532,6 +534,9 @@ js_config:
   Disable: 0
   Env: jd_wxCollectionActivityUrl
   KeyWord:
+  - - jd_task_jgyl_custom
+  - - M_WX_ADD_CART_URL
+  - - jd_wxCollectionActivity_activityUrl
   - - jd_wxCollectionActivityUrl
   Name: HarbourJ加购
   OverdueTime: 1800
