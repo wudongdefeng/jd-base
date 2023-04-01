@@ -1,0 +1,539 @@
+js_config:
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhy_wxGameActivity_activityId
+  KeyWord:
+  - - jd_cjhy_wxGameActivity_activityId
+  Name: feverun-CJ打豆豆
+  OverdueTime: 1800
+  Script: jd_cjhy_wxGameActivity.js
+  Wait: 5
+  - []
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhy_wxKnowledgeActivity_activityId
+  KeyWord:
+  - - jd_cjhy_wxKnowledgeActivity_activityId
+  Name: feverun-CJ知识达人
+  OverdueTime: 1800
+  Script: jd_cjhy_wxKnowledgeActivity.js
+  Wait: 5
+  KeyWord:
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhy_wxMcLevelAndBirthGifts_ids
+  KeyWord:
+  - - jd_cjhy_wxMcLevelAndBirthGifts_ids
+  Name: feverun-CJ生日
+  OverdueTime: 1800
+  Script: jd_cjhy_wxMcLevelAndBirthGifts.js
+  Wait: 5
+  Name: feverun-CJ收藏有礼
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhy_wxShopFollowActivity_activityId
+  KeyWord:
+  - - jd_cjhy_wxShopFollowActivity_activityId
+  Name: feverun-CJ收藏有礼
+  OverdueTime: 1800
+  Script: jd_cjhy_wxShopFollowActivity.js
+  Wait: 5
+  TimeOut: 0
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhy_wxShopGift_ids
+  KeyWord:
+  - - jd_cjhy_wxShopGift_ids
+  Name: feverun-CJ关注有礼
+  OverdueTime: 1800
+  Script: jd_cjhy_wxShopGift.js
+  Wait: 5
+- Container:
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhydz_microDz_Id
+  KeyWord:
+  - - jd_cjhydz_microDz_Id
+  Name: feverun-CJ微定制
+  OverdueTime: 1800
+  Script: jd_cjhydz_microDz.js
+  Wait: 5
+  Env: jd_drawCenter_activityId
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhydz_wxTeam_Id
+  KeyWord:
+  - - jd_cjhydz_wxTeam_Id
+  Name: feverun-CJ组队瓜分
+  OverdueTime: 1800
+  Script: jd_cjhydz_wxTeam.js
+  Wait: 5
+  - - jd_loreal_interact_yqrhyl_activityId
+- Container:
+  - []
+  Disable: 0
+  Env: jd_drawCenter_activityId
+  KeyWord:
+  - - jd_drawCenter_activityId
+  Name: feverrun店铺抽奖刮刮乐
+  OverdueTime: 1800
+  Script: jd_drawCenter.js
+  Wait: 5
+  Script: jd_lottery.js
+- Container:
+  - []
+  Disable: 0
+  Env: jd_loreal_interact_yqrhyl_activityId
+  KeyWord:
+  - - jd_loreal_interact_yqrhyl_activityId
+  Name: feverun-loreal_interact邀请好友
+  OverdueTime: 1800
+  Script: jd_loreal_interact_yqrhyl.js
+  Wait: 5
+  Wait: 5
+- Container:
+  - []
+  Disable: 0
+  Env: JD_Lottery
+  KeyWord:
+  - - JD_Lottery
+  Name: feverun-抽奖机
+  OverdueTime: 1800
+  Script: jd_lottery.js
+  Wait: 5
+  - []
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_interact_yqrhyl_activityId
+  KeyWord:
+  - - jd_lzkj_interact_yqrhyl_activityId
+  Name: feverun-lzkj_interact邀请好友
+  OverdueTime: 1800
+  Script: jd_lzkj_interact_yqrhyl.js
+  Wait: 5
+  KeyWord:
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_interactsaas_gzspyl_activityId
+  KeyWord:
+  - - jd_lzkj_interactsaas_gzspyl_activityId
+  Name: feverun-lzkj_interact关注有礼
+  OverdueTime: 1800
+  Script: jd_lzkj_interactsaas_gzspyl.js
+  Wait: 5
+  Name: feverun-lzkj_interactsaas邀请好友入会
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_interactsaas_gzyl_activityId
+  KeyWord:
+  - - jd_lzkj_interactsaas_gzyl_activityId
+  Name: feverun-lzkj_interactsaas关注有礼
+  OverdueTime: 1800
+  Script: jd_lzkj_interactsaas_gzyl.js
+  Wait: 5
+  TimeOut: 0
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_interactsaas_jgyl_activityId
+  KeyWord:
+  - - jd_lzkj_interactsaas_jgyl_activityId
+  Name: feverun-lzkj_interactsaas加购有礼
+  OverdueTime: 1800
+  Script: jd_lzkj_interactsaas_jgyl.js
+  Wait: 5
+- Container:
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_interactsaas_yqhyrh_activityId
+  KeyWord:
+  - - jd_lzkj_interactsaas_yqhyrh_activityId
+  Name: feverun-lzkj_interactsaas邀请好友入会
+  OverdueTime: 1800
+  Script: jd_lzkj_interactsaas_yqhyrh.js
+  Wait: 5
+  Env: jd_lzkj_wxCollectionActivityId
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_sevenDay_ids
+  KeyWord:
+  - - jd_lzkj_sevenDay_ids
+  Name: feverun-lzkj七日sevenday
+  OverdueTime: 1800
+  Script: jd_lzkj_sevenDay.js
+  Wait: 5
+  - - jd_lzkj_wxDrawActivity_Id
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_signActivity2_ids
+  KeyWord:
+  - - jd_lzkj_signActivity2_ids
+  Name: feverun-lzkj七日sign2
+  OverdueTime: 1800
+  Script: jd_lzkj_signActivity2.js
+  Wait: 5
+  Script: jd_lzkj_wxGameActivity.js
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_wxBuildActivity_activityId
+  KeyWord:
+  - - jd_lzkj_wxBuildActivity_activityId
+  Name: feverun-lzkj建楼有礼
+  OverdueTime: 1800
+  Script: jd_lzkj_wxBuildActivity.js
+  Wait: 5
+  Wait: 5
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_wxCollectionActivityId
+  KeyWord:
+  - - jd_lzkj_wxCollectionActivityId
+  Name: feverun-lzkj加购
+  OverdueTime: 1800
+  Script: jd_lzkj_wxCollectionActivity.js
+  Wait: 5
+  - []
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_wxDrawActivity_Id
+  KeyWord:
+  - - jd_lzkj_wxDrawActivity_Id
+  Name: feverun-lzkj抽奖
+  OverdueTime: 1800
+  Script: jd_lzkj_wxDrawActivity.js
+  Wait: 5
+  KeyWord:
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_wxGameActivity_activityId
+  KeyWord:
+  - - jd_lzkj_wxGameActivity_activityId
+  Name: feverun-lzkj打豆豆
+  OverdueTime: 1800
+  Script: jd_lzkj_wxGameActivity.js
+  Wait: 5
+  Name: feverun-大牌联合
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_wxKnowledgeActivity_activityId
+  KeyWord:
+  - - jd_lzkj_wxKnowledgeActivity_activityId
+  Name: feverun-lzkj知识达人
+  OverdueTime: 1800
+  Script: jd_lzkj_wxKnowledgeActivity.js
+  Wait: 5
+  TimeOut: 0
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_wxShopFollowActivity_activityId
+  KeyWord:
+  - - jd_lzkj_wxShopFollowActivity_activityId
+  Name: feverun-lzkj收藏有礼
+  OverdueTime: 1800
+  Script: jd_lzkj_wxShopFollowActivity.js
+  Wait: 5
+- Container:
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_wxShopGift_ids
+  KeyWord:
+  - - jd_lzkj_wxShopGift_ids
+  Name: feverun-lzkj关注有礼
+  OverdueTime: 1800
+  Script: jd_lzkj_wxShopGift.js
+  Wait: 5
+  Env: jd_txzj_lottery_id
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkjdz_wxTeam_Id
+  KeyWord:
+  - - jd_lzkjdz_wxTeam_Id
+  Name: feverun-lzkj组队瓜分
+  OverdueTime: 1800
+  Script: jd_lzkjdz_wxTeam.js
+  Wait: 5
+  - - jd_txzj_sign_in_id
+- Container:
+  - []
+  Disable: 0
+  Env: DPLHTY
+  KeyWord:
+  - - DPLHTY
+  Name: feverun-大牌联合
+  OverdueTime: 1800
+  Script: jd_opencardLH.js
+  Wait: 5
+  Script: jd_wxCollectCard.js
+- Container:
+  - []
+  Disable: 0
+  Env: jd_openLuckBag_Id
+  KeyWord:
+  - - jd_openLuckBag_Id
+  Name: feverun-幸运福袋
+  OverdueTime: 1800
+  Script: jd_openLuckBag.js
+  Wait: 5
+  Wait: 5
+- Container:
+  - []
+  Disable: 0
+  Env: jd_shopGifts_ids
+  KeyWord:
+  - - jd_shopGifts_ids
+  Name: feverun-店铺礼包
+  OverdueTime: 1800
+  Script: jd_shopGifts.js
+  Wait: 5
+  - []
+- Container:
+  - []
+  Disable: 0
+  Env: jd_txzj_collect_item_id
+  KeyWord:
+  - - jd_txzj_collect_item_id
+  Name: feverun-txzj收藏有礼
+  OverdueTime: 1800
+  Script: jd_txzj_collect_item.js
+  Wait: 5
+  KeyWord:
+- Container:
+  - []
+  Disable: 0
+  Env: jd_txzj_lottery_id
+  KeyWord:
+  - - jd_txzj_lottery_id
+  Name: feverun-txzj抽奖
+  OverdueTime: 1800
+  Script: jd_txzj_lottery.js
+  Wait: 5
+  Name: 邀请赢大礼
+- Container:
+  - []
+  Disable: 0
+  Env: jd_txzj_sign_in_id
+  KeyWord:
+  - - jd_txzj_sign_in_id
+  Name: feverun-txzj签到
+  OverdueTime: 1800
+  Script: jd_txzj_sign_in.js
+  Wait: 5
+  TimeOut: 0
+- Container:
+  - []
+  Disable: 0
+  Env: jd_wxCollectCard_activityId
+  KeyWord:
+  - - jd_wxCollectCard_activityId
+  Name: feverun-集卡有礼
+  OverdueTime: 1800
+  Script: jd_wxCollectCard.js
+  Wait: 5
+- Container:
+- Container:
+  - []
+  Disable: 0
+  Env: jd_wxFansInterActionActivity_activityId
+  KeyWord:
+  - - jd_wxFansInterActionActivity_activityId
+  Name: feverun-粉丝互动
+  OverdueTime: 1800
+  Script: jd_wxFansInterActionActivity.js
+  Wait: 5
+  Env: VENDER_ID
+- Container:
+  - []
+  Disable: 0
+  Env: jd_wxSecond_activityId
+  KeyWord:
+  - - jd_wxSecond_activityId
+  Name: feverun-读秒
+  OverdueTime: 1800
+  Script: jd_wxSecond.js
+  Wait: 5
+  - - jd_cjhy_completeInfoActivity_Ids
+- Container:
+  - []
+  Disable: 0
+  Env: jd_wxShareActivity_activityId
+  KeyWord:
+  - - jd_wxShareActivity_activityId
+  Name: feverun-分享有礼
+  OverdueTime: 1800
+  Script: jd_wxShareActivity.js
+  Wait: 5
+  Script: jd_cjhy_daily.js
+- Container:
+  - []
+  Disable: 0
+  Env: jd_wxUnPackingActivity_activityId
+  KeyWord:
+  - - jd_wxUnPackingActivity_activityId
+  Name: feverun-让福袋飞
+  OverdueTime: 1800
+  Script: jd_wxUnPackingActivity.js
+  Wait: 5
+  Wait: 5
+- Container:
+  - []
+  Disable: 0
+  Env: jd_inv_authorCode
+  KeyWord:
+  - - jd_inv_authorCode
+  Name: 邀请赢大礼
+  OverdueTime: 1800
+  Script: jd_inviteFriendsGift.py
+  Wait: 5
+  - []
+- Container:
+  - []
+  Disable: 0
+  Env: jinggengInviteJoin
+  KeyWord:
+  - - jinggengInviteJoin
+  Name: jinggeng邀请入会有礼
+  OverdueTime: 1800
+  Script: jd_jinggengInvite.py
+  Wait: 5
+  KeyWord:
+- Container:
+  - []
+  Disable: 0
+  Env: jd_joinCommonId
+  KeyWord:
+  - - jd_joinCommonId
+  Name: 通用开卡-joinCommon系列
+  OverdueTime: 1800
+  Script: jd_joinCommon_opencard.py
+  Wait: 5
+  Name: feverrun-LZ每日抢
+- Container:
+  - []
+  Disable: 0
+  Env: jd_shopLeagueId
+  KeyWord:
+  - - jd_shopLeagueId
+  Name: 通用开卡-shopLeague系列
+  OverdueTime: 1800
+  Script: jd_shopLeague_opencard.py
+  Wait: 5
+  TimeOut: 0
+- Container:
+  - []
+  Disable: 0
+  Env: VENDER_ID
+  KeyWord:
+  - - VENDER_ID
+  Name: feverun-强制入会
+  OverdueTime: 1800
+  Script: jd_card_force.js
+  Wait: 5
+
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhy_completeInfoActivity_Ids
+  KeyWord:
+  - - jd_cjhy_completeInfoActivity_Ids
+  Name: feverun-CJ完善信息有礼
+  OverdueTime: 1800
+  Script: jd_cjhy_completeInfoActivity.js
+  Wait: 5
+
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhy_daily_ids
+  KeyWord:
+  - - jd_cjhy_daily_ids
+  Name: feverun-CJ每日抢
+  OverdueTime: 1800
+  Script: jd_cjhy_daily.js
+  Wait: 5
+
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhy_sevenDay_ids
+  KeyWord:
+  - - jd_cjhy_sevenDay_ids
+  Name: feverun-CJ七日签到seven
+  OverdueTime: 1800
+  Script: jd_cjhy_sevenDay.js
+  Wait: 5
+
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhy_signActivity_ids
+  KeyWord:
+  - - jd_cjhy_signActivity_ids
+  Name: feverun-CJ七日签到sign
+  OverdueTime: 1800
+  Script: jd_cjhy_signActivity.js
+  Wait: 5
+
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhy_wxCollectionActivityId
+  KeyWord:
+  - - jd_cjhy_wxCollectionActivityId
+  Name: feverun-CJ加购
+  OverdueTime: 1800
+  Script: jd_cjhy_wxCollectionActivity.js
+  Wait: 5
+
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhy_wxDrawActivity_Id
+  KeyWord:
+  - - jd_cjhy_wxDrawActivity_Id
+  Name: feverun-CJ店铺抽奖
+  OverdueTime: 1800
+  Script: jd_cjhy_wxDrawActivity.js
+  Wait: 5
+
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_daily_ids
+  KeyWord:
+  - - jd_lzkj_daily_ids
+  Name: feverrun-LZ每日抢
+  OverdueTime: 1800
+  Script: jd_lzkj_daily.js
+  Wait: 5
+
+- Container:
+  - []
+  Disable: 0
+  Env: jd_wxCartKoi_activityId
+  KeyWord:
+  - - jd_wxCartKoi_activityId
+  Name: feverrun-购物车锦鲤
+  OverdueTime: 1800
+  Script: jd_wxCartKoi.js
+  Wait: 5
