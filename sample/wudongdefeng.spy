@@ -514,14 +514,14 @@ js_config:
 - Container:
   - []
   Disable: 0
-  Env: M_WX_LUCK_DRAW_URL
+  Env: LUCK_DRAW_URL
   KeyWord:
   - - jd_task_zpcj_custom
   - - M_WX_LUCK_DRAW_URL
   - - LUCK_DRAW_URL
-  Name: M幸运抽奖
+  Name: kingran幸运抽奖
   OverdueTime: 1800
-  Script: m_jd_wx_luckDraw.js
+  Script: jd_luck_draw.js
   TimeOut: 3600
   Wait: 5
 - Container:
