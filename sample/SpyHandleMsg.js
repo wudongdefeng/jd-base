@@ -418,7 +418,7 @@ function ListS() {
             ],
         },
         {
-            keyword: "https://cjhy-isv.isvjcloud.com/mc/wxPointShopView/pointExgHb?giftId=",
+            keyword: "https://cjhy-isv.isvjcloud.com/mc/wxPointShopView",
             name: '积分兑换',
             trans: [
                 {
