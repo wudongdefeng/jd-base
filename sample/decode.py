@@ -41,6 +41,16 @@ url_rules = {  # 格式  "变量": "正则表达式"，正则表达式可以去�
     "/interactsaas\/index\?activityType=10053/: "jd_lzkj_interactsaas_gzspyl_activityId",
     "/interactsaas\/index\?activityType=10069/: "jd_lzkj_interactsaas_gzyl_activityId",
     "/interactsaas\/index\?activityType=10070/: "jd_lzkj_interactsaas_yqhyrh_activityId",
+    "wxCollectionActivity/activity: "jd_wxCollectionActivity_activityUrl",
+    "wxDrawActivity|lzclient: "LUCK_DRAW_URL",
+    "wxShopFollowActivity: "jd_wxShopFollowActivity_activityUrl",
+    "wxKnowledgeActivity: "jd_wxKnowledgeActivity_activityUrl",
+    "(lzkj-isv.isvj(clou)?d.com\/wxShopGift)|(cjhy-isv\.isvjcloud\.com\/wxShopGift): "jd_wxShopGift_activityUrl",
+    "https://txzj-isv.isvjcloud.com/cart_item: "jd_cart_item_activityUrl",
+    "https://txzj-isv.isvjcloud.com/collect_item: "jd_collect_item_activityUrl",
+    "https://txzj-isv.isvjcloud.com/collect_shop: "jd_collect_shop_activityUrl",
+    "https://txzj-isv.isvjcloud.com/lottery: "jd_lottery_activityUrl",
+    "jinggeng-isv\.isvj(clou)?d\.com\/ql\/front\/showInviteJoin: "jd_showInviteJoin_activityUrl",
 }
 
 
