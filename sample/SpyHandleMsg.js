@@ -269,8 +269,8 @@ function ListS() {
         },
 
         {
-            keyword: 'https://cjhy-isv.isvjcloud.com/mc/wxMcLevelAndBirthGifts/activity',
-            name: 'CJ生日礼包和会员等级礼包',
+            keyword: 'https://lzkj-isv.isvjcloud.com/mc/wxMcLevelAndBirthGifts/activity',
+            name: 'LZ生日礼包和会员等级礼包',
             trans: [
                 {
                     ori: 'activityId',
