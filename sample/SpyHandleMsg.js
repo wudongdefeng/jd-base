@@ -391,32 +391,11 @@ function ListS() {
             trans: [
                 {
                     ori: 'code',
-                    redi: 'yhyauthorCode',
+                    redi: 'jd_inv_authorCode',
                 },
             ],
         },
 
-        {
-            keyword: 'https://jinggengjcq-isv.isvjcloud.com',
-            name: '大牌联合开卡',
-            trans: [
-                {
-                    ori: 'actId',
-                    redi: 'DPLHTY',
-                },
-            ],
-        },
-
-        {
-            keyword: 'https://mpdz-dz.isvjcloud.com',
-            name: '大牌联合开卡',
-            trans: [
-                {
-                    ori: 'actId',
-                    redi: 'DPLHTY',
-                },
-            ],
-        },
         {
             keyword: "https://cjhy-isv.isvjcloud.com/mc/wxPointShopView",
             name: '积分兑换',
@@ -442,8 +421,8 @@ function ListS() {
             name: '店铺刮刮乐',
             trans: [
                 {
-                    ori: '-1',
-                    redi: 'jd_shopDraw_activityUrl', //kr
+                    ori: 'shopID',
+                    redi: 'DPCJID', //kr
                 },
             ],
         },
@@ -716,46 +695,46 @@ function ListS() {
                 },
             ],
         },
-        {
-            keyword: /cjhy-isv\.isvjcloud\.com\/sign\/signActivity/,
-            name: 'CJ超级店铺无线签到',
-            trans: [
-                {
-                    ori: 'activityId',
-                    redi: 'jd_cjhy_signActivity_ids',
-                },
-            ],
-        },
-        {
-            keyword: /cjhy-isv.isvj(clou)?d.com\/sign\/sevenDay\/signActivity/,
-            name: 'CJ超级店铺无线签到',
-            trans: [
-                {
-                    ori: 'activityId',
-                    redi: 'jd_cjhy_sevenDay_ids',
-                },
-            ],
-        },
-        {
-            keyword: /lzkj-isv.isvj(clou)?d.com\/sign\/signActivity/,
-            name: 'LZ超级店铺无线签到',
-            trans: [
-                {
-                    ori: 'activityId',
-                    redi: 'jd_lzkj_signActivity2_ids',
-                },
-            ],
-        },
-        {
-            keyword: /lzkj-isv.isvj(clou)?d.com\/sign\/sevenDay/,
-            name: 'LZ超级店铺无线签到',
-            trans: [
-                {
-                    ori: 'activityId',
-                    redi: 'jd_lzkj_sevenDay_ids',
-                },
-            ],
-        },
+       // {
+         //   keyword: /cjhy-isv\.isvjcloud\.com\/sign\/signActivity/,
+          //  name: 'CJ超级店铺无线签到',
+           // trans: [
+             //   {
+              //      ori: 'activityId',
+               //     redi: 'jd_cjhy_signActivity_ids',
+               // },
+           // ],
+        //},
+       // {
+         //   keyword: /cjhy-isv.isvj(clou)?d.com\/sign\/sevenDay\/signActivity/,
+        //    name: 'CJ超级店铺无线签到',
+         //   trans: [
+         //       {
+           //         ori: 'activityId',
+            //        redi: 'jd_cjhy_sevenDay_ids',
+              //  },
+            //],
+        //},
+       // {
+         //   keyword: /lzkj-isv.isvj(clou)?d.com\/sign\/signActivity/,
+         //   name: 'LZ超级店铺无线签到',
+          //  trans: [
+           //     {
+            //        ori: 'activityId',
+            //        redi: 'jd_lzkj_signActivity2_ids',
+            //    },
+           // ],
+        //},
+        //{
+         //   keyword: /lzkj-isv.isvj(clou)?d.com\/sign\/sevenDay/,
+        //    name: 'LZ超级店铺无线签到',
+         //   trans: [
+         //       {
+         //           ori: 'activityId',
+          //          redi: 'jd_lzkj_sevenDay_ids',
+          //      },
+          //  ],
+        //},
         {
             keyword: /lzkj-isv.isvj(clou)?d.com\/wxBuildActivity/,
             name: 'LZ盖楼有礼',
