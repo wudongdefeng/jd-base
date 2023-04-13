@@ -522,7 +522,7 @@ function ListS() {
             ],
         },
         {
-            keyword: "https://cjhy-isv.isvjcloud.com/wxShopFollowActivity/activity",
+            keyword: /https:\/\/lzkj-isv\.isvj(clou)?d\.com\/wxShopFollowActivity/,
             name: "LZ店铺关注抽奖",
             trans: [
                 {
@@ -532,7 +532,7 @@ function ListS() {
             ],
         },
         {
-            keyword: /https:\/\/lzkj-isv\.isvj(clou)?d\.com\/wxShopFollowActivity/,
+            keyword: /https:\/\/cjhy-isv\.isvj(clou)?d\.com\/wxShopFollowActivity/,
             name: 'CJ店铺关注抽奖',
             trans: [
                 {
