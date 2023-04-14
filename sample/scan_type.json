@@ -1,0 +1,75 @@
+{ 
+  "/cjhy(dz)?-isv\.isvjcloud\.com\/wxTeam\/activity/": "jd_cjhy_activityId',
+  "/lzkj(dz)?-isv\.isvj(clou)?d.com\/wxTeam\/activity/": "jd_zdjr_activityId',
+  "/cjhy(dz)?-isv\.isvjcloud\.com\/microDz\/invite\/activity/": "jd_wdz_activityId',
+  "/cjhy(dz)?-isv\.isvjcloud\.com\/microDz\/invite\/openLuckBag/": "jd_wdzfd_activityId',
+  "/lzkj(dz)?-isv\.isvjcloud.com\/wxCollectCard/": "jd_wxCollectCard_activityId', //kr
+  "'wxCollectionActivity/activity'": "jd_wxCollectionActivity_activityUrl', //kr
+  "/wxDrawActivity|lzclient/": "LUCK_DRAW_URL', //kr
+  "/lzkj(dz)?-isv\.isvj(clou)?d.com\/wxgame/": "jd_wxgame_activityId', //kr
+  "/lzkj(dz)?-isv\.isvj(clou)?d\.com\/wxSecond/": "jd_wxSecond_activityId', //kr
+  "'wxCartKoi/cartkoi'": "jd_wxCartKoi_activityId',
+  "'wxShopFollowActivity'": "jd_wxShopFollowActivity_activityUrl',
+  "/https:\/\/lzkj-isv.isvj(clou)?d.com\/drawCenter/": "jd_drawCenter_activityId',
+  "/lzkjdz-isv.isvj(clou)?d.com\/wxFansInterActionActivity/": "jd_wxFansInterActionActivity_activityId',
+  "/lzkj(dz)?-isv.isvj(clou)?d.com\/wxShareActivity/": "jd_wxShareActivity_activityId',
+  "'https://jdjoy.jd.com/module/task/v2/doTask'": "comm_activityIDList',
+  "/lzkjdz-isv.isvj(clou)?d.com\/wxUnPackingActivity/": "jd_wxUnPackingActivity_activityId',
+  "'https://cjhy-isv.isvjcloud.com/wx/completeInfoActivity/view/activity'": "jd_completeInfoActivity_activityId',
+  "'https://lzkj-isv.isvjcloud.com/mc/wxMcLevelAndBirthGifts/activity'": "jd_wxMcLevelAndBirthGifts_activityId',
+  "/https:\/\/lzkj-isv.isvj(clou)?d.com\/wxBuildActivity/": "jd_wxBuildActivity_activityId', //kr
+  "/wxKnowledgeActivity/": "jd_wxKnowledgeActivity_activityUrl', //KR
+  "'https://cjhy-isv.isvjcloud.com/wxKnowledgeActivity/activity'": "jd_cjwxKnowledgeActivity_activityId', //kr
+  "'https://cjhy-isv.isvjcloud.com/activity/daily/'": "jd_cjdaily_activityId',
+  "/(lzkj-isv.isvj(clou)?d.com\/wxShopGift)|(cjhy-isv\.isvjcloud\.com\/wxShopGift)/": "jd_wxShopGift_activityUrl', //kr
+  "'https://txzj-isv.isvjcloud.com/cart_item'": "jd_cart_item_activityUrl', //kr
+  "'https://txzj-isv.isvjcloud.com/collect_item'": "jd_collect_item_activityUrl', //kr
+  "'https://txzj-isv.isvjcloud.com/collect_shop'": "jd_collect_shop_activityUrl', //kr
+  "'https://txzj-isv.isvjcloud.com/lottery'": "jd_lottery_activityUrl', //kr
+  "'https://cjhy-isv.isvjcloud.com/wxInviteActivity/openCard/invitee'": "VENDER_ID',
+  "/pro(dev)?\.m\.jd\.com\/mall\/active\/dVF7gQUVKyUcuSsVhuya5d2XD4F/": "jd_inv_authorCode',
+  ""https://cjhy-isv.isvjcloud.com/mc/wxPointShopView"": "POINT_EXCHANGE_URL', //kr
+  "/jinggeng-isv\.isvj(clou)?d\.com\/ql\/front\/showInviteJoin/": "jd_showInviteJoin_activityUrl', //kr
+  "/shop\.m\.jd.com\/shop\/lottery/": "DPCJID', //kr
+  "/(interactsaas|interact)\/index\?activityType=(10006|10070)/": "jd_lzkj_loreal_invite_url', //kr
+  "/interactsaas\/index\?activityType=(10020|10021|10026|10080)/": "jd_lzkj_loreal_draw_url', //kr
+  "/(interactsaas|interact)\/index\?activityType=10024/": "jd_lzkj_loreal_cart_url', //kr
+  "/(interactsaas|interact)\/index\?activityType=10069/": "jd_lzkj_loreal_followShop_url', //kr
+  "/cjhy(dz)?-isv\.isvjcloud\.com\/wxTeam\/activity/": "jd_cjhydz_wxTeam_Id',
+  "/lzkj(dz)?-isv\.isvj(clou)?d.com\/wxTeam\/activity/": "jd_lzkjdz_wxTeam_Id',
+  "/cjhy(dz)?-isv\.isvjcloud\.com\/microDz\/invite\/activity/": "jd_cjhydz_microDz_Id',
+  "/https:\/\/lzkj-isv\.isvj(clou)?d\.com\/wxShopFollowActivity/": ""jd_lzkj_wxShopFollowActivity_activityId"
+  "/https:\/\/cjhy-isv\.isvj(clou)?d\.com\/wxShopFollowActivity/": "jd_cjhy_wxShopFollowActivity_activityId',
+  "/cjhy(dz)?-isv\.isvjcloud\.com\/microDz\/invite\/openLuckBag/": "jd_openLuckBag_Id',
+  "/lzkj-isv\.isvj(clou)?d\.com\/wxGameActivity/": "jd_lzkj_wxGameActivity_activityId', //环保
+  "/lzkj-isv\.isvj(clou)?d.com\/wxgame/": "WXGAME_ACT_ID', //环保
+  "'https://cjhy-isv.isvjcloud.com/wxGameActivity/activity'": "jd_cjhy_wxGameActivity_activityId', //环保
+  "'https://lzkj-isv.isvjcloud.com/wxKnowledgeActivity/activity'": "jd_lzkj_wxKnowledgeActivity_activityId', //环保
+  "'https://cjhy-isv.isvjcloud.com/wxKnowledgeActivity/activity'": "jd_cjhy_wxKnowledgeActivity_activityId', //环保
+  "'https://txzj-isv.isvjcloud.com/cart_item'": "jd_txzj_cart_item_id',
+  "'https://txzj-isv.isvjcloud.com/collect_item'": "jd_txzj_collect_item_id',
+  "'https://txzj-isv.isvjcloud.com/sign_in'": "jd_txzj_sign_in_id',
+  "'https://txzj-isv.isvjcloud.com/lottery'": "jd_txzj_lottery_id',
+  "'https://cjhy-isv.isvjcloud.com/activity/daily/'": "jd_cjhy_daily_ids',
+  "'https://cjhy-isv.isvjcloud.com/mc/wxMcLevelAndBirthGifts/activity'": "jd_cjhy_wxMcLevelAndBirthGifts_ids',
+  "/(cjhy|lzkj)-isv\.isvj(clou)?d\.com\/sign/": "jd_sevenDay_activityUrl',
+  "/lzkj-isv.isvj(clou)?d.com\/wxBuildActivity/": "jd_lzkj_wxBuildActivity_activityId',
+  "/lzkj-isv\.isvj(clou)?d.com\/wxShopGift/": "jd_lzkj_wxShopGift_ids',
+  "/cjhy-isv\.isvjcloud\.com\/wxShopGift/": "jd_cjhy_wxShopGift_ids',
+  "/interact\/index\?activityType=10006/": "jd_loreal_interact_yqrhyl_activityId',
+  "/interactsaas\/index\?activityType=10006/": "jd_lzkj_interactsaas_yqrhyl_activityId',
+  "/interactsaas\/index\?activityType=10024/": "jd_lzkj_interactsaas_jgyl_activityId',
+  "/interactsaas\/index\?activityType=10069/": "jd_lzkj_interactsaas_gzyl_activityId',
+  "/interactsaas\/index\?activityType=10053/": "jd_lzkj_interactsaas_gzspyl_activityId',
+  "'https://wqs.jd.com/promote/2023/spring2023/index.html'": "krtycode',
+  "'https://lzdz-isv.isvjd.com/categoryUnion/categoryUnionActivity/'": "jd_categoryUnion_activityId',
+  "/interactsaas\/\?activityType=10024/": "jd_lzkj_interactsaas_jgyl_activityId',
+  "/interactsaas\/index\?activityType=10023/": "jd_lzkj_interactsaas_rlqd_Ids',
+  "/interactsaas\/\?activityType=10023/": "jd_lzkj_interactsaas_rlqd_Ids',
+  "/interactsaas\/index\?activityType=10040/": "jd_lzkj_interactsaas_qrqd_Ids',
+  "/interactsaas\/\?activityType=10040/": "jd_lzkj_interactsaas_qrqd_Ids',
+  "/interactsaas\/index\?activityType=10001/": "jd_loreal_interact_ljqdysl_Ids',
+  "/interactsaas\/\?activityType=10001/": "jd_loreal_interact_ljqdysl_Ids',
+  "/interactsaas\/index\?activityType=10047/": "jd_lzkj_interactsaas_glyl_Ids',
+  "/interactsaas\/\?activityType=10047/": "jd_lzkj_interactsaas_glyl_Ids',
+}
