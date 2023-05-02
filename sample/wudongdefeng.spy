@@ -513,6 +513,6 @@ js_config:
   - - jd_wxCollectionActivityUrl
   Name: HarbourJ加购
   OverdueTime: 1800
-  Script: HarbourJ/jd_wxCollectionActivity.py
+  Script: jd_wxCollectionActivity.py
   TimeOut: 3600
   Wait: 5
