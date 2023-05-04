@@ -157,12 +157,12 @@ js_config:
   Wait: 5
 - Container:
   - []
-  Disable: 0
+  Disable: 1
   Env: LUCK_DRAW_URL
   KeyWord:
   - - LUCK_DRAW_URL
   - - M_WX_LUCK_DRAW_URL
-  Name: 店铺抽奖通用活动
+  Name: kingran店铺抽奖通用活动
   OverdueTime: 1800
   Script: wudongdefeng_tem-update/jd_luck_draw.js
   TimeOut: 3600
