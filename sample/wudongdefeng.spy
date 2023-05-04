@@ -239,7 +239,7 @@ js_config:
   Wait: 5
 - Container:
   - []
-  Disable: 0
+  Disable: 1
   Env: M_WX_TEAM_URL
   KeyWord:
   - - M_WX_TEAM_URL
