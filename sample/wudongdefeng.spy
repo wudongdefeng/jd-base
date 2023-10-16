@@ -1,24 +1,13 @@
 js_config:
 - Container:
   - []
-  Disable: 1
-  Env: M_FAV_SHOP_ARGV
-  KeyWord:
-  - - M_FAV_SHOP_ARGV
-  Name: M收藏有礼
-  OverdueTime: 1800
-  Script: m_jd_fav_shop_gift.js
-  TimeOut: 3600
-  Wait: 5
-- Container:
-  - []
   Disable: 0
   Env: jd_shopFollowGiftId
   KeyWord:
   - - jd_shopFollowGiftId
   Name: 关注有礼
   OverdueTime: 1800
-  Script:HarbourJ/jd_shopFollowGift.py
+  Script: HarbourJ/jd_shopFollowGift.py
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -29,7 +18,7 @@ js_config:
   - - jd_wxCollectionActivity_activityUrl
   Name: kingran加购
   OverdueTime: 1800
-  Script:jd_wxCollectionActivity.js
+  Script: wudongdefeng_tem-update/jd_wxCollectionActivity.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -40,7 +29,7 @@ js_config:
   - - jd_drawCenter_activityId
   Name: kingran老虎机抽奖
   OverdueTime: 1800
-  Script:jd_drawCenter.js
+  Script: wudongdefeng_tem-update/jd_drawCenter.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -51,7 +40,7 @@ js_config:
   - - jd_lzkj_loreal_draw_url
   Name: kingran_lzkj_loreal抽奖
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_draw.js
+  Script: wudongdefeng_tem-update/jd_lzkj_loreal_draw.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -62,7 +51,7 @@ js_config:
   - - jd_lzkj_loreal_draw_url
   Name: kingran_lzkj_loreal抽奖
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_draw.js
+  Script: wudongdefeng_tem-update/jd_lzkj_loreal_draw.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -73,7 +62,7 @@ js_config:
   - - jd_wxBuildActivity_activityId
   Name: kingran盖楼领奖
   OverdueTime: 1800
-  Script:jd_wxBuildActivity.js
+  Script: wudongdefeng_tem-update/jd_wxBuildActivity.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -84,7 +73,7 @@ js_config:
   - - M_FANS_RED_PACKET_URL
   Name: M粉丝红包
   OverdueTime: 1800
-  Script:m_jd_fans_redPackt.js
+  Script: wudongdefeng_tem-update/m_jd_fans_redPackt.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -95,7 +84,7 @@ js_config:
   - - jd_wxKnowledgeActivity_activityUrl
   Name: kingran知识超人
   OverdueTime: 1800
-  Script:jd_wxKnowledgeActivity.js
+  Script: wudongdefeng_tem-update/jd_wxKnowledgeActivity.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -106,7 +95,7 @@ js_config:
   - - jd_wxShareActivity_activityId
   Name: LZ分享有礼
   OverdueTime: 1800
-  Script:jd_wxShareActivity.js
+  Script: wudongdefeng_tem-update/jd_wxShareActivity.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -117,7 +106,7 @@ js_config:
   - - jd_wxKnowledgeActivity_activityUrl
   Name: 完善信息有礼
   OverdueTime: 1800
-  Script:jd_wxKnowledgeActivity.js
+  Script: wudongdefeng_tem-update/jd_wxKnowledgeActivity.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -128,7 +117,7 @@ js_config:
   - - jd_wxShopFollowActivity_activityUrl
   Name: kingran关注有礼抽奖
   OverdueTime: 1800
-  Script:jd_wxShopFollowActivity.js
+  Script: wudongdefeng_tem-update/jd_wxShopFollowActivity.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -139,7 +128,7 @@ js_config:
   - - jd_wxMcLevelAndBirthGifts_activityId
   Name: kingran等级/生日礼包
   OverdueTime: 1800
-  Script:jd_wxMcLevelAndBirthGifts.js
+  Script: wudongdefeng_tem-update/jd_wxMcLevelAndBirthGifts.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -150,7 +139,7 @@ js_config:
   - - LUCK_DRAW_URL
   Name: 幸运抽奖
   OverdueTime: 1800
-  Script:luck_draw.js
+  Script: luck_draw.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -161,7 +150,7 @@ js_config:
   - - jd_wxgame_activityId
   Name: kingran无线游戏
   OverdueTime: 1800
-  Script:jd_wxgame.js
+  Script: wudongdefeng_tem-update/jd_wxgame.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -172,7 +161,7 @@ js_config:
   - - jd_wxShopGift_activityUrl
   Name: M关注有礼无线
   OverdueTime: 1800
-  Script:jd_wxShopGift.js
+  Script: wudongdefeng_tem-update/jd_wxShopGift.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -183,7 +172,7 @@ js_config:
   - - jd_pointExgBeans_activityUrl
   Name: 积分兑换
   OverdueTime: 1800
-  Script:jd_pointExgBeans.js
+  Script: wudongdefeng_tem-update/jd_pointExgBeans.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -194,7 +183,7 @@ js_config:
   - - jd_wxCartKoi_activityId
   Name: 购物车锦鲤
   OverdueTime: 1800
-  Script:jd_wxCartKoi.js
+  Script: wudongdefeng_tem-update/jd_wxCartKoi.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -205,7 +194,7 @@ js_config:
   - - jd_lzkjInteractUrl
   Name: harbor-inter邀请有礼
   OverdueTime: 1800
-  Script:HarbourJ/jd_lzkjInteract.py
+  Script: HarbourJ/jd_lzkjInteract.py
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -216,7 +205,7 @@ js_config:
   - - DPLHTY
   Name: kingran-大牌联合
   OverdueTime: 1800
-  Script:jd_opencardDPLHTY.js
+  Script: wudongdefeng_tem-update/jd_opencardDPLHTY.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -227,7 +216,7 @@ js_config:
   - - jd_wxShopGift_activityUrl
   Name: kinran关注有礼无线
   OverdueTime: 1800
-  Script:m_jd_fav_shop_gift.js
+  Script: wudongdefeng_tem-update/m_jd_fav_shop_gift.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -238,7 +227,7 @@ js_config:
   - - jd_wdz_activityId
   Name: HarbourJ-微定制
   OverdueTime: 1800
-  Script:HarbourJ/jd_wdz.py
+  Script: HarbourJ/jd_wdz.py
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -249,7 +238,7 @@ js_config:
   - - jd_wxTeam_activityUrl
   Name: kingran组队瓜分
   OverdueTime: 1800
-  Script:jd_wxTeam.js
+  Script: wudongdefeng_tem-update/jd_wxTeam.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -260,7 +249,7 @@ js_config:
   - - jd_drawCenter_activityId
   Name: kingran店铺刮奖
   OverdueTime: 1800
-  Script:jd_drawCenter.js
+  Script: wudongdefeng_tem-update/jd_drawCenter.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -271,7 +260,7 @@ js_config:
   - - jd_lzkj_loreal_invite_url
   Name: kingran-lzkj_loreal邀请好友
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_invite.js
+  Script: wudongdefeng_tem-update/jd_lzkj_loreal_invite.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -282,7 +271,7 @@ js_config:
   - - JD_Lottery
   Name: kingran-抽奖机
   OverdueTime: 1800
-  Script:jd_lottery.js
+  Script: wudongdefeng_tem-update/jd_lottery.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -293,7 +282,7 @@ js_config:
   - - jd_lzkj_loreal_draw_url
   Name: kingran-店铺抽奖（超级无线欧莱雅）
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_draw.js
+  Script: wudongdefeng_tem-update/jd_lzkj_loreal_draw.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -304,7 +293,7 @@ js_config:
   - - jd_lzkj_loreal_cart_url
   Name: kingran-加购有礼（超级无线欧莱雅）
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_cart.js
+  Script: wudongdefeng_tem-update/jd_lzkj_loreal_cart.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -315,7 +304,7 @@ js_config:
   - - jd_lzkj_loreal_followShop_url
   Name: kingran-关注店铺有礼（超级无线欧莱雅）
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_followShop.js
+  Script: wudongdefeng_tem-update/jd_lzkj_loreal_followShop.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -326,7 +315,7 @@ js_config:
   - - d_lzkj_loreal_daySign_url
   Name: kingran-签到有礼（超级无线欧莱雅）
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_daySign.js
+  Script: wudongdefeng_tem-update/jd_lzkj_loreal_daySign.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -337,7 +326,7 @@ js_config:
   - - jd_lzkj_loreal_upperSign_url
   Name: kingran-上上签抽奖interactsaas（超级无线欧莱雅）
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_upperSign.js
+  Script: wudongdefeng_tem-update/jd_lzkj_loreal_upperSign.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -348,7 +337,7 @@ js_config:
   - - jd_shopSign_activityUrl
   Name: 七日签到
   OverdueTime: 1800
-  Script:jd_shopSign.js
+  Script: wudongdefeng_tem-update/jd_shopSign.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -359,7 +348,7 @@ js_config:
   - - jd_joyOpenId
   Name: joy开卡有礼
   OverdueTime: 1800
-  Script:jd_opencardJoy.js
+  Script: wudongdefeng_tem-update/jd_opencardJoy.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -370,7 +359,7 @@ js_config:
   - - jd_wxBulidActivityId
   Name: HarbourJ-建楼有礼
   OverdueTime: 1800
-  Script:HarbourJ/jd_wxBulidActivity.py
+  Script: HarbourJ/jd_wxBulidActivity.py
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -381,7 +370,7 @@ js_config:
   - - jd_wxUnPackingActivity_activityId
   Name: kingran-幸运福袋
   OverdueTime: 1800
-  Script:jd_wxUnPackingActivity.js
+  Script: wudongdefeng_tem-update/jd_wxUnPackingActivity.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -392,7 +381,7 @@ js_config:
   - - jd_shopFollowGiftId
   Name: HarbourJ-店铺礼包
   OverdueTime: 1800
-  Script:HarbourJ/jd_shopFollowGift.py
+  Script: HarbourJ/jd_shopFollowGift.py
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -403,7 +392,7 @@ js_config:
   - - jd_cart_item_activityUrl
   Name: kingran-txzj加购有礼
   OverdueTime: 1800
-  Script:jd_txzj_cart_item.js
+  Script: wudongdefeng_tem-update/jd_txzj_cart_item.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -414,7 +403,7 @@ js_config:
   - - jd_share_new_activityUrl
   Name: kingran-txzj分享有礼
   OverdueTime: 1800
-  Script:jd_txzj_share_new.js
+  Script: wudongdefeng_tem-update/jd_txzj_share_new.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -425,7 +414,7 @@ js_config:
   - - jd_shop_gift_activityUrl
   Name: kingran-txzj店铺礼包
   OverdueTime: 1800
-  Script:jd_txzj_shop_gift.js
+  Script: wudongdefeng_tem-update/jd_txzj_shop_gift.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -436,7 +425,7 @@ js_config:
   - - jd_lottery_activityUrl
   Name: kingran-txzj关注抽奖
   OverdueTime: 1800
-  Script:jd_txzj_lottery.js
+  Script: wudongdefeng_tem-update/jd_txzj_lottery.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -447,7 +436,7 @@ js_config:
   - - jd_collect_shop_activityUrl
   Name: kingran-txzj关注商品
   OverdueTime: 1800
-  Script:jd_txzj_collect_shop.js
+  Script: wudongdefeng_tem-update/jd_txzj_collect_shop.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -458,7 +447,7 @@ js_config:
   - - jd_collect_item_activityUrl
   Name: kingran-txzj关注有礼
   OverdueTime: 1800
-  Script:jd_txzj_collect_item.js
+  Script: wudongdefeng_tem-update/jd_txzj_collect_item.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -469,7 +458,7 @@ js_config:
   - - jd_sign_in_activityUrl
   Name: kingran-txzj签到
   OverdueTime: 1800
-  Script:jd_txzj_sign_in.js
+  Script: wudongdefeng_tem-update/jd_txzj_sign_in.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -480,7 +469,7 @@ js_config:
   - - jd_wxCollectCard_activityId
   Name: kingran-集卡有礼
   OverdueTime: 1800
-  Script:jd_wxCollectCard.js
+  Script: wudongdefeng_tem-update/jd_wxCollectCard.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -491,7 +480,7 @@ js_config:
   - - jd_wxFansInterActionActivity_activityId
   Name: kingran-粉丝互动
   OverdueTime: 1800
-  Script:jd_wxFansInterActionActivity.js
+  Script: wudongdefeng_tem-update/jd_wxFansInterActionActivity.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -502,7 +491,7 @@ js_config:
   - - jd_wxSecond_activityId
   Name: kingran-读秒
   OverdueTime: 1800
-  Script:jd_wxSecond.js
+  Script: wudongdefeng_tem-update/jd_wxSecond.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -513,7 +502,7 @@ js_config:
   - - jd_wxShareActivity_activityId
   Name: kingran-分享有礼
   OverdueTime: 1800
-  Script:jd_wxShareActivity.js
+  Script: wudongdefeng_tem-update/jd_wxShareActivity.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -524,7 +513,7 @@ js_config:
   - - jd_inv_authorCode
   Name: 邀请赢大礼
   OverdueTime: 1800
-  Script:jd_prodev_actCode
+  Script: jd_prodev_actCode
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -535,7 +524,7 @@ js_config:
   - - jinggengInviteJoin
   Name: jinggeng邀请入会有礼
   OverdueTime: 1800
-  Script:HarbourJ/jd_jinggengInvite.py
+  Script: HarbourJ/jd_jinggengInvite.py
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -546,7 +535,7 @@ js_config:
   - - jd_joinCommonId
   Name: 通用开卡-joinCommon系列
   OverdueTime: 1800
-  Script:HarbourJ/jd_joinCommon_opencard.py
+  Script: HarbourJ/jd_joinCommon_opencard.py
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -557,7 +546,7 @@ js_config:
   - - jd_shopLeagueId
   Name: 通用开卡-shopLeague系列
   OverdueTime: 1800
-  Script:HarbourJ/jd_shopLeague_opencard.py
+  Script: HarbourJ/jd_shopLeague_opencard.py
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -568,7 +557,7 @@ js_config:
   - - DPCJID
   Name: harbour-店铺抽奖
   OverdueTime: 1800
-  Script:HarbourJ/jd_dpcj.py
+  Script: HarbourJ/jd_dpcj.py
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -579,7 +568,7 @@ js_config:
   - - jd_completeInfoActivity_activityId
   Name: kingran-完善信息有礼
   OverdueTime: 1800
-  Script:jd_completeInfoActivity.js
+  Script: wudongdefeng_tem-update/jd_completeInfoActivity.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -590,7 +579,7 @@ js_config:
   - - jd_daily_activityUrl
   Name: kingran-每日抢
   OverdueTime: 1800
-  Script:jd_daily.js
+  Script: wudongdefeng_tem-update/jd_daily.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -601,7 +590,7 @@ js_config:
   - - jd_lzkj_loreal_share_url
   Name: 分享有礼（超级无线欧莱雅）
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_share.js
+  Script: jd_lzkj_loreal_share.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -612,7 +601,7 @@ js_config:
   - - jd_floor_activityUrl
   Name: jinggeng盖楼有礼
   OverdueTime: 1800
-  Script:jd_floor.js
+  Script: jd_floor.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -623,7 +612,7 @@ js_config:
   - - jd_showInviteJoin_activityUrl
   Name: jinggeng邀请有礼
   OverdueTime: 1800
-  Script:jd_jinggeng_showInviteJoin.js
+  Script: jd_jinggeng_showInviteJoin.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -634,7 +623,7 @@ js_config:
   - - jd_loadBlindBox_activityUrl
   Name: jinggeng惊喜开盲盒
   OverdueTime: 1800
-  Script:jd_loadBlindBox.js
+  Script: jd_loadBlindBox.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -645,7 +634,7 @@ js_config:
   - - jd_lzkj_loreal_cart_url
   Name: 加购有礼（超级无线欧莱雅）-KR
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_cart.js
+  Script: jd_lzkj_loreal_cart.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -656,7 +645,7 @@ js_config:
   - - jd_lzkj_loreal_daySign_url
   Name: 签到有礼（超级无线欧莱雅）-KR
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_daySign.js
+  Script: jd_lzkj_loreal_daySign.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -667,7 +656,7 @@ js_config:
   - - jd_lzkj_loreal_draw_url
   Name: 幸运抽奖（超级无线欧莱雅）-KR
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_draw.js
+  Script: jd_lzkj_loreal_draw.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -678,7 +667,7 @@ js_config:
   - - jd_lzkj_loreal_followGoods_url
   Name: 关注商品有礼（超级无线欧莱雅）-KR
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_followGoods.js
+  Script: jd_lzkj_loreal_followGoods.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -689,7 +678,7 @@ js_config:
   - - jd_lzkj_loreal_followShop_url
   Name: 关注店铺有礼（超级无线欧莱雅）-KR
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_followShop.js
+  Script: jd_lzkj_loreal_followShop.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -700,7 +689,7 @@ js_config:
   - - jd_lzkj_loreal_invite_url
   Name: 邀请入会有礼（超级无线欧莱雅）-KR
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_invite.js
+  Script: jd_lzkj_loreal_invite.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -711,7 +700,7 @@ js_config:
   - - jd_lzkj_loreal_sign_url
   Name: 签到抽奖（超级无线欧莱雅）-KR
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_sign.js
+  Script: jd_lzkj_loreal_sign.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -722,7 +711,7 @@ js_config:
   - - jd_lzkj_loreal_upperSign_url
   Name: 上上签抽奖（超级无线欧莱雅）-KR
   OverdueTime: 1800
-  Script:jd_lzkj_loreal_upperSign.js
+  Script: jd_lzkj_loreal_upperSign.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -733,7 +722,7 @@ js_config:
   - - jd_shopDraw_venderId
   Name: 店铺刮刮乐-KR
   OverdueTime: 1800
-  Script:jd_shopDraw.js
+  Script: jd_shopDraw.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -744,7 +733,7 @@ js_config:
   - - jd_showCart_activityUrl
   Name: 加购有礼 · 京耕
   OverdueTime: 1800
-  Script:jd_showCart.js
+  Script: jd_showCart.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -755,7 +744,7 @@ js_config:
   - - jd_showDrawOne_activityUrl
   Name: 大转盘抽奖 · 京耕
   OverdueTime: 1800
-  Script:jd_showDrawOne.js
+  Script: jd_showDrawOne.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -766,7 +755,7 @@ js_config:
   - - jd_showFavoriteShop_activityUrl
   Name: 关注店铺有礼 · 京耕
   OverdueTime: 1800
-  Script:jd_showFavoriteShop.js
+  Script: jd_showFavoriteShop.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -777,7 +766,7 @@ js_config:
   - - jd_showInviteJoin_activityUrl
   Name: 邀请入会赢好礼 · 京耕
   OverdueTime: 1800
-  Script:jd_showInviteJoin.js
+  Script: jd_showInviteJoin.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -788,7 +777,7 @@ js_config:
   - - jd_showPartition_activityUrl
   Name: 组队瓜分奖品 · 京耕
   OverdueTime: 1800
-  Script:jd_showPartition.js
+  Script: jd_showPartition.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -799,7 +788,7 @@ js_config:
   - - jd_showPerfectInformation_activityUrl
   Name: 完善资料有礼 · 京耕
   OverdueTime: 1800
-  Script:jd_showPerfectInformation.js
+  Script: jd_showPerfectInformation.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -810,7 +799,7 @@ js_config:
   - - jd_showSign_activityUrl
   Name: 店铺签到 · 京耕
   OverdueTime: 1800
-  Script:jd_showPerfectInformation.js
+  Script: jd_showPerfectInformation.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -821,7 +810,7 @@ js_config:
   - - jd_showTaskDraw_activityUrl
   Name: 九宫格抽奖 · 京耕
   OverdueTime: 1800
-  Script:jd_showTaskDraw.js
+  Script: jd_showTaskDraw.js
   TimeOut: 3600
   Wait: 5
 - Container:
@@ -832,7 +821,6 @@ js_config:
   - - jd_categoryUnion_activityId
   Name: kingran品类联合
   OverdueTime: 1800
-  Script:jd_categoryUnion.js
+  Script: wudongdefeng_tem-update/jd_categoryUnion.js
   TimeOut: 3600
   Wait: 5
-
