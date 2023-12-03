@@ -115,6 +115,7 @@ function Combin_All {
   export wish_appIdArrList="1EFNVyqeH@1FFVQyqw@1EFRWxKuG@1E1xZy6s"
   export wish_appNameArrList="京东电器@1111点心动@许愿抽好礼@PLUS生活特权"
   export JD_SYJ="true"
+  export gua_cleancart_SignUrl="https://jd.smiek.top/jdcleancatr_21102717"
   export JD_JOIN_ZLC="false"
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL)
   if [[ $(date -u "+%H") -eq 12 ]] || [[ $(date -u "+%H") -eq 13 ]]; then
