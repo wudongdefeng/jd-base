@@ -117,6 +117,7 @@ function Combin_All {
   export JD_SYJ="true"
   export gua_cleancart_SignUrl="https://jd.smiek.top/jdcleancatr_21102717"
   export JD_JOIN_ZLC="false"
+  export ONEVAL="true"
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherJDGLOBAL)
   if [[ $(date -u "+%H") -eq 12 ]] || [[ $(date -u "+%H") -eq 13 ]]; then
     export JDCFD_SHARECODES=$(Combin_Sub ForOtherJDCFD "26DDC6311C11085111BD817F548B8102D90CFEE44F69BB53E059EC830BC20CDE@EFF086EF2E7582413BDF061FE6F35C660BAF51E2332B8B0ADC8BC7C7FE962364@80DEC19D6ECED69F0A46CDD6E4745C9D09B0AC7744A1A1D05B78E28221ECDDD4")
